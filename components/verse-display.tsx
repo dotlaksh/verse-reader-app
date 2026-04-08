@@ -48,7 +48,6 @@ export function VerseDisplay({
         {/* Sanskrit Text Section */}
         {verse.sanskrit && (
           <div className="sanskrit-section">
-            <div className="sanskrit-label">Sanskrit</div>
             <p className="sanskrit-text">
               {verse.sanskrit}
             </p>
@@ -57,7 +56,6 @@ export function VerseDisplay({
 
         {/* English Meaning Section */}
         <div className="meaning-section">
-          <div className="meaning-label">Meaning</div>
           <p className="meaning-text whitespace-pre-line">
             {verse.verse}
           </p>
