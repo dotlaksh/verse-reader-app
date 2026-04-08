@@ -59,7 +59,7 @@ export function VerseDisplay({
         <div className="meaning-section">
           <div className="meaning-label">Meaning</div>
           <p className="meaning-text whitespace-pre-line">
-            {verse.text}
+            {verse.verse}
           </p>
         </div>
 
