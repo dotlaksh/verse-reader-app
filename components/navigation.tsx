@@ -37,9 +37,7 @@ export function Navigation({
 
           {/* Progress Indicator */}
           <div className="flex-1 text-center">
-            <div className="text-sm text-muted-foreground">
-              Chapter {currentChapter} • Verse {currentVerse} of {totalVerses}
-            </div>
+           
             <div className="mt-2 w-full bg-muted rounded-full h-1 overflow-hidden">
               <div
                 className="bg-primary h-full transition-all duration-300"
