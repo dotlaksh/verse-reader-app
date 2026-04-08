@@ -33,9 +33,6 @@ export function VerseDisplay({
           <span className="text-lg font-medium text-primary">
             Verse {verse.number}
           </span>
-          <span className="text-sm text-muted-foreground">
-            {verseIndex + 1} of {chapter.verses.length}
-          </span>
         </div>
 
         {/* Speaker (if applicable) */}
