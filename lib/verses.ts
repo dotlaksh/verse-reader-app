@@ -13,392 +13,2212 @@ export interface Chapter {
 
 export const chapters: Chapter[] = [
   {
-    id: 1,
-    title: "Instruction on Self-Realization",
-    verses: [
-      { id: "1.1", number: "1.1", speaker: "Janaka said:", text: "Master,\nhow is Knowledge to be achieved,\ndetachment acquired,\nliberation attained?" },
-      { id: "1.2", number: "1.2", speaker: "Ashtavakra said:", text: "To be free,\nshun the experiences of the senses\nlike poison.\nTurn your attention to\nforgiveness, sincerity, kindness, simplicity, truth." },
-      { id: "1.3", number: "1.3", speaker: "Ashtavakra said:", text: "You are not earth, water, fire or air.\nNor are you empty space.\nLiberation is to know yourself\nas Awareness alone—\nthe Witness of these." },
-      { id: "1.4", number: "1.4", speaker: "Ashtavakra said:", text: "Abide in Awareness\nwith no illusion of person.\nYou will be instantly free and at peace." },
-      { id: "1.5", number: "1.5", speaker: "Ashtavakra said:", text: "You have no caste or duties.\nYou are invisible, unattached, formless.\nYou are the Witness of all things.\nBe happy." },
-      { id: "1.6", number: "1.6", speaker: "Ashtavakra said:", text: "Right and wrong, pleasure and pain,\nexist in mind only.\nThey are not your concern.\nYou neither do nor enjoy.\nYou are free." },
-      { id: "1.7", number: "1.7", speaker: "Ashtavakra said:", text: "You are the Solitary Witness\nof All That Is,\nforever free.\nYour only bondage is not seeing This." },
-      { id: "1.8", number: "1.8", speaker: "Ashtavakra said:", text: "The thought: \"I am the doer\"\nis the bite of a poisonous snake.\nTo know: \"I do nothing\"\nis the wisdom of faith.\nBe happy." },
-      { id: "1.9", number: "1.9", speaker: "Ashtavakra said:", text: "A single understanding:\n\"I am the One Awareness,\"\nconsumes all suffering\nin the fire of an instant.\nBe happy." },
-      { id: "1.10", number: "1.10", speaker: "Ashtavakra said:", text: "You are unbounded Awareness—\nBliss, Supreme Bliss—\nin which the universe appears\nlike the mirage of a snake in a rope.\nBe happy." },
-      { id: "1.11", number: "1.11", speaker: "Ashtavakra said:", text: "It is true what they say:\n\"You are what you think.\"\nIf you think you are bound you are bound.\nIf you think you are free you are free." },
-      { id: "1.12", number: "1.12", speaker: "Ashtavakra said:", text: "You are Self—the Solitary Witness.\nYou are perfect, all-pervading, One.\nYou are free, desireless, forever still.\nThe universe is but a seeming in You." },
-      { id: "1.13", number: "1.13", speaker: "Ashtavakra said:", text: "Meditate on this: \"I am Awareness alone—Unity itself.\"\nGive up the idea that you are separate, a person,\nthat there is within and without." },
-      { id: "1.14", number: "1.14", speaker: "Ashtavakra said:", text: "You have long been bound thinking:\n\"I am a person.\"\nLet the knowledge: \"I am Awareness alone\"\nbe the sword that frees you." },
-      { id: "1.15", number: "1.15", speaker: "Ashtavakra said:", text: "You are now and forever\nfree, luminous, transparent, still.\nThe practice of meditation\nkeeps one in bondage." },
-      { id: "1.16", number: "1.16", speaker: "Ashtavakra said:", text: "You are pure Consciousness—\nthe substance of the universe.\nThe universe exists within you.\nDon't be small-minded." },
-      { id: "1.17", number: "1.17", speaker: "Ashtavakra said:", text: "You are unconditioned, changeless, formless.\nYou are solid, unfathomable, cool.\nDesire nothing.\nYou are Consciousness." },
-      { id: "1.18", number: "1.18", speaker: "Ashtavakra said:", text: "That which has form is not real.\nOnly the formless is permanent.\nOnce this is known,\nyou will not return to illusion." },
-      { id: "1.19", number: "1.19", speaker: "Ashtavakra said:", text: "Just as a mirror exists\nboth within and without\nthe image reflected,\nthe Supreme Self exists\nboth within and without the body." },
-      { id: "1.20", number: "1.20", speaker: "Ashtavakra said:", text: "Just as the same space exists\nboth within and without a jar,\nthe timeless, all-pervasive One\nexists as Totality." },
+    [
+  {
+    "id": 1,
+    "title": "Self – Witness in All",
+    "verses": [
+      {
+        "id": "1.1",
+        "number": "1.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "kathaṁ jñānamavāpnoti kathaṁ muktirbhaviṣyati, vairāgyaṁ ca kathaṁ praptaṁ-etad brūhi mama prabho. (1)",
+        "verse": "\"Teach me this, O Lord! how can Knowledge be acquired? How can Liberation come? How is renunciation achieved?\""
+      },
+      {
+        "id": "1.2",
+        "number": "1.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "muktim-icchasi cet-tāta viṣayān viṣavat-tyaja kṣamārjava-dayā-toṣa-satyaṁ pīyūṣa-vad-bhaja. (2)",
+        "verse": "\"If you aspire for Liberation, my child, reject the objects of the senses as poison and seek forgiveness, straightforwardness, kindness, cheerfulness and truth as nectar.\""
+      },
+      {
+        "id": "1.3",
+        "number": "1.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na pṛthvī na jalaṁ nāgnirna vāyurdyaurna vā bhavān, eṣāṁ sākṣiṇamātmānaṁ cidrūpaṁ viddhi muktaye. (3)",
+        "verse": "\"You are neither earth, nor water, nor fire, nor air, nor space. In order to attain freedom know the Self as the ‘witness’ of all these – the embodiment of pure Consciousness itself.\""
+      },
+      {
+        "id": "1.4",
+        "number": "1.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yadi dehaṁ pṛthak-kṛtya citi viśrāmya tiṣṭhasi, adhunaiva sukhī śāntaḥ bandhamukto bhaviṣyasi. (4)",
+        "verse": "\"If you detach yourself from the body and abide in Consciousness, you will at once become happy, peaceful and free from bondage.\""
+      },
+      {
+        "id": "1.5",
+        "number": "1.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na tvaṁ viprādiko varṇo-nāśramī nākṣagocaraḥ, asaṅgo-'si nirākāro viśva-sākṣī sukhī bhava. (5)",
+        "verse": "\"You do not belong to the Brāhmaṇa or any such other caste. Nor do you belong to any station in life (āśrama). You are not perceivable by the senses. Unattached, formless and ‘witness’ of all you are, be happy.\""
+      },
+      {
+        "id": "1.6",
+        "number": "1.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dharmādharmao sukhaṁ duḥkhaṁ mānasāni na te vibho, na kartā'si na bhoktā'si mukta evāsi sarvadā. (6)",
+        "verse": "\"Virtue and vice, happiness and sorrow are all attributes of the mind, not of yourself, O all-pervading one! you are neither the ‘doer’ nor the ‘enjoyer’. Indeed, you are ever free.\""
+      },
+      {
+        "id": "1.7",
+        "number": "1.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "eko draṣṭāsi sarvasya muktaprāyo'si sarvadā, ayameva hi te bandho draṣṭāraṁ paśyasītaram. (7)",
+        "verse": "\"You are the one seer of all, and are surely ever free. Indeed, this alone is your bondage that you see yourself not as the seer but as something different.\""
+      },
+      {
+        "id": "1.8",
+        "number": "1.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ahaṁ kartetyahaṁmāna-mahākṛṣṇāhi-daṁśitaḥ, nāhaṁ karteti viśvāsāmṛtaṁ pītvā sukhī bhava. (8)",
+        "verse": "\"You, who have been bitten by the great black serpent of egoism ‘I am the doer’, please drink the nectar of faith, ‘I am not the doer’, and be happy.\""
+      },
+      {
+        "id": "1.9",
+        "number": "1.9",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "eko viśuddhabodho'hamiti niścaya-vahninā, prajvālyājñāna-gahanaṁ vīta-śokaḥ sukhī bhava. (9)",
+        "verse": "\"Having thus burnt down the forest of ignorance with the fire of certitude ‘I am the one pure Consciousness’, and discarding all grief, be happy.\""
+      },
+      {
+        "id": "1.10",
+        "number": "1.10",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yatra viśvam-idaṁ bhāti kalpitaṁ rajju-sarpavat, ānanda-paramānandaḥ sa bodhastvaṁ sukhaṁ cara. (10)",
+        "verse": "\"You are that Consciousness, Bliss – supreme Bliss – upon which this universe appears superimposed, like a snake on a rope. Live happily as that blissful Consciousness.\""
+      },
+      {
+        "id": "1.11",
+        "number": "1.11",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "muktābhimānī mukto hi baddho baddhābhimānyapi, kiṁvadantīha satyeyaṁ yā matiḥ sā gatirbhavet. (11)",
+        "verse": "\"He who considers himself free becomes free indeed, and he who considers himself bound remains bound. ‘As one thinks, so one becomes’, is a proverbial saying in this world and it is indeed quite true.\""
+      },
+      {
+        "id": "1.12",
+        "number": "1.12",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ātmā sākṣī vibhuḥ pūrṇa eko muktaścidakriyaḥ, asaṅgo nispṛhaḥ śānto bhramāt saṁsāravāniva. (12)",
+        "verse": "\"The Self is witness, all-pervading, perfect, non-dual, free, Consciousness, actionless, unattached, desireless and quiet. Through illusion, It appears as if It is absorbed in the world.\""
+      },
+      {
+        "id": "1.13",
+        "number": "1.13",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kūṭasthaṁ bodham-advaitam-ātmānaṁ paribhāvaya, ābhāso'haṁ bhramaṁ muktvā bhāvaṁ bāhyam-athāntaram. (13)",
+        "verse": "\"Having given up all external and internal fluctuations, and the illusion - ‘I am the reflected Self (ego)’, meditate upon the Self, as immutable non-dual Consciousness.\""
+      },
+      {
+        "id": "1.14",
+        "number": "1.14",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dehabhimāna-pāśena ciraṁ baddho'si putraka, bodho'haṁ jñāna-khaḍgena tanniṣkṛtya sukhī bhava. (14)",
+        "verse": "\"My dear son, you have been bound by the rope of your body-consciousness. Rend it asunder with the sword of the Knowledge ‘I am Consciousness’ and be happy.\""
+      },
+      {
+        "id": "1.15",
+        "number": "1.15",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "niḥsaṅgo niṣkriyo'si tvaṁ svaprakāśo nirañjanaḥ, ayam-eva hi te bandhaḥ samādhim-anutiṣṭhasi. (15)",
+        "verse": "\"You are unattached, actionless, self-effulgent and without any taints. ‘You practise meditation,’ and this indeed is your bondage.\""
+      },
+      {
+        "id": "1.16",
+        "number": "1.16",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tvayā vyāptam-idaṁ viśvaṁ tvayi protaṁ yathārthataḥ, śuddha-buddha-svarūpastvaṁ mā gamaḥ kṣudra-cittatām. (16)",
+        "verse": "\"You pervade this universe and this universe is strung or woven only in you. Really, by nature, you are pure Consciousness. Do not give way to petty-mindedness.\""
+      },
+      {
+        "id": "1.17",
+        "number": "1.17",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ, agādha-buddhir-akṣubdho bhava cinmātra-vāsanaḥ. (17)",
+        "verse": "\"You are unconditioned, changeless, dense, of profound intelligence, serene and unperturbed. Desire Consciousness alone.\""
+      },
+      {
+        "id": "1.18",
+        "number": "1.18",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sākāram-anṛtaṁ viddhi nirākāraṁ tu niścalam, etat-tattvopadeśena na punarbhava-sambhavaḥ. (18)",
+        "verse": "\"Know that which has form to be false and the formless to be changeless. Through this spiritual instruction you shall escape the possibility of rebirth.\""
+      },
+      {
+        "id": "1.19",
+        "number": "1.19",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yathaivādarśa-madhyasthe rūpe'ntaḥ paritastu saḥ, tathaivāsmin śarīre'ntaḥ paritaḥ parameśvaraḥ. (19)",
+        "verse": "\"Just as a mirror exists inside and outside the image reflected in it, so the supreme Self exists inside and outside this body.\""
+      },
+      {
+        "id": "1.20",
+        "number": "1.20",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ekaṁ sarvagataṁ vyoma bahir-antar-yathā ghaṭe, nityaṁ nirantaraṁ brahma sarvabhūtagaṇe tathā. (20)",
+        "verse": "\"Just as the same all-pervading space is inside and outside the jar, so the immutable and all-pervading Brahman exists in all things and beings.\""
+      }
     ]
   },
   {
-    id: 2,
-    title: "Joy of Self-Realization",
-    verses: [
-      { id: "2.1", number: "2.1", speaker: "Janaka said:", text: "I am now spotless and at peace—\nAwareness beyond Consciousness.\nAll this time\nI have been duped by illusion." },
-      { id: "2.2", number: "2.2", speaker: "Janaka said:", text: "By this light alone\nthe body and the universe appear.\nI am Everything\nor Nothing." },
-      { id: "2.3", number: "2.3", speaker: "Janaka said:", text: "Seeing there is no\nuniverse or body,\nby grace the Self is revealed." },
-      { id: "2.4", number: "2.4", speaker: "Janaka said:", text: "As waves, foam and bubbles\nare not different from water,\nso the universe emanating from Self\nis not different from Self." },
-      { id: "2.5", number: "2.5", speaker: "Janaka said:", text: "Look closely at cloth,\nyou see only threads.\nLook closely at creation,\nyou see only Self." },
-      { id: "2.6", number: "2.6", speaker: "Janaka said:", text: "As sweetness\npervades sugarcane juice,\nI am the essence of creation." },
-      { id: "2.7", number: "2.7", speaker: "Janaka said:", text: "Not seeing Self, the world is materialized.\nSeeing Self, the world is vanished.\nA rope is not a snake,\nbut can appear to be." },
-      { id: "2.8", number: "2.8", speaker: "Janaka said:", text: "I am not other than Light.\nThe universe manifests\nat my glance." },
-      { id: "2.9", number: "2.9", speaker: "Janaka said:", text: "The mirage of universe appears in me\nas silver appears in mother-of-pearl,\nas a snake appears in a rope,\nas water appears on a desert horizon." },
-      { id: "2.10", number: "2.10", speaker: "Janaka said:", text: "As a pot returns to clay,\na wave to water,\na bracelet to gold,\nso will the universe return to Me." },
-      { id: "2.11", number: "2.11", speaker: "Janaka said:", text: "I am wonderful indeed—\nbeyond adoration.\nI cannot decay nor ever die,\nthough God and all the universe\nshould perish to the last blade of grass." },
-      { id: "2.12", number: "2.12", speaker: "Janaka said:", text: "I am wonderful indeed—\nbeyond adoration.\nEven with a body I am One.\nI neither come nor go.\nI am everywhere at once." },
-      { id: "2.13", number: "2.13", speaker: "Janaka said:", text: "I am wonderful indeed—\nbeyond adoration.\nI am astounded at my powers.\nThe universe appears within me\nbut I do not touch it." },
-      { id: "2.14", number: "2.14", speaker: "Janaka said:", text: "I am wonderful indeed—\nbeyond adoration.\nI am everything thought or spoken,\nand have nothing." },
-      { id: "2.15", number: "2.15", speaker: "Janaka said:", text: "In Reality,\nknowledge, the knower, and the knowable\ndo not exist.\nI am the transparent Self\nin which through ignorance\nthey appear." },
-      { id: "2.16", number: "2.16", speaker: "Janaka said:", text: "Looking at One and seeing many\nis the cause of all misery.\nThe only cure is to realize\nwhat is seen is not there.\nI am One—aware, blissful, immaculate." },
-      { id: "2.17", number: "2.17", speaker: "Janaka said:", text: "I am unbounded Awareness.\nOnly in imagination do I have limits.\nReflecting on this,\nI abide in the Absolute." },
-      { id: "2.18", number: "2.18", speaker: "Janaka said:", text: "I am neither free nor bound.\nThe illusion of such things\nhas fallen into disbelief.\nThough I contain creation,\nit has no substance." },
-      { id: "2.19", number: "2.19", speaker: "Janaka said:", text: "Having seen for certain\nthat this universe and body\nis without form or substance,\nI am revealed as Awareness alone.\nImagination has no place here." },
-      { id: "2.20", number: "2.20", speaker: "Janaka said:", text: "The body exists only in imagination,\nas do heaven and hell,\nbondage, freedom, fear.\nAre these my concern?\nI, who am pure Awareness?" },
-      { id: "2.21", number: "2.21", speaker: "Janaka said:", text: "I see no differences or separation.\nEven the multitudes appear\nas a single formless desert.\nTo what should I cling?" },
-      { id: "2.22", number: "2.22", speaker: "Janaka said:", text: "I am not the body.\nI do not have a body.\nI am Awareness, not a person.\nMy thirst for life bound me\nto a seeming of life." },
-      { id: "2.23", number: "2.23", speaker: "Janaka said:", text: "In the limitless ocean of Myself\nthe winds of the mind\nroil the myriad waves of the world." },
-      { id: "2.24", number: "2.24", speaker: "Janaka said:", text: "But when the wind subsides\nin the limitless ocean\nthe ark of personhood is swallowed up,\nalong with the universe it carries." },
-      { id: "2.25", number: "2.25", speaker: "Janaka said:", text: "And how wonderful it is!\nIn the limitless ocean of Myself,\nwaves of beings\narise, collide, play for a time,\nthen disappear--as is their nature." },
+    "id": 2,
+    "title": "The Marvellous Self",
+    "verses": [
+      {
+        "id": "2.1",
+        "number": "2.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho nirañjanaḥ śānto bodho'haṁ prakṛteḥ paraḥ, etāvantam-ahaṁ kālaṁ mohenaiva viḍambitaḥ. (1)",
+        "verse": "\"O! I am the taintless, serene, pure Consciousness, and beyond nature. So long I have spent my days bewildered by delusion.\""
+      },
+      {
+        "id": "2.2",
+        "number": "2.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "yathā prakāśayamyeko deham-enaṁ tathā jagat, ato mama jagat-sarvam-athavā na ca kiñcana. (2)",
+        "verse": "\"I, the One, illumine this body and also reveal this universe. Therefore, mine is all this universe or indeed nothing is mine.\""
+      },
+      {
+        "id": "2.3",
+        "number": "2.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "saśarīram-aho viśvaṁ parityajya mayā'dhunā, kutaścit kauśalād-eva paramātmā vilokyate. (3)",
+        "verse": "\"O! having abandoned the universe together with the body, I now perceive the supreme Self through the dexterity of some Teacher.\""
+      },
+      {
+        "id": "2.4",
+        "number": "2.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "yathā na toyato bhinnās-taraṅgāḥ phena-budbudāḥ, ātmano na tathā bhinnaṁ viśvam-ātmavinirgatam. (4)",
+        "verse": "\"As waves, foam and bubbles are not different from the waters, so the universe, streaming forth from the Self, is not different from the Self.\""
+      },
+      {
+        "id": "2.5",
+        "number": "2.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "tantumātro bhaved-eva paṭo yadvad-vicāritaḥ, ātmatanmātram-evedaṁ tadvad-viśvaṁ vicāritam. (5)",
+        "verse": "\"Just as cloth, when analysed, becomes nothing but thread, even so this universe, when examined carefully is found to be nothing but the Self.\""
+      },
+      {
+        "id": "2.6",
+        "number": "2.6",
+        "speaker": "Janaka said:",
+        "sanskrit": "yathaivekṣurase kḷptā tena vyāptaiva śarkarā, tathā viśvaṁ mayi kḷptaṁ mayā vyāptaṁ nirantaram. (6)",
+        "verse": "\"Just as sugar made from the sugarcane juice is entirely pervaded by that juice, so the universe, produced in me, is permeated by me, both within and without.\""
+      },
+      {
+        "id": "2.7",
+        "number": "2.7",
+        "speaker": "Janaka said:",
+        "sanskrit": "ātmājñānājjagad-bhāti ātmajñānānna bhāsate, rajjvajñānād-ahirbhāti tajjñānād-bhāsate na hi. (7)",
+        "verse": "\"The universe appears from the ‘ignorance' of the Self, and disappears with 'knowledge’ of the Self just as the serpent, indeed, appears from the 'non-apprehension' of the rope and disappears with its 'apprehension'.\""
+      },
+      {
+        "id": "2.8",
+        "number": "2.8",
+        "speaker": "Janaka said:",
+        "sanskrit": "prakāśo me nijaṁ rūpaṁ nātirikto'smyahaṁ tataḥ, yadā prakāśate viśvaṁ tadā'haṁbhāsa eva hi. (8)",
+        "verse": "\"Light is my very nature; I am nothing other than that Light. When the universe manifests, indeed, it is I alone who shine.\""
+      },
+      {
+        "id": "2.9",
+        "number": "2.9",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho vikalpitaṁ viśvam-ajñānān-mayi bhāsate, rūpyaṁ śuktau phaṇī rajjau vāri sūryakare yathā. (9)",
+        "verse": "\"O Marvellous! The universe appears in Me, misapprehended through ‘ignorance’ just as silver in the mother-of-pearl, snake in the rope, and water in the sunlight.\""
+      },
+      {
+        "id": "2.10",
+        "number": "2.10",
+        "speaker": "Janaka said:",
+        "sanskrit": "matto vinirgataṁ viśvaṁ mayyeva layameṣyati, mṛdi kumbho jale vīciḥ kanake kaṭakaṁ yathā. (10)",
+        "verse": "\"Just as the pot dissolves into clay, the wave into water or the bangle into gold, so the universe which has streamed forth from Me will attain dissolution in Me.\""
+      },
+      {
+        "id": "2.11",
+        "number": "2.11",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho ahaṁ namo mahyaṁ vināśo yasya nāsti me, brahmādi-stamba-paryantaṁ jagannāśe'pi tiṣṭhataḥ. (11)",
+        "verse": "\"O! Marvellous am I! Adoration to Myself who knows no decay and survives even the destruction of the universe, from the Creator (Brahmā) down to a blade of grass.\""
+      },
+      {
+        "id": "2.12",
+        "number": "2.12",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho ahaṁ namo mahyam-eko'haṁ dehavānapi, kvacinna gantā nāgantā vyāpya viśvam-avasthitaḥ. (12)",
+        "verse": "\"Marvellous am I! Adoration to Myself, who, though with a body, am one, who neither go anywhere, nor come from anywhere but ever abide pervading the universe.\""
+      },
+      {
+        "id": "2.13",
+        "number": "2.13",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho ahaṁ namo mahyaṁ dakṣo nāstīha matsamaḥ, asaṁspṛśya śarīreṇa yena viśvaṁ ciraṁ dhṛtam. (13)",
+        "verse": "\"O! Marvellous am I! Salutations to Myself! There is none so competent in this world as Me, who, am holding the universe eternally without touching it with My body.\""
+      },
+      {
+        "id": "2.14",
+        "number": "2.14",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho ahaṁ namo mahyaṁ yasya me nāsti kiñcana, athavā yasya me sarvaṁ yad-vāṅ-manasa-gocaram. (14)",
+        "verse": "\"O! Marvellous am I! Prostrations to Myself who have nothing, or all, that which is accessible to speech and mind, belongs to Me only.\""
+      },
+      {
+        "id": "2.15",
+        "number": "2.15",
+        "speaker": "Janaka said:",
+        "sanskrit": "jñānaṁ jñeyaṁ tathā jñātā tritayaṁ nāsti vāstavam, ajñānād-bhāti yatredaṁ so'ham-asmi nirañjanaḥ. (15)",
+        "verse": "\"The ‘knowledge,’ the ‘knowable’ and the ‘knower’ – these triple categories do not in fact exist. I am that taintless Self in which, through 'ignorance,' this triad appears to exist.\""
+      },
+      {
+        "id": "2.16",
+        "number": "2.16",
+        "speaker": "Janaka said:",
+        "sanskrit": "dvaita-mūlam-aho duḥkhaṁ nānyat-tasyāsti bheṣajam, dṛśyam-etanmṛṣā sarvaṁ eko'haṁ cid-raso'malaḥ. (16)",
+        "verse": "\"O! The root of all misery is the sense of duality. There is no other remedy for this (misery) except the realisation that all visible objects of experiences are unreal and that I am the non-dual, pure Consciousness and Bliss.\""
+      },
+      {
+        "id": "2.17",
+        "number": "2.17",
+        "speaker": "Janaka said:",
+        "sanskrit": "bodhamātro'ham-ajñānād-upādhiḥ kalpito mayā, evaṁ vimṛśato nityaṁ nirvikalpe sthitirmama. (17)",
+        "verse": "\"I am pure Consciousness. Through 'ignorance' I have projected my equipments, such as the body, upon the Self. Constantly reflecting thus I abide in the Self, purged of all mental activities.\""
+      },
+      {
+        "id": "2.18",
+        "number": "2.18",
+        "speaker": "Janaka said:",
+        "sanskrit": "na me bandho'sti mokṣo vā bhrāntiḥ śāntā nirāśrayā, aho mayi sthitaṁ viśvaṁ vastuto na mayi sthitam. (18)",
+        "verse": "\"I have neither bondage nor freedom. The 'illusion,' having lost its support, has ended. O! The universe, though it abides in Me, does not in fact exist in Me.\""
+      },
+      {
+        "id": "2.19",
+        "number": "2.19",
+        "speaker": "Janaka said:",
+        "sanskrit": "sa-śarīram-idaṁ viśvaṁ na kiñcid-iti niścitam, śuddha-cinmātra ātmā ca tat-kasmin kalpanā'dhunā. (19)",
+        "verse": "\"I have known, for certain, that the body and the universe are unsubstantial and that the Self is pure Consciousness alone. So, now upon what can imaginations stand?\""
+      },
+      {
+        "id": "2.20",
+        "number": "2.20",
+        "speaker": "Janaka said:",
+        "sanskrit": "śarīraṁ svarga-narakau bandha-mokṣau bhayaṁ tathā, kalpanā-mātram-evaitat kiṁ me kāryaṁ cidātmanaḥ. (20)",
+        "verse": "\"Body, the notions of heaven and hell, bondage and freedom, as also anxiety – all these are mere imaginations. What purpose have I with all these – I whose nature is pure Consciousness?\""
+      },
+      {
+        "id": "2.21",
+        "number": "2.21",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho jana-samūhe’pi na dvaitaṁ paśyato mama, araṇyam-iva saṁvṛttaṁ kva ratiṁ karavāṇyaham. (21)",
+        "verse": "\"O Marvellous! I do not find any duality even in the midst of human crowds. I feel like I am in a forest. Towards what then should I feel attachment?\""
+      },
+      {
+        "id": "2.22",
+        "number": "2.22",
+        "speaker": "Janaka said:",
+        "sanskrit": "nāhaṁ deho na me deho jīvo nāham-ahaṁ hi cit, ayam-eva hi me bandha āsīd yā jīvite spṛhā. (22)",
+        "verse": "\"I am not the body. Nor have I a body. I am not a being (ego). I am pure Consciousness. That I had desired to live – this indeed was my bondage.\""
+      },
+      {
+        "id": "2.23",
+        "number": "2.23",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho bhuvana-kallolair-vicitrairdrāk samutthitam, mayyananta-mahāmbhodhau cittavāte samudyate. (23)",
+        "verse": "\"O Marvellous! In the limitless ocean of Me, when mental storms rise, diverse waves of worlds are instantly produced.\""
+      },
+      {
+        "id": "2.24",
+        "number": "2.24",
+        "speaker": "Janaka said:",
+        "sanskrit": "mayyananta-mahāmbhodhau cittavāte praśāmyati, abhāgyājjīvavaṇijo jagatpoto vinaśvaraḥ. (24)",
+        "verse": "\"With the calming of the storms of the mind, in the limitless ocean of Myself, unfortunately for the jīva, the trader, the ship of the universe gets wrecked and sunk!\""
+      },
+      {
+        "id": "2.25",
+        "number": "2.25",
+        "speaker": "Janaka said:",
+        "sanskrit": "mayyananta-mahāmbhodhāv-āścaryaṁ jīva-vīcayaḥ, udyanti ghnanti khelanti praviśanti svabhāvataḥ. (25)",
+        "verse": "\"Wonderful! Marvellous! In Me, the limitless ocean, the waves of individual selves, according to their nature, rise, jostle about, play for a time and disappear.\""
+      }
     ]
   },
   {
-    id: 3,
-    title: "Test of Self-Realization",
-    verses: [
-      { id: "3.1", number: "3.1", speaker: "Ashtavakra said:", text: "Having realized yourself as One,\nbeing serene and indestructible,\nwhy do you desire wealth?" },
-      { id: "3.2", number: "3.2", speaker: "Ashtavakra said:", text: "Just as imagining silver in mother-of-pearl,\ncauses greed to arise,\nso does ignorance of Self\ncause desire for illusion." },
-      { id: "3.3", number: "3.3", speaker: "Ashtavakra said:", text: "Having realized yourself as That\nin which the waves of the world rise and fall,\nwhy do you run around in turmoil?" },
-      { id: "3.4", number: "3.4", speaker: "Ashtavakra said:", text: "Having realized yourself as pure Awareness,\nas beautiful beyond description,\nhow can you remain a slave to lust?" },
-      { id: "3.5", number: "3.5", speaker: "Ashtavakra said:", text: "It is strange\nthat in a sage who has realized\nSelf in All and All in Self\nthis sense of ownership should continue." },
-      { id: "3.6", number: "3.6", speaker: "Ashtavakra said:", text: "Strange that one abiding in the Absolute,\nintent on freedom,\nshould be vulnerable to lust\nand weakened by amorous pastimes." },
-      { id: "3.7", number: "3.7", speaker: "Ashtavakra said:", text: "Strange that knowing lust\nas an enemy of knowledge,\none so weak and nearing death\nshould still crave sensual pleasure." },
-      { id: "3.8", number: "3.8", speaker: "Ashtavakra said:", text: "Strange that one who is unattached\nto the things of this world and the next,\nwho can discriminate between the transient and the timeless,\nwho yearns for freedom,\nshould yet fear the dissolution of the body." },
-      { id: "3.9", number: "3.9", speaker: "Ashtavakra said:", text: "Whether acclaimed or tormented\nthe serene sage abides in the Self.\nHe is neither gratified nor angered." },
-      { id: "3.10", number: "3.10", speaker: "Ashtavakra said:", text: "A great soul\nwitnesses his body's actions\nas if they were another's.\nHow can praise or blame disturb him?" },
-      { id: "3.11", number: "3.11", speaker: "Ashtavakra said:", text: "Realizing the universe is illusion,\nhaving lost all curiosity,\nhow can one of steady mind fear death?" },
-      { id: "3.12", number: "3.12", speaker: "Ashtavakra said:", text: "With whom can we compare\nthe great soul\nwho, content knowing Self,\nremains desireless in disappointment?" },
-      { id: "3.13", number: "3.13", speaker: "Ashtavakra said:", text: "Why should a person of steady mind,\nwho sees the nothingness of objects,\nprefer one thing to another?" },
-      { id: "3.14", number: "3.14", speaker: "Ashtavakra said:", text: "He who is unattached,\nuntouched by opposites,\nfree of desire,\nexperiences neither pleasure nor pain\nas events pass through." },
+    "id": 3,
+    "title": "Self in All – All in Self",
+    "verses": [
+      {
+        "id": "3.1",
+        "number": "3.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "avināśinam-ātmānam-ekaṁ vijñāya tattvataḥ, tavātmajñasya dhīrasya katham-arthārjane ratiḥ. (1)",
+        "verse": "\"Having known the Self in its true nature as indestructible and one, how is it that you, a knower of the Self and one poised in wisdom, feel passion for the accumulation of wealth?\""
+      },
+      {
+        "id": "3.2",
+        "number": "3.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ātmājñānād-aho prītir-viṣaya-bhrama-gocare, śukterajñānato lobho yathā rajata-vibhrame. (2)",
+        "verse": "\"Alas! Just as, due to ignorance, a seashell is sought, mistaking it for silver, even so, due to the ‘ignorance’ of the Self, there is attachment to the illusory world of the senses.\""
+      },
+      {
+        "id": "3.3",
+        "number": "3.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "viśvaṁ sphurati yatredaṁ taraṅgā iva sāgare, so'ham-asmīti vijñāya kiṁ dīna iva dhāvasi. (3)",
+        "verse": "\"Having realised, ‘I am That’, from which the universe arises, like waves from the sea, why do you run about like a wretched creature?\""
+      },
+      {
+        "id": "3.4",
+        "number": "3.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śrutvā'pi śuddha-caitanyam-ātmānaṁ atisundaram, upasthe'tyanta-saṁsakto mālinyam-adhigacchati. (4)",
+        "verse": "\"Even after hearing that the Self is pure Consciousness, supremely beautiful, how can one yet be deeply entangled in sensuous objects and thus become impure?\""
+      },
+      {
+        "id": "3.5",
+        "number": "3.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sarva-bhūteṣu cātmānaṁ sarva-bhūtāni cātmani, muner-jānata āścaryaṁ mamatvam-anuvartate. (5)",
+        "verse": "\"This is amazing that the sense of ownership (mineness) should still continue in the wise men who have realised ‘the Self in all beings and all beings in the Self’.\""
+      },
+      {
+        "id": "3.6",
+        "number": "3.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "āsthitaḥ paramādvaitaṁ mokṣārthe'pi vyavasthitaḥ, āścaryaṁ kāmavaśago vikalaḥ keliśikṣayā. (6)",
+        "verse": "\"It is strange indeed, that one abiding in the transcendent non-duality and set for the goal of Liberation should yet come under the sway of lust and distraught by his sexual habits.\""
+      },
+      {
+        "id": "3.7",
+        "number": "3.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "udbhūtaṁ jñāna-durmitram-avadhāryātidurbalaḥ, āścaryaṁ kāmam-ākāṅkṣet kālam-antam-anuśritaḥ. (7)",
+        "verse": "\"Strange it is that knowing sex to be an enemy of Knowledge, even a man who has grown extremely weak and has reached his last days should yet desire for sex-gratification!\""
+      },
+      {
+        "id": "3.8",
+        "number": "3.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ihāmutra viraktasya nityānitya-vivekinaḥ, āścaryaṁ mokṣa-kāmasya mokṣādeva vibhīṣikā. (8)",
+        "verse": "\"It is strange that one who is unattached to the pleasures of this world and the next, who discriminates the eternal from the ephemeral and who aspires for Liberation, should yet fear the dissolution of the body!\""
+      },
+      {
+        "id": "3.9",
+        "number": "3.9",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dhīrastu bhojyamāno'pi pīḍyamāno'pi sarvadā, ātmānaṁ kevalaṁ paśyan na tuṣyati na kupyati. (9)",
+        "verse": "\"The wise person ever sees the absolute Self and is neither pleased nor angry, indeed, even when feted and feasted or tormented.\""
+      },
+      {
+        "id": "3.10",
+        "number": "3.10",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ceṣṭamānaṁ śarīraṁ svaṁ paśyatyanya-śarīravat, saṁstave cāpi nindāyāṁ kathaṁ kṣubhyet mahāśayaḥ. (10)",
+        "verse": "\"A great souled person watches his own body acting as if it were another's. As such, how should he be perturbed by praise or blame?\""
+      },
+      {
+        "id": "3.11",
+        "number": "3.11",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "māyā-mātram-idaṁ viśvaṁ paśyan vigata-kautukaḥ, api sannihite mṛtyau kathaṁ trasyati dhīradhīḥ. (11)",
+        "verse": "\"Realising this universe as a mere illusion and having lost all zest in life, how can even such a man of poised intellect fear the approach of death?\""
+      },
+      {
+        "id": "3.12",
+        "number": "3.12",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "niḥspṛhaṁ mānasaṁ yasya nairāśye'pi mahātmanaḥ, tasyātmajñāna-tṛptasya tulanā kena jāyate. (12)",
+        "verse": "\"With whom can we compare that great sage, whose mind is free from desires; who, even in his frustration experiences contentment in his Self-knowledge?\""
+      },
+      {
+        "id": "3.13",
+        "number": "3.13",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "svabhāvād-eva jānāno dṛśyam-etanna kiñcana, idaṁ grāhyam-idaṁ tyājyaṁ sa kiṁ paśyati dhīradhīḥ. (13)",
+        "verse": "\"Why should that wise minded man, who knows that the perceived world in its own nature, has no substance, consider one thing acceptable and another unacceptable?\""
+      },
+      {
+        "id": "3.14",
+        "number": "3.14",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "antastyakta-kaṣāyasya nirdvandvasya nirāśiṣaḥ, yadṛcchayāgato bhogo na duḥkhāya na tuṣṭaye. (14)",
+        "verse": "\"He who has given up all worldly passions from his mind, who is beyond the pairs of opposites and who is free from desires, to him objects of enjoyment, unexpectedly reaching him, can cause neither pleasure nor pain.\""
+      }
     ]
   },
   {
-    id: 4,
-    title: "Glorification of Self-Realization",
-    verses: [
-      { id: "4.1", number: "4.1", speaker: "Janaka said:", text: "Surely one who knows Self,\nthough he plays the game of life,\ndiffers greatly from the world's\nbewildered burdened beasts." },
-      { id: "4.2", number: "4.2", speaker: "Janaka said:", text: "Truly the yogi feels no elation,\nthough he abides in the exalted state\nyearned for by Indra and all the\ndiscontented gods." },
-      { id: "4.3", number: "4.3", speaker: "Janaka said:", text: "Surely one who knows That\nis not touched by virtue or vice,\njust as space is not touched by smoke,\nthough it seems to be." },
-      { id: "4.4", number: "4.4", speaker: "Janaka said:", text: "Who can prevent the great soul,\nwho knows the universe as Self,\nfrom living life as it comes?" },
-      { id: "4.5", number: "4.5", speaker: "Janaka said:", text: "Of the four kinds of beings,\nfrom Brahma to a blade of grass,\nonly the sage can renounce\naversion and desire." },
-      { id: "4.6", number: "4.6", speaker: "Janaka said:", text: "Rare is he who knows himself\nas One with no other—\nthe Lord of the Universe.\nHe acts as he knows\nand is never afraid." },
+    "id": 4,
+    "title": "Glory of Realisation",
+    "verses": [
+      {
+        "id": "4.1",
+        "number": "4.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "hantātmajñasya dhīrasya khelato bhogalīlayā, na hi saṁsāra-vāhīkair-mūḍhaiḥ saha samānatā. (1)",
+        "verse": "\"O marvel! The man of understanding, the knower of the Self, who plays the sport of life, has no comparison with the deluded beasts of burden of the world.\""
+      },
+      {
+        "id": "4.2",
+        "number": "4.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "yat-padaṁ prepsavo dīnāḥ śakrādyāḥ sarva-devatāḥ, aho tatra sthito yogī na harṣam-upagacchati. (2)",
+        "verse": "\"O marvel! The yogin does not feel elated abiding in that state which Indra and others hanker after and become unhappy (because they cannot attain it).\""
+      },
+      {
+        "id": "4.3",
+        "number": "4.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "tajjñasya puṇya-pāpābhyāṁ sparśo hyantarna jāyate, na hyākāśasya dhūmena dṛśyamānā'pi saṅgatiḥ. (3)",
+        "verse": "\"Indeed, the heart of one who has comprehended the Self is not touched by virtue and vice, just as the space is uncontaminated by smoke even though apparently it exists in space.\""
+      },
+      {
+        "id": "4.4",
+        "number": "4.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "ātmaivedaṁ jagat-sarvaṁ jñātaṁ yena mahātmanā, yadṛcchayā vartamānaṁ taṁ niṣeddhuṁ kṣameta kaḥ. (4)",
+        "verse": "\"The wise man, who has known this entire universe to be the Self alone, acts spontaneously. Who can forbid him?\""
+      },
+      {
+        "id": "4.5",
+        "number": "4.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "ābrahma-stamba-paryante bhūta-grāme caturvidhe, vijñasyaiva hi sāmarthyam-icchānicchā-vivarjane. (5)",
+        "verse": "\"Of the four categories of existence, from Brahmā down to a grass blade, it is the wise one alone who has the capacity to renounce desires and aversions.\""
+      },
+      {
+        "id": "4.6",
+        "number": "4.6",
+        "speaker": "Janaka said:",
+        "sanskrit": "ātmānam-advayaṁ kaścijjānāti jagadīśvaram, yadvetti tatsa kurute na bhayaṁ tasya kutracit. (6)",
+        "verse": "\"Rare indeed is the one who knows the Self, as one without a second and as the Lord of the universe. He does what comes to his mind and has no fears from any quarters.\""
+      }
     ]
   },
   {
-    id: 5,
-    title: "Four Ways to Dissolution",
-    verses: [
-      { id: "5.1", number: "5.1", speaker: "Ashtavakra said:", text: "You are immaculate,\ntouched by nothing.\nWhat is there to renounce?\nThe mind is complex—let it go.\nKnow the peace of dissolution." },
-      { id: "5.2", number: "5.2", speaker: "Ashtavakra said:", text: "The universe arises from you\nlike foam from the sea.\nKnow yourself as One.\nEnter the peace of dissolution." },
-      { id: "5.3", number: "5.3", speaker: "Ashtavakra said:", text: "Like an imagined snake in a rope\nthe universe appears to exist\nin the immaculate Self\nbut does not.\nSeeing this you know: \"There is nothing to dissolve.\"" },
-      { id: "5.4", number: "5.4", speaker: "Ashtavakra said:", text: "You are perfect, changeless,\nthrough misery and happiness,\nhope and despair,\nlife and death.\nThis is the state of dissolution." },
+    "id": 5,
+    "title": "Four Methods – Dissolution of Ego",
+    "verses": [
+      {
+        "id": "5.1",
+        "number": "5.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na te saṅgo'sti kenāpi kiṁ śuddhastyaktum-icchasi, saṅghāta-vilayaṁ kurvannevam-eva layaṁ vraja. (1)",
+        "verse": "\"You have no contact with anything whatsoever. Pure as you are, what do you want to renounce? Having dissolved the body-complex, enter into ‘laya’ – the state of dissolution.\""
+      },
+      {
+        "id": "5.2",
+        "number": "5.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "udeti bhavato viśvaṁ vāridheriva budbudaḥ, iti jñātvaikam-ātmānam-evam-eva layaṁ vraja. (2)",
+        "verse": "\"The universe rises from You, like a bubble from the sea, thus comprehend the non-dual Self. In this way, enter into ‘laya’ – the state of dissolution.\""
+      },
+      {
+        "id": "5.3",
+        "number": "5.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "pratyakṣam-apyavastutvād-viśvaṁ nāstyamale tvayi, rajju-sarpa iva vyaktam-evam-eva layaṁ vraja. (3)",
+        "verse": "\"The universe even though visible, because it is unreal, like the snake in the rope, does not exist in you, who are pure. Thus, in this way, enter into ‘laya’ – the state of dissolution.\""
+      },
+      {
+        "id": "5.4",
+        "number": "5.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sama-duḥkha-sukhaḥ pūrṇa āśā-nairāśyayoḥ samaḥ, sama-jīvita-mṛtyuḥ sannevam-eva layaṁ vraja. (4)",
+        "verse": "\"You are perfect and the same in pain and pleasure, in hope and disappointment and in life and death. Thus, in this way, enter into ‘laya’ – the state of dissolution.\""
+      }
     ]
   },
   {
-    id: 6,
-    title: "The Higher Knowledge",
-    verses: [
-      { id: "6.1", number: "6.1", speaker: "Janaka said:", text: "I am infinite space;\nthe universe is a jar.\nThis I know.\nNo need to renounce, accept or destroy." },
-      { id: "6.2", number: "6.2", speaker: "Janaka said:", text: "I am a shoreless ocean;\nthe universe makes waves.\nThis I know.\nNo need to renounce, accept or destroy." },
-      { id: "6.3", number: "6.3", speaker: "Janaka said:", text: "I am mother-of-pearl;\nthe universe is the illusion of silver.\nThis I know.\nNo need to renounce, accept or destroy." },
-      { id: "6.4", number: "6.4", speaker: "Janaka said:", text: "I am in all beings;\nall beings are in me.\nThis I know.\nNo need to renounce, accept or destroy." },
+    "id": 6,
+    "title": "The Self Supreme",
+    "verses": [
+      {
+        "id": "6.1",
+        "number": "6.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "ākāśavad-ananto'haṁ ghaṭavat-prākṛtaṁ jagat, iti jñānaṁ tathaitasya na tyāgo na graho layaḥ.",
+        "verse": "\"Infinite as space am I and the world like a limited jar; this is ‘true Knowledge’. There is nothing then to be renounced nor to be accepted nor to be destroyed.\""
+      },
+      {
+        "id": "6.2",
+        "number": "6.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "mahodadhir-ivāhaṁ sa prapañco vīcisannibhaḥ, iti jñānaṁ tathaitasya na tyāgo na graho layaḥ.",
+        "verse": "\"I am like the ocean and the universe is like a wave: this is ‘true Knowledge’. There is nothing then to be renounced or to be accepted or to be destroyed.\""
+      },
+      {
+        "id": "6.3",
+        "number": "6.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "ahaṁ sa śukti-sañkāśo rūpyavad-viśvakalpanā, iti jñānaṁ tathaitasya na tyāgo na graho layaḥ.",
+        "verse": "\"I am like the seashell and the illusion of the universe is like the silveriness, this is ‘true Knowledge.’ There is nothing then to be renounced nor to be accepted nor to be destroyed.\""
+      },
+      {
+        "id": "6.4",
+        "number": "6.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "ahaṁ vā sarvabhūteṣu sarvabhūtānyatho mayi, iti jñānaṁ tathaitasya na tyāgo na graho layaḥ.",
+        "verse": "\"I am, indeed, in all beings and all beings are in Me, this is ‘true Knowledge’. There is nothing then to be renounced nor to be accepted nor to be destroyed.\""
+      }
     ]
   },
   {
-    id: 7,
-    title: "Nature of Self-Realization",
-    verses: [
-      { id: "7.1", number: "7.1", speaker: "Janaka said:", text: "In me, the shoreless ocean,\nthe ark of universe\ndrifts here and there\non the winds of its nature.\nI am not impatient." },
-      { id: "7.2", number: "7.2", speaker: "Janaka said:", text: "In me, the shoreless ocean,\nlet the waves of the universe\nrise and fall as they will.\nI am neither enhanced nor diminished." },
-      { id: "7.3", number: "7.3", speaker: "Janaka said:", text: "In me, the shoreless ocean,\nthe universe is imagined.\nI am still and formless.\nIn this alone I abide." },
-      { id: "7.4", number: "7.4", speaker: "Janaka said:", text: "The Self is not in objects,\nnor are objects in the pure and infinite Self.\nThe Self is tranquil,\nfree of attachment and desire.\nIn this alone I abide." },
-      { id: "7.5", number: "7.5", speaker: "Janaka said:", text: "I am Awareness alone.\nThe world is passing show.\nHow can thoughts arise\nof acceptance or rejection?\nAnd where?" },
+    "id": 7,
+    "title": "That Tranquil Self",
+    "verses": [
+      {
+        "id": "7.1",
+        "number": "7.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "mayyananta-mahāmbhodhau viśvapota itastataḥ, bhramati svānta-vātena na mamāstyasahiṣṇutā.",
+        "verse": "\"In Me, the shoreless ocean, the ark of the universe, moves here and there, driven by the wind of its own mind (universal mind). I am not impatient.\""
+      },
+      {
+        "id": "7.2",
+        "number": "7.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "mayyananta-mahāmbhodhau jagad-vīciḥ svabhāvataḥ, udetu vāstam-āyātu na me vṛddhirna ca kṣatiḥ.",
+        "verse": "\"In Me, the limitless ocean, let the waves of the world rise and vanish spontaneously. I experience neither increase nor decrease (of Me) thereby.\""
+      },
+      {
+        "id": "7.3",
+        "number": "7.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "mayyananta-mahāmbhodhau viśvaṁ nāma vikalpanā, atiśānto nirākāra etadevāham-āsthitaḥ.",
+        "verse": "\"In Me, the shoreless ocean, is the imagined illusion of the universe. I am the profoundly tranquil and formless. In this Knowledge alone, I abide.\""
+      },
+      {
+        "id": "7.4",
+        "number": "7.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "nātmā bhāveṣu no bhāvas-tatrānante nirañjane, ityasakto'spṛhaḥ śānta etadevāham-āsthitaḥ.",
+        "verse": "\"The Self is not in the object, nor is the object in this Self, which is infinite and taintless. Hence, it is free from attachment and desire; it is tranquil. In this Knowledge alone I abide.\""
+      },
+      {
+        "id": "7.5",
+        "number": "7.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "aho cinmātram-evāham-indrajālopamaṁ jagat, ato mama kathaṁ kutra heyopādeya-kalpanā.",
+        "verse": "\"O Marvellous! I am really pure Consciousness. The world is like a magic show. Hence, how and where can there be any notion of rejection or acceptance in Me?\""
+      }
     ]
   },
   {
-    id: 8,
-    title: "Bondage and Liberation",
-    verses: [
-      { id: "8.1", number: "8.1", speaker: "Ashtavakra said:", text: "When the mind desires or grieves things,\naccepts or rejects things,\nis pleased or displeased by things--\nthis is bondage." },
-      { id: "8.2", number: "8.2", speaker: "Ashtavakra said:", text: "When the mind does not\ndesire or grieve,\naccept or reject,\nbecome pleased or displeased,\nliberation is at hand." },
-      { id: "8.3", number: "8.3", speaker: "Ashtavakra said:", text: "If the mind is attached to any experience,\nthis is bondage.\nWhen the mind is detached from all experience,\nthis is liberation." },
-      { id: "8.4", number: "8.4", speaker: "Ashtavakra said:", text: "When there is no \"I\"\nthere is only liberation.\nWhen \"I\" appears\nbondage appears with it.\nKnowing this,\nit is effortless to refrain\nfrom accepting and rejecting." },
+    "id": 8,
+    "title": "Bondage and Freedom",
+    "verses": [
+      {
+        "id": "8.1",
+        "number": "8.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tadā bandho yadā cittaṁ kiñcid-vāñchati śocati, kiñcin-muñcati gṛhṇāti kiñcid-dhṛśyati kupyati.",
+        "verse": "\"It is bondage when the mind desires or grieves at anything; does reject or accept anything; does feel happy or angry at anything.\""
+      },
+      {
+        "id": "8.2",
+        "number": "8.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tadā muktir-yadā cittaṁ na vāñchati na śocati, na muñcati na gṛhṇāti na hṛṣyati na kupyati.",
+        "verse": "\"Freedom is attained when the mind does not desire or grieve, does not reject or accept, does not feel happy or angry at anything.\""
+      },
+      {
+        "id": "8.3",
+        "number": "8.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tadā bandho yadā cittaṁ saktaṁ kāsvapi dṛṣṭiṣu, tadā mokṣo yadā cittam-asaktaṁ sarvadṛṣṭiṣu.",
+        "verse": "\"It is bondage, when the mind is attached to any of the sensory perceptions. It is freedom when the mind is detached from all perceptions.\""
+      },
+      {
+        "id": "8.4",
+        "number": "8.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yadā nāhaṁ tadā mokṣo yadāhaṁ bandhanaṁ tadā, matveti helayā kiñcit mā gṛhāṇa vimuñca mā.",
+        "verse": "\"When there is no ego-‘I’ there is ‘freedom’, when there is ego-‘I’ there is ‘bondage’. Knowing thus, stop from accepting or rejecting anything playfully.\""
+      }
     ]
   },
   {
-    id: 9,
-    title: "Detachment",
-    verses: [
-      { id: "9.1", number: "9.1", speaker: "Ashtavakra said:", text: "Opposing forces,\nduties done and left undone—\nwhen does it end\nand for whom?\nConsidering this, be ever desireless,\nlet go of all things,\nand to the world turn an indifferent eye." },
-      { id: "9.2", number: "9.2", speaker: "Ashtavakra said:", text: "Rare and blessed is one\nwhose desire to live,\nto enjoy and to know,\nhas been extinguished by observing\nthe ways of men." },
-      { id: "9.3", number: "9.3", speaker: "Ashtavakra said:", text: "Seeing all things as threefold suffering,\nthe sage becomes still.\nInsubstantial, transient, contemptible--\nthe world is fit only for rejection." },
-      { id: "9.4", number: "9.4", speaker: "Ashtavakra said:", text: "Was there an age or time\nmen existed without opposites?\nLeave the opposites behind.\nBe content with what comes.\nPerfection." },
-      { id: "9.5", number: "9.5", speaker: "Ashtavakra said:", text: "The greatest seers, saints and yogis\nagree on very little.\nSeeing this,\nwho could not be indifferent to knowledge\nand become still?" },
-      { id: "9.6", number: "9.6", speaker: "Ashtavakra said:", text: "One who\nthrough worldly indifference,\nthrough serenity and reason,\nsees his true nature and escapes illusion—\nis he not a true teacher?" },
-      { id: "9.7", number: "9.7", speaker: "Ashtavakra said:", text: "In the myriad forms of the universe\nsee the primal element alone.\nYou will be instantly free,\nand abide in Self." },
-      { id: "9.8", number: "9.8", speaker: "Ashtavakra said:", text: "Desire creates the world--renounce it.\nRenounce desires\nand you renounce the world.\nNow you may live as you are." },
+    "id": 9,
+    "title": "Indifference",
+    "verses": [
+      {
+        "id": "9.1",
+        "number": "9.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kṛtākṛte ca dvandvāni kadā śāntāni kasya vā, evaṁ jñātveha nirvedād-bhava tyāgaparo'vratī.",
+        "verse": "\"To whom do the conflicts of duties performed and not performed and of the pairs of opposites belong? When do they cease? End for whom? Having thus fully enquired, through complete indifference to the world, become passionless and be devoted to renunciation.\""
+      },
+      {
+        "id": "9.2",
+        "number": "9.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kasyāpi tāta dhanyasya loka-ceṣṭāvalokanāt, jīvitecchā bubhukṣā ca bubhutsopaśamaṁ gatāḥ.",
+        "verse": "\"Rare indeed, my son, is that blessed person whose passion for living, desire to enjoy and hunger to learn and know have been extinguished by observing the ways of men.\""
+      },
+      {
+        "id": "9.3",
+        "number": "9.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "anityaṁ sarvam-evedaṁ tāpa-tritaya-dūṣitam, asāraṁ ninditaṁ heyam-iti niścitya śāmyati.",
+        "verse": "\"The Man of Wisdom becomes serene by realising that this world indeed is transient, filthy with the triple misery, worthless, contemptible and as something to be rejected.\""
+      },
+      {
+        "id": "9.4",
+        "number": "9.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ko'sau kālo vayaḥ kiṁ vā yatra dvandvāni no nṛṇām, tānyupekṣya yathāprāptavartī siddhim-avāpnuyāt.",
+        "verse": "\"What is that time or that age, in which the pairs of opposites do not exist for man? He who, abjuring these, rests contented with what comes to him unasked, reaches perfection.\""
+      },
+      {
+        "id": "9.5",
+        "number": "9.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nānā mataṁ maharṣīṇāṁ sādhūnāṁ yogināṁ tathā, dṛṣṭvā nirvedam-āpannaḥ ko na śāmyati mānavaḥ.",
+        "verse": "\"Where is that man, who having observed the diversities of opinions among the great seers, sages and yogins, and thus becoming completely indifferent, does not attain tranquillity.\""
+      },
+      {
+        "id": "9.6",
+        "number": "9.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kṛtvā mūrti-parijñānaṁ caitanyasya na kiṁ guruḥ, nirveda-samatā-yuktyā yastārayati saṁsṛteḥ.",
+        "verse": "\"He who apprehends the true nature of pure Consciousness, by complete indifference to the world, by equanimity and by logical reasoning and thus saves himself from the round of birth and death -is he not really the spiritual guide?\""
+      },
+      {
+        "id": "9.7",
+        "number": "9.7",
+        "speaker": "Aṣṭāvakra\n    said:",
+        "sanskrit": "paśya bhūta-vikārāṁs-tvaṁ bhūtamātrān yathārthataḥ, tat-kṣaṇād-bandha-nirmuktaḥ svarūpastho bhaviṣyasi. (7) Aṣṭāvakra said:",
+        "verse": "\"Recognising the modifications of the elements as nothing in reality, but the five elements themselves, you will at once be free from their bondage, and thus abide in your true nature.\""
+      },
+      {
+        "id": "9.8",
+        "number": "9.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vāsanā eva saṁsāra iti sarvā vimuñca tāḥ, tattyāgo vāsanātyāgāt sthitiradya yathā tathā.",
+        "verse": "\"Desires alone constitute the world; therefore, you please renounce them all. The giving up of desires is the renunciation of the world. Now you may live anywhere you like.\""
+      }
     ]
   },
   {
-    id: 10,
-    title: "Quietude",
-    verses: [
-      { id: "10.1", number: "10.1", speaker: "Ashtavakra said:", text: "Give up desire,\nwhich is the enemy.\nGive up prosperity,\nwhich is born of mischief and good works.\nBe indifferent." },
-      { id: "10.2", number: "10.2", speaker: "Ashtavakra said:", text: "Look upon\nfriends, lands, wealth, houses, wives, gifts--\nand all apparent good fortune--\nas a passing show,\nas a dream lasting three to five days." },
-      { id: "10.3", number: "10.3", speaker: "Ashtavakra said:", text: "Where there is desire, there is the world.\nBe firm in non-attachment.\nBe free of desire.\nBe happy." },
-      { id: "10.4", number: "10.4", speaker: "Ashtavakra said:", text: "Bondage and desire are the same.\nDestroy desire and be free.\nOnly by detaching from the world\ndoes one joyfully realize Self." },
-      { id: "10.5", number: "10.5", speaker: "Ashtavakra said:", text: "You are One—\nAwareness itself.\nThe universe is neither aware\nnor does it exist.\nEven ignorance is unreal.\nWhat is left to know?" },
-      { id: "10.6", number: "10.6", speaker: "Ashtavakra said:", text: "Attached as you have been to\nkingdoms, sons, wives, bodies, pleasures—\nlife after life—\nstill they are now lost forever." },
-      { id: "10.7", number: "10.7", speaker: "Ashtavakra said:", text: "Prosperity, pleasure, pious deeds...\nEnough!\nIn the dreary forest of the world\nthe mind finds no rest." },
-      { id: "10.8", number: "10.8", speaker: "Ashtavakra said:", text: "For how many lifetimes\nhave you done hard and painful labor\nwith body, mind and speech?\nIt is time to stop." },
+    "id": 10,
+    "title": "Dispassion",
+    "verses": [
+      {
+        "id": "10.1",
+        "number": "10.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vihāya vairiṇaṁ kāmam-arthaṁ cānartha-saṅkulam, dharmam-apyetayor-hetuṁ sarvatrānādaraṁ kuru.",
+        "verse": "\"Having given up ‘desire’ (kāma) which is the enemy, ‘wealth’ (artha – worldly prosperity) which is attended with mischief, and ‘piety’ (dharma – performance of good deeds) which is the cause of these two, cultivate indifference to everything.\""
+      },
+      {
+        "id": "10.2",
+        "number": "10.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "svapnendrajālavat paśya dināni trīṇi pañca vā, mitra-kṣetra-dhanāgāra-dāra-dāyādi-sampadaḥ.",
+        "verse": "\"Look upon friends, lands, wealth, houses, wives, presents, and other such objects of fortune as a dream or as a magician's show, lasting only a few days – just three or five.\""
+      },
+      {
+        "id": "10.3",
+        "number": "10.3",
+        "speaker": "Aṣṭāvakra\n    said:",
+        "sanskrit": "yatra yatra bhavet-tṛṣṇā saṁsāraṁ viddhi tatra vai, prauḍha-vairāgyam-āśritya vītatṛṣṇaḥ sukhī bhava. (3) Aṣṭāvakra said:",
+        "verse": "\"Know that to be the world wherever there is desire. Cultivating strong dispassion, go beyond the desire and be happy.\""
+      },
+      {
+        "id": "10.4",
+        "number": "10.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tṛṣṇā-mātrātmako bandhas-tannāśo mokṣa ucyate, bhavāsaṁsakti-mātreṇa prāpti-tuṣṭir-muhurmuhuḥ.",
+        "verse": "\"Desire is the soul of bondage and its destruction is said to be Liberation. By non-attachment to the world alone does one attain the constant bliss of the realisation of the Self.\""
+      },
+      {
+        "id": "10.5",
+        "number": "10.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tvam-ekaś-cetanaḥ śuddho jaḍaṁ viśvam-asat-tathā, avidyāpi na kiñcit-sā kā bubhutsā tathāpi te.",
+        "verse": "\"You are the one, pure Intelligence. The universe is inert and unreal. Ignorance also is non-existent. What then can you yet desire to know?\""
+      },
+      {
+        "id": "10.6",
+        "number": "10.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "rājyaṁ sutāḥ kalatrāṇi śarīrāṇi sukhāni ca, saṁsaktasyāpi naṣṭāni tava janmani janmani.",
+        "verse": "\"Kingdoms, sons, wives, bodies and pleasures have all been lost to you, life after life, even though you were attached to them.\""
+      },
+      {
+        "id": "10.7",
+        "number": "10.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "alam-arthena kāmena sukṛtenāpi karmaṇā, ebhyaḥ saṁsāra-kāntāre na viśrāntam-abhūn-manaḥ.",
+        "verse": "\"Enough of wealth, desires and pious deeds! In the wilderness of the world, the mind did not find repose in these.\""
+      },
+      {
+        "id": "10.8",
+        "number": "10.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kṛtaṁ na kati janmāni kāyena manasā girā, duḥkham-āyāsadaṁ karma tad-adyāpy-uparamyatām.",
+        "verse": "\"For how many births have you not undertaken hard and painful work with your body, mind and speech? Hence, cease them, at least today!\""
+      }
     ]
   },
   {
-    id: 11,
-    title: "Wisdom",
-    verses: [
-      { id: "11.1", number: "11.1", speaker: "Ashtavakra said:", text: "Existence, non-existence, change--\nthis is the nature of things.\nRealizing this,\nstillness, serenity and bliss\nnaturally follow." },
-      { id: "11.2", number: "11.2", speaker: "Ashtavakra said:", text: "One who knows for certain that\n\"Self creates All and is alone\"\nbecomes still, desireless, unattached." },
-      { id: "11.3", number: "11.3", speaker: "Ashtavakra said:", text: "One who knows for certain\nthat adversity and success\ncome and go in obedience to destiny\nbecomes content.\nHe neither desires nor grieves." },
-      { id: "11.4", number: "11.4", speaker: "Ashtavakra said:", text: "One who knows for certain\nthat birth and death, happiness and misery,\ncome and go in obedience to destiny\nsees nothing to accomplish.\nHe engages in non-action,\nand in action remains unattached." },
-      { id: "11.5", number: "11.5", speaker: "Ashtavakra said:", text: "One who has realized\nthat only by caring\nis misery caused in the world\nbecomes free, happy, serene, desireless." },
-      { id: "11.6", number: "11.6", speaker: "Ashtavakra said:", text: "\"I am not the body, nor is the body my possession—\nI am Awareness itself.\"\nOne who realizes this for certain\nhas no memory of things done or left undone.\nThere is only the Absolute." },
-      { id: "11.7", number: "11.7", speaker: "Ashtavakra said:", text: "\"From Brahma to the last blade of grass--\nI alone exist.\"\nOne who knows this for certain\nbecomes immaculate, serene, unconflicted.\nAttainment has no meaning." },
-      { id: "11.8", number: "11.8", speaker: "Ashtavakra said:", text: "One who knows for certain\nthat this manifold and wonderful universe\nis nothing\nbecomes desireless Awareness\nand abides in the stillness of No-thing." },
+    "id": 11,
+    "title": "Self As Pure Intelligence",
+    "verses": [
+      {
+        "id": "11.1",
+        "number": "11.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhāvābhāva-vikāraśca svabhāvād-iti niścayī, nirvikāro gata-kleśaḥ sukhenaivopaśāmyati.",
+        "verse": "\"He who has understood with certitude that change in the form of existence and destruction is inherent in things, he becomes unperturbed and free from pains and easily finds his peace.\""
+      },
+      {
+        "id": "11.2",
+        "number": "11.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "īśvaraḥ sarva-nirmātā nehānya iti niścayī, antargalita-sarvāśaḥ śāntaḥ kvāpi na sajjate.",
+        "verse": "\"He who has understood with certitude that God (Self) is the Creator of all and there is none else here, becomes calm with all his inner desires melted away. He is no longer attached to anything whatsoever.\""
+      },
+      {
+        "id": "11.3",
+        "number": "11.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "āpadaḥ sampadaḥ kāle daivād-eveti niścayī, tṛptaḥ svasthendriyo nityaṁ na vāñchati na śocati.",
+        "verse": "\"He who has understood with certitude that misfortune and fortune come in their own time, through the effects of past actions, becomes ever contented and has all his senses well under control. He neither desires nor grieves.\""
+      },
+      {
+        "id": "11.4",
+        "number": "11.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sukha-duḥkhe janma mṛtyū daivād-eveti niścayī, sādhyādarśī nirāyāsaḥ kurvannapi na lipyate.",
+        "verse": "\"He who has understood with certitude that happiness and sorrow, birth and death, are all due to the effects of past actions, does no more seek after the ordinary goals of life. He becomes free from efforts. He is not attached (tainted) even though engaged in action.\""
+      },
+      {
+        "id": "11.5",
+        "number": "11.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "cintayā jāyate duḥkhaṁ nānyatheheti niścayī, tayā hīnaḥ sukhī śāntaḥ sarvatra galitaspṛhaḥ.",
+        "verse": "\"He who has understood with certitude that it is anxiety and nothing else that brings sorrow in the world, becomes free from it and is happy and peaceful everywhere with his desires melted away.\""
+      },
+      {
+        "id": "11.6",
+        "number": "11.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nāhaṁ deho na me deho bodho'ham-iti niścayī, kaivalyam-iva saṁprāpto na smaratyakṛtaṁ kṛtam.",
+        "verse": "\"‘I am not the body, nor is the body mine, I am pure Intelligence’ – he who has understood this with certitude, does no longer remember what he ‘has done’ or what he ‘has not done’, as if he has attained the state of aloneness (kaivalya).\""
+      },
+      {
+        "id": "11.7",
+        "number": "11.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ābrahma-stamba-paryantam-ahameveti niścayī, nirvikalpaḥ śuciḥ śāntaḥ prāptāprāpta-vinirvṛtaḥ.",
+        "verse": "\"‘I am indeed in everything from the Creator down to a tuft of grass’ – he who has understood this with certitude becomes free from all thought oscillations; pure and serene, he withdraws from what is attained and what is not attained.\""
+      },
+      {
+        "id": "11.8",
+        "number": "11.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nānāścaryam-idaṁ viśvaṁ na kiñcid-iti niścayī, nirvāsanaḥ sphūrtimātro na kiñcid-iva śāmyati.",
+        "verse": "\"He who has understood with certitude that this manifold and marvellous universe is nothing (unreal), becomes desireless pure Intelligence. He finds peace, as if nothing exists.\""
+      }
     ]
   },
   {
-    id: 12,
-    title: "Abiding in the Self",
-    verses: [
-      { id: "12.1", number: "12.1", speaker: "Janaka said:", text: "Becoming first intolerant of action,\nthen of excessive speech,\nthen of thought itself,\nI come to be here." },
-      { id: "12.2", number: "12.2", speaker: "Janaka said:", text: "Neither sounds nor other sense perceptions\nattract my attention.\nEven the Self is unperceived.\nThe mind is free, undistracted, one-pointed.\nAnd here I am." },
-      { id: "12.3", number: "12.3", speaker: "Janaka said:", text: "Effort is required\nto concentrate a distracted mind\nsuperimposed with illusion.\nKnowing this, I remain here." },
-      { id: "12.4", number: "12.4", speaker: "Janaka said:", text: "Nothing to reject,\nnothing to accept.\nNo joy, no sorrow.\nLord God I am here." },
-      { id: "12.5", number: "12.5", speaker: "Janaka said:", text: "The four stages of life,\nlife without stages,\nmeditation, renunciation, objects of mind—\nnothing but distractions.\nI am forever here." },
-      { id: "12.6", number: "12.6", speaker: "Janaka said:", text: "Doing and not-doing\nboth arise from ignorance.\nI know this.\nAnd I am here." },
-      { id: "12.7", number: "12.7", speaker: "Janaka said:", text: "Thinking of the unthinkable One\nunavoidably conjures thought.\nI choose no-thought\nand remain here." },
-      { id: "12.8", number: "12.8", speaker: "Janaka said:", text: "Blessed is he\nwho attains this by effort.\nBlessed is he\nwho is such by nature." },
+    "id": 12,
+    "title": "How to Abide in the Self",
+    "verses": [
+      {
+        "id": "12.1",
+        "number": "12.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "kāya-kṛtyāsahaḥ pūrvaṁ tato vāg-vistarāsahaḥ, atha cintāsahas-tasmād-evame-vāham-āsthitaḥ.",
+        "verse": "\"I became intolerant first of physical action, then of extensive speech and then of thought. Thus do I, therefore, abide in myself.\""
+      },
+      {
+        "id": "12.2",
+        "number": "12.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "prītyabhāvena śabdāder-adṛśyatvena cātmanaḥ, vikṣepaikāgra-hṛdaya evam-evāham-āsthitaḥ.",
+        "verse": "\"Having no satisfaction (attachment) in sound and the other sense objects and the Self being no object of perception, I have my mind freed from distractions and rendered single pointed. Thus do I, therefore, abide in myself.\""
+      },
+      {
+        "id": "12.3",
+        "number": "12.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "samādhyās-ādi-vikṣiptau vyavahāraḥ samādhaye, evaṁ vilokya niyamam-evam-evāham-āsthitaḥ.",
+        "verse": "\"An effort has to be made for samādhi (for concentration) only when there is distraction of the mind due to one's own superimpositions. Seeing this to be the rule, thus do I, therefore, abide in myself.\""
+      },
+      {
+        "id": "12.4",
+        "number": "12.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "heyopādeya-virahād-evaṁ harṣa-viṣādayoḥ, abhāvād-adya he brahmannevam-evāham-āsthitaḥ.",
+        "verse": "\"Finding nothing as acceptable and nothing as rejectable and having neither joy nor sorrow, ‘O Brahman!’ thus do I, therefore, now abide in myself.\""
+      },
+      {
+        "id": "12.5",
+        "number": "12.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "āśramānāśramaṁ dhyānaṁ citta-svīkṛta-varjanam, vikalpaṁ mama vīkṣyaitairevam-evāham-āsthitaḥ.",
+        "verse": "\"A particular stage of life, or negation of it, meditation, control of mental functions (mind) recognising these as cause of distractions in me, thus do I, indeed, abide in myself.\""
+      },
+      {
+        "id": "12.6",
+        "number": "12.6",
+        "speaker": "Janaka said:",
+        "sanskrit": "karmānuṣṭhānam-ajñānādyathaivoparamas-tathā, buddhvā samyag-idaṁ tattvam-evam-evāham-āsthitaḥ.",
+        "verse": "\"Abstention from action is as much the outcome of ignorance as the undertaking of action. Knowing this truth fully well, thus do I, indeed, abide in myself.\""
+      },
+      {
+        "id": "12.7",
+        "number": "12.7",
+        "speaker": "Janaka said:",
+        "sanskrit": "acintyaṁ cintyamāno'pi cintārūpaṁ bhajatyasau, tyaktvā tadbhāvanaṁ tasmād-evam-evāham-āsthitaḥ.",
+        "verse": "\"Thinking on the unthinkable One, one resorts only to a form of (one's own) thought. Therefore, giving up that thought, thus do I, indeed, abide in myself.\""
+      },
+      {
+        "id": "12.8",
+        "number": "12.8",
+        "speaker": "Janaka said:",
+        "sanskrit": "1. kāya-kṛtyāsahaḥ pūrvaṁ tato vāg-vistarāsahaḥ, atha cintāsahas-tasmād-evame-vāham-āsthitaḥ. (1) Janaka said: 2. “I became intolerant first of physical action, then of extensive speech and then of thought. Thus do I, therefore, abide in myself.” 3. prītyabhāvena śabdāder-adṛśyatvena cātmanaḥ, vikṣepaikāgra-hṛdaya evam-evāham-āsthitaḥ. (2) 4. “Having no satisfaction (attachment) in sound and the other sense objects and the Self being no object of perception, I have my mind freed from distractions and rendered single pointed. Thus do I, therefore, abide in myself.” 5. samādhyās-ādi-vikṣiptau vyavahāraḥ samādhaye, evaṁ vilokya niyamam-evam-evāham-āsthitaḥ. (3) 6. “An effort has to be made for samādhi (for concentration) only when there is distraction of the mind due to one's own superimpositions. Seeing this to be the rule, thus do I, therefore, abide in myself.” 7. heyopādeya-virahād-evaṁ harṣa-viṣādayoḥ, abhāvād-adya he brahmannevam-evāham-āsthitaḥ. (4) 8. “Finding nothing as acceptable and nothing as rejectable and having neither joy nor sorrow, ‘O Brahman!’ thus do I, therefore, now abide in myself.” 9. āśramānāśramaṁ dhyānaṁ citta-svīkṛta-varjanam, vikalpaṁ mama vīkṣyaitairevam-evāham-āsthitaḥ. (5) 10. “A particular stage of life, or negation of it, meditation, control of mental functions (mind) recognising these as cause of distractions in me, thus do I, indeed, abide in myself.” 11. karmānuṣṭhānam-ajñānādyathaivoparamas-tathā, buddhvā samyag-idaṁ tattvam-evam-evāham-āsthitaḥ. (6) 12. “Abstention from action is as much the outcome of ignorance as the undertaking of action. Knowing this truth fully well, thus do I, indeed, abide in myself.” 13. acintyaṁ cintyamāno'pi cintārūpaṁ bhajatyasau, tyaktvā tadbhāvanaṁ tasmād-evam-evāham-āsthitaḥ. (7) 14. “Thinking on the unthinkable One, one resorts only to a form of (one's own) thought. Therefore, giving up that thought, thus do I, indeed, abide in myself.” 15. evam-eva kṛtaṁ yena sa kṛtārtho bhaved-asau, evam-eva svabhāvo yaḥ sa kṛtārtho bhaved-asau. (8)",
+        "verse": "\"Blessed is the man who has accomplished this. Blessed is he who thus fulfils himself by his nature divine.\""
+      }
     ]
   },
   {
-    id: 13,
-    title: "Happiness",
-    verses: [
-      { id: "13.1", number: "13.1", speaker: "Janaka said:", text: "The tranquil state\nof knowing Self alone is rare—\neven among those who own but a loincloth.\nI therefore neither renounce nor accept\nand am happy." },
-      { id: "13.2", number: "13.2", speaker: "Janaka said:", text: "The body is strained by practices.\nThe tongue tires of scripture.\nThe mind numbs with meditation.\nDetached from all this,\nI live as I am." },
-      { id: "13.3", number: "13.3", speaker: "Janaka said:", text: "Realizing that nothing is done,\nI do what comes\nand am happy." },
-      { id: "13.4", number: "13.4", speaker: "Janaka said:", text: "Yogis who preach\neither effort or non-effort\nare still attached to the body.\nI neither dissociate nor associate\nwith any of that\nand am happy." },
-      { id: "13.5", number: "13.5", speaker: "Janaka said:", text: "I have nothing to gain or lose\nby standing, walking or sitting down.\nSo whether I stand, walk or sit\nI am happy." },
-      { id: "13.6", number: "13.6", speaker: "Janaka said:", text: "I do not lose by sleeping\nnor attain by effort.\nNot thinking in terms of loss or gain\nI am happy." },
-      { id: "13.7", number: "13.7", speaker: "Janaka said:", text: "Pleasure and pain fluctuate\nand are inconsistent.\nWithout good or bad\nI live happily." },
+    "id": 13,
+    "title": "The Bliss Absolute",
+    "verses": [
+      {
+        "id": "13.1",
+        "number": "13.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "akiñcanabhavaṁ svāsthyaṁ kaupīnatve'pi durlabham, tyāgādāne vihāyāsmād-aham-āse yathāsukham.",
+        "verse": "\"The tranquillity, which is born of the awareness that there is nothing else but the Self, is rare even for one who wears just a loin cloth. Therefore, by giving up the ideas of renunciation and acceptance, I live in true happiness.\""
+      },
+      {
+        "id": "13.2",
+        "number": "13.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "kutrāpi khedaḥ kāyasya jihvā kutrāpi khidyate, manaḥ kutrāpi tattyaktvā puruṣārthe sthitaḥ sukham.",
+        "verse": "\"There is weariness of the body here, fatigue of the tongue there and distress of the mind elsewhere. Having renounced this in life's goal, I live in true happiness.\""
+      },
+      {
+        "id": "13.3",
+        "number": "13.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "kṛtaṁ kimapi naiva syād-iti sañcintya tattvataḥ, yadā yat kartumāyāti tatkṛtvāse yathā-sukham.",
+        "verse": "\"Understanding fully that nothing whatsoever is really done by the Self, I do whatever presents itself to be done and so, I live in true happiness.\""
+      },
+      {
+        "id": "13.4",
+        "number": "13.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "karma-naiṣkarmya-nirbandha-bhāvā dehastha-yoginaḥ, saṁyogāyoga-virahād-aham-āse yathā-sukham.",
+        "verse": "\"The spiritual seekers (yogins), who are attached to the body, insist upon action or inaction. Divorced from both association and dissociation, I live in true happiness.\""
+      },
+      {
+        "id": "13.5",
+        "number": "13.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "arthānarthau na me sthityā gatyā vā śayanena vā, tiṣṭhan gacchan svapan tasmād-aham-āse yathā-sukham.",
+        "verse": "\"No good or evil can be associated with my staying, going or sleeping. So whether I stay or go or sleep, I live in true happiness.\""
+      },
+      {
+        "id": "13.6",
+        "number": "13.6",
+        "speaker": "Janaka said:",
+        "sanskrit": "svapato nāsti me hāniḥ siddhir-yatnavato na vā, nāśollāsau vihāyāsmād-aham-āse yathā-sukham.",
+        "verse": "\"I do not lose anything by sleeping, nor gain anything by striving. So giving up thoughts of loss and delight, I live in true happiness.\""
+      },
+      {
+        "id": "13.7",
+        "number": "13.7",
+        "speaker": "Janaka said:",
+        "sanskrit": "1. akiñcanabhavaṁ svāsthyaṁ kaupīnatve'pi durlabham, tyāgādāne vihāyāsmād-aham-āse yathāsukham. (1) Janaka said: 2. “The tranquillity, which is born of the awareness that there is nothing else but the Self, is rare even for one who wears just a loin cloth. Therefore, by giving up the ideas of renunciation and acceptance, I live in true happiness.” 3. kutrāpi khedaḥ kāyasya jihvā kutrāpi khidyate, manaḥ kutrāpi tattyaktvā puruṣārthe sthitaḥ sukham. (2) 4. “There is weariness of the body here, fatigue of the tongue there and distress of the mind elsewhere. Having renounced this in life's goal, I live in true happiness.” 5. kṛtaṁ kimapi naiva syād-iti sañcintya tattvataḥ, yadā yat kartumāyāti tatkṛtvāse yathā-sukham. (3) 6. “Understanding fully that nothing whatsoever is really done by the Self, I do whatever presents itself to be done and so, I live in true happiness.” 7. karma-naiṣkarmya-nirbandha-bhāvā dehastha-yoginaḥ, saṁyogāyoga-virahād-aham-āse yathā-sukham. (4) 8. “The spiritual seekers (yogins), who are attached to the body, insist upon action or inaction. Divorced from both association and dissociation, I live in true happiness.” 9. arthānarthau na me sthityā gatyā vā śayanena vā, tiṣṭhan gacchan svapan tasmād-aham-āse yathā-sukham. (5) 10. “No good or evil can be associated with my staying, going or sleeping. So whether I stay or go or sleep, I live in true happiness.” 11. svapato nāsti me hāniḥ siddhir-yatnavato na vā, nāśollāsau vihāyāsmād-aham-āse yathā-sukham. (6) 12. “I do not lose anything by sleeping, nor gain anything by striving. So giving up thoughts of loss and delight, I live in true happiness.” 13. sukhādi-rūpāniyamaṁ bhāveṣvālokya bhūriśaḥ, śubhāśubhe vihāyāsmād-aham-āse yathā-sukham. (7)",
+        "verse": "\"Observing again and again, the fluctuations of the forms of pleasures and so on, in different circumstances, I have renounced good and evil and I live in true happiness.\""
+      }
     ]
   },
   {
-    id: 14,
-    title: "Tranquility",
-    verses: [
-      { id: "14.1", number: "14.1", speaker: "Janaka said:", text: "Though appearing asleep like other men,\none whose interest in the world is exhausted,\nwhose mind has been emptied,\nwho thinks only by inadvertence,\nis in Reality awake." },
-      { id: "14.2", number: "14.2", speaker: "Janaka said:", text: "When desire has melted,\nhow can there be wealth,\nor friends, or the seduction of senses?\nWhat use is scripture and knowledge?" },
-      { id: "14.3", number: "14.3", speaker: "Janaka said:", text: "I have realized the Supreme Self,\nthe Witness, the One.\nI am indifferent\nto bondage and freedom.\nI have no need for liberation." },
-      { id: "14.4", number: "14.4", speaker: "Janaka said:", text: "The inner condition\nof one who is devoid of doubt\nyet moves among creatures of illusion\ncan only be known by those like him." },
+    "id": 14,
+    "title": "Tranquillity",
+    "verses": [
+      {
+        "id": "14.1",
+        "number": "14.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "prakṛtyā śūnyacitto yaḥ pramādād-bhāva-bhāvanaḥ, nidrito bodhita iva kṣīṇa-saṁsaraṇo hi saḥ.",
+        "verse": "\"He indeed has his recollections of worldly life extinguished who becomes void minded spontaneously, who thinks of sense objects only by chance and who is, as it were, awake though physically asleep.\""
+      },
+      {
+        "id": "14.2",
+        "number": "14.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva dhanāni kva mitrāṇi kva me viṣaya-dasyavaḥ, kva śāstraṁ kva ca vijñānaṁ yadā me galitā spṛhā.",
+        "verse": "\"When once the desires have melted away, where are my riches, where are my friends, where are the thieves in the form of sense objects, nay, where are the scriptures and knowledge itself?\""
+      },
+      {
+        "id": "14.3",
+        "number": "14.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "vijñāte sākṣi-puruṣe paramātmani ceśvare, nairāśye bandha-mokṣe ca na cintā muktaye mama.",
+        "verse": "\"As I have realised the supreme Self who is the ‘witness’ and the Lord, the Puruṣa and have become indifferent both to bondage and Liberation, I (now) feel no anxiety for my emancipation.\""
+      },
+      {
+        "id": "14.4",
+        "number": "14.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "1. prakṛtyā śūnyacitto yaḥ pramādād-bhāva-bhāvanaḥ, nidrito bodhita iva kṣīṇa-saṁsaraṇo hi saḥ. (1) Janaka said: 2. “He indeed has his recollections of worldly life extinguished who becomes void minded spontaneously, who thinks of sense objects only by chance and who is, as it were, awake though physically asleep.” 3. kva dhanāni kva mitrāṇi kva me viṣaya-dasyavaḥ, kva śāstraṁ kva ca vijñānaṁ yadā me galitā spṛhā. (2) 4. “When once the desires have melted away, where are my riches, where are my friends, where are the thieves in the form of sense objects, nay, where are the scriptures and knowledge itself?” 5. vijñāte sākṣi-puruṣe paramātmani ceśvare, nairāśye bandha-mokṣe ca na cintā muktaye mama. (3) 6. “As I have realised the supreme Self who is the ‘witness’ and the Lord, the Puruṣa and have become indifferent both to bondage and Liberation, I (now) feel no anxiety for my emancipation.” 7. antar-vikalpa-śūnyasya bahiḥ svacchanda-cāriṇaḥ, bhrāntasyeva daśāstāstās-tādṛśā eva jānate. (4)",
+        "verse": "\"The different conditions of a wise man, who, devoid of any thoughts within, outwardly roams about at his own pleasure like a deluded man, can only be understood by those like him.\""
+      }
     ]
   },
   {
-    id: 15,
-    title: "Knowledge of the Self",
-    verses: [
-      { id: "15.1", number: "15.1", speaker: "Ashtavakra said:", text: "A man of open intuition\nmay realize the Self upon\nhearing a casual instruction,\nwhile a man of cluttered intellect\ninquires bewildered for a lifetime." },
-      { id: "15.2", number: "15.2", speaker: "Ashtavakra said:", text: "Aversion to the world's offerings is liberation.\nAttraction to the world's offerings\nis the suffering of bondage.\nThis is the truth.\nNow do as you please." },
-      { id: "15.3", number: "15.3", speaker: "Ashtavakra said:", text: "This knowledge of Truth\nturns an eloquent, wise and active man\nmute, empty and inert.\nLovers of the world therefore shun it." },
-      { id: "15.4", number: "15.4", speaker: "Ashtavakra said:", text: "You are not the body.\nYou do not have a body.\nYou neither do nor enjoy.\nYou are Awareness only--the timeless Witness.\nYou are free.\nGo in happiness." },
-      { id: "15.5", number: "15.5", speaker: "Ashtavakra said:", text: "Attachment and aversion\nare attributes of the mind.\nYou are not the mind.\nYou are Consciousness itself--\nchangeless, undivided, free.\nGo in happiness." },
-      { id: "15.6", number: "15.6", speaker: "Ashtavakra said:", text: "Realize Self in All and All in Self.\nBe free of personal identity\nand the sense of \"mine.\"\nBe happy." },
-      { id: "15.7", number: "15.7", speaker: "Ashtavakra said:", text: "You are That in which the universe appears\nlike waves appearing in the ocean.\nYou are Consciousness itself.\nNo need to worry." },
-      { id: "15.8", number: "15.8", speaker: "Ashtavakra said:", text: "Have faith, my son, have faith.\nYou are Awareness alone,\nthe Self, the One.\nYou are the Lord of Nature." },
-      { id: "15.9", number: "15.9", speaker: "Ashtavakra said:", text: "The body is made of worldly stuff.\nIt comes, it lingers, it goes.\nThe Self neither comes nor goes,\nyet remains.\nWhy mourn the body?" },
-      { id: "15.10", number: "15.10", speaker: "Ashtavakra said:", text: "If the body lasts until the end of time\nor perishes today—\nis there gain or loss for you?\nYou who are Awareness?" },
-      { id: "15.11", number: "15.11", speaker: "Ashtavakra said:", text: "Let the waves of the universe\nrise and fall as they will.\nYou have nothing to gain or lose.\nYou are the ocean." },
-      { id: "15.12", number: "15.12", speaker: "Ashtavakra said:", text: "You are the substance of Consciousness.\nThe world is You.\nWho is it that thinks\nhe can accept or reject it?\nAnd where does he stand?" },
-      { id: "15.13", number: "15.13", speaker: "Ashtavakra said:", text: "In you who are One—\nimmaculate, still Awareness—\nfrom where can birth, action\nor a separate person arise?" },
-      { id: "15.14", number: "15.14", speaker: "Ashtavakra said:", text: "Whatever you perceive\nis You and You alone.\nHow can bracelets, armlets and anklets\nbe other than the gold they are made of?" },
-      { id: "15.15", number: "15.15", speaker: "Ashtavakra said:", text: "Leave behind such distinctions\nas \"I am He, the Self,\"\nand \"I am not this.\"\nConsider everything Self.\nBe desireless.\nBe happy." },
-      { id: "15.16", number: "15.16", speaker: "Ashtavakra said:", text: "Your ignorance alone\ncreates the universe.\nIn reality One alone exists.\nThere is no person or god\nother than You." },
-      { id: "15.17", number: "15.17", speaker: "Ashtavakra said:", text: "One who knows for certain\nthat the universe is illusion," },
+    "id": 15,
+    "title": "Brahman – The Absolute Reality",
+    "verses": [
+      {
+        "id": "15.1",
+        "number": "15.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yathā-tathopadeśena kṛtārthaḥ sattva-buddhimān, ājīvam-api jijñāsuḥ parastatra vimuhyati.",
+        "verse": "\"A person of pure Intelligence realises the Self even by instruction casually imparted. A man of impure intellect is confused in trying to realise the Self, even after enquiring throughout his life.\""
+      },
+      {
+        "id": "15.2",
+        "number": "15.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mokṣo viṣaya-vairasyaṁ bandho vaiṣayiko rasaḥ, etāvad-eva vijñānaṁ yathecchasi tathā kuru.",
+        "verse": "\"Distaste for sense objects is Liberation; passion for sense objects is bondage. Such indeed is Knowledge. Now you do as you please.\""
+      },
+      {
+        "id": "15.3",
+        "number": "15.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vāgmi-prājña-mahodyogaṁ janaṁ mūka-jaḍālasam, karoti tattva-bodho'yam-atastyakto bubhukṣubhiḥ.",
+        "verse": "\"This knowledge of the Truth makes an eloquent, wise and active person, mute, inert and passive. Therefore, it is shunned by those who wish to enjoy (the world).\""
+      },
+      {
+        "id": "15.4",
+        "number": "15.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na tvaṁ deho na te deho bhoktā kartā na vā bhavān, cidrūpo'si sadā sākṣī nirapekṣaḥ sukhaṁ cara.",
+        "verse": "\"You are not the body, nor is the body yours. You are neither the ‘doer’ nor the ‘enjoyer’. You are Consciousness itself, the eternal, indifferent witness. You go about happily.\""
+      },
+      {
+        "id": "15.5",
+        "number": "15.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "rāga-dveṣau mano-dharmau na manaste kadācana, nirvikalpo'si bodhātmā nirvikāraḥ sukhaṁ cara.",
+        "verse": "\"Passions and aversions are the qualities of the mind. The mind is never yours. You are Intelligence itself free from all fluctuations and changeless. You go about happily.\""
+      },
+      {
+        "id": "15.6",
+        "number": "15.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sarva-bhūteṣu cātmānaṁ sarva-bhūtāni cātmani, vijñāya nirahaṅkāro nirmamas-tvaṁ sukhī bhava.",
+        "verse": "\"Realising the Self in all beings and all beings in the Self, free from 'I-ness' and free from ‘mine-ness’, May you be happy.\""
+      },
+      {
+        "id": "15.7",
+        "number": "15.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "viśvaṁ sphurati yatredaṁ taraṅgā iva sāgare, tat-tvam-eva na sandehaścinmūrte vijvaro bhava.",
+        "verse": "\"O you, pure Intelligence! In you the universe manifests itself like waves in the ocean. Be you free from the fever of the mind.\""
+      },
+      {
+        "id": "15.8",
+        "number": "15.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śraddhasva tāta śraddhasva nātra mohaṁ kuruṣva bhoḥ, jñāna-svarūpo bhagavān-ātmā tvaṁ prakṛte paraḥ.",
+        "verse": "\"Have faith, my son, have faith! Have no delusion about this! You are Knowledge itself. You are the Lord. You are the Self. You are beyond nature.\""
+      },
+      {
+        "id": "15.9",
+        "number": "15.9",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "guṇaiḥ saṁveṣṭito dehas-tiṣṭhatyāyāti yāti ca, ātmā na gantā nāgantā kim-enam-anuśocasi.",
+        "verse": "\"The body composed of the constituents of nature, comes, stays and goes away. The Self neither comes nor goes. Why, then, do you mourn over it?\""
+      },
+      {
+        "id": "15.10",
+        "number": "15.10",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dehas-tiṣṭhatu kalpāntaṁ gacchatvadyaiva vā punaḥ, kva vṛddhiḥ kva ca vā hānistava cinmātra-rūpiṇaḥ.",
+        "verse": "\"Let the body last to the end of the ‘cycle’ (kalpa) or let it go just today itself! Where is there any increase or decrease in you, who are pure Intelligence?\""
+      },
+      {
+        "id": "15.11",
+        "number": "15.11",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tvayyananta-mahāmbhodhau viśvavīciḥ svabhāvataḥ, udetu vāstam-āyātu na te vṛddhirna vā kṣatiḥ.",
+        "verse": "\"In you, who are the infinite ocean (of Consciousness), let the waves of the universe spontaneously rise and disappear. There can be no gain or loss to you.\""
+      },
+      {
+        "id": "15.12",
+        "number": "15.12",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tāta cinmāt-rarūpo'si na te bhinnam-idaṁ jagat, ataḥ kasya kathaṁ kutra heyopādeya-kalpanā.",
+        "verse": "\"O Son! You are pure Intelligence itself. This universe is nothing different from you. Therefore, how, where and whose can be the ideas of acceptance and rejection?\""
+      },
+      {
+        "id": "15.13",
+        "number": "15.13",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ekasminn-avyaye śānte cidākāśe'male tvayi, kuto janma kuto karma kuto'haṅkāra eva ca.",
+        "verse": "\"From where will there be birth, activity and even the ego sense, for you who are the one, immutable, serene, stainless, pure Consciousness?\""
+      },
+      {
+        "id": "15.14",
+        "number": "15.14",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yat-tvaṁ paśyasi tatraikas-tvam-eva pratibhāsase, kiṁ pṛthag-bhāsate svarṇāt kaṭakāṅgada-nūpuram.",
+        "verse": "\"You alone manifest as whatever you perceive. Do bangles, armlets and anklets appear different from gold?\""
+      },
+      {
+        "id": "15.15",
+        "number": "15.15",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ayaṁ so'ham-ayaṁ nāhaṁ vibhāgam-iti santyaja, sarvam-ātmeti niścitya niḥsaṅkalpaḥ sukhī bhava.",
+        "verse": "\"Totally give up all such distinctions as ‘I am He’ and ‘This I am not’. Consider all as the Self and be desireless and happy.\""
+      },
+      {
+        "id": "15.16",
+        "number": "15.16",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tavaivājñānato viśvaṁ tvam-ekaḥ paramārthataḥ, tvatto'nyo nāsti saṁsārī nāsaṁsārī ca kaścana.",
+        "verse": "\"It is through your ‘ignorance’ alone that the universe appears to exist. In reality you are the One. Other than you there is no individual self (jīva) nor supreme Self (Ᾱtman).\""
+      },
+      {
+        "id": "15.17",
+        "number": "15.17",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhrānti-mātram-idaṁ viśvaṁ na kiñcid-iti niścayī, nirvāsanaḥ sphūrtimātro na kiñcid-iva śāmyati.",
+        "verse": "\"One who understands with certitude that this universe is but an illusion and is nothing, becomes desireless and pure Intelligence and finds serenity, as if nothing exists.\""
+      },
+      {
+        "id": "15.18",
+        "number": "15.18",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "eka eva bhavāmbhodhāvāsīd-asti bhaviśyati, na te bandho'sti mokṣo vā kṛtakṛtyaḥ sukhaṁ cara.",
+        "verse": "\"In the ocean of existence the one Self only was, is and will be. There is neither bondage nor Liberation for you. Live fulfilled and roam about happily.\""
+      },
+      {
+        "id": "15.19",
+        "number": "15.19",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mā saṅkalpa-vikalpābhyāṁ cittaṁ kṣobhaya cinmaya, upaśāmya sukhaṁ tiṣṭha svātmanyānanda-vigrahe.",
+        "verse": "\"O pure Intelligence! Do not disturb your mind by affirming and negating things. Silencing them, abide happily in your own Self, which is an embodiment of the Bliss Absolute.\""
+      },
+      {
+        "id": "15.20",
+        "number": "15.20",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "1. yathā-tathopadeśena kṛtārthaḥ sattva-buddhimān, ājīvam-api jijñāsuḥ parastatra vimuhyati. (1) Aṣṭāvakra said: 2. “A person of pure Intelligence realises the Self even by instruction casually imparted. A man of impure intellect is confused in trying to realise the Self, even after enquiring throughout his life.” 3. mokṣo viṣaya-vairasyaṁ bandho vaiṣayiko rasaḥ, etāvad-eva vijñānaṁ yathecchasi tathā kuru. (2) 4. “Distaste for sense objects is Liberation; passion for sense objects is bondage. Such indeed is Knowledge. Now you do as you please.” 5. vāgmi-prājña-mahodyogaṁ janaṁ mūka-jaḍālasam, karoti tattva-bodho'yam-atastyakto bubhukṣubhiḥ. (3) 6. “This knowledge of the Truth makes an eloquent, wise and active person, mute, inert and passive. Therefore, it is shunned by those who wish to enjoy (the world).” 7. na tvaṁ deho na te deho bhoktā kartā na vā bhavān, cidrūpo'si sadā sākṣī nirapekṣaḥ sukhaṁ cara. (4) 8. “You are not the body, nor is the body yours. You are neither the ‘doer’ nor the ‘enjoyer’. You are Consciousness itself, the eternal, indifferent witness. You go about happily.” 9. rāga-dveṣau mano-dharmau na manaste kadācana, nirvikalpo'si bodhātmā nirvikāraḥ sukhaṁ cara. (5) 10. “Passions and aversions are the qualities of the mind. The mind is never yours. You are Intelligence itself free from all fluctuations and changeless. You go about happily.” 11. sarva-bhūteṣu cātmānaṁ sarva-bhūtāni cātmani, vijñāya nirahaṅkāro nirmamas-tvaṁ sukhī bhava. (6) 12. “Realising the Self in all beings and all beings in the Self, free from 'I-ness' and free from ‘mine-ness’, May you be happy.” 13. viśvaṁ sphurati yatredaṁ taraṅgā iva sāgare, tat-tvam-eva na sandehaścinmūrte vijvaro bhava. (7) 14. “O you, pure Intelligence! In you the universe manifests itself like waves in the ocean. Be you free from the fever of the mind.” 15. śraddhasva tāta śraddhasva nātra mohaṁ kuruṣva bhoḥ, jñāna-svarūpo bhagavān-ātmā tvaṁ prakṛte paraḥ. (8) 16. “Have faith, my son, have faith! Have no delusion about this! You are Knowledge itself. You are the Lord. You are the Self. You are beyond nature.” 17. guṇaiḥ saṁveṣṭito dehas-tiṣṭhatyāyāti yāti ca, ātmā na gantā nāgantā kim-enam-anuśocasi. (9) 18. “The body composed of the constituents of nature, comes, stays and goes away. The Self neither comes nor goes. Why, then, do you mourn over it?” 19. dehas-tiṣṭhatu kalpāntaṁ gacchatvadyaiva vā punaḥ, kva vṛddhiḥ kva ca vā hānistava cinmātra-rūpiṇaḥ. (10) 20. “Let the body last to the end of the ‘cycle’ (kalpa) or let it go just today itself! Where is there any increase or decrease in you, who are pure Intelligence?” 21. tvayyananta-mahāmbhodhau viśvavīciḥ svabhāvataḥ, udetu vāstam-āyātu na te vṛddhirna vā kṣatiḥ. (11) 22. “In you, who are the infinite ocean (of Consciousness), let the waves of the universe spontaneously rise and disappear. There can be no gain or loss to you.” 23. tāta cinmāt-rarūpo'si na te bhinnam-idaṁ jagat, ataḥ kasya kathaṁ kutra heyopādeya-kalpanā. (12) 24. “O Son! You are pure Intelligence itself. This universe is nothing different from you. Therefore, how, where and whose can be the ideas of acceptance and rejection?” 25. ekasminn-avyaye śānte cidākāśe'male tvayi, kuto janma kuto karma kuto'haṅkāra eva ca. (13) 26. “From where will there be birth, activity and even the ego sense, for you who are the one, immutable, serene, stainless, pure Consciousness?” 27. yat-tvaṁ paśyasi tatraikas-tvam-eva pratibhāsase, kiṁ pṛthag-bhāsate svarṇāt kaṭakāṅgada-nūpuram. (14) 28. “You alone manifest as whatever you perceive. Do bangles, armlets and anklets appear different from gold?” 29. ayaṁ so'ham-ayaṁ nāhaṁ vibhāgam-iti santyaja, sarvam-ātmeti niścitya niḥsaṅkalpaḥ sukhī bhava. (15) 30. “Totally give up all such distinctions as ‘I am He’ and ‘This I am not’. Consider all as the Self and be desireless and happy.” 31. tavaivājñānato viśvaṁ tvam-ekaḥ paramārthataḥ, tvatto'nyo nāsti saṁsārī nāsaṁsārī ca kaścana. (16) 32. “It is through your ‘ignorance’ alone that the universe appears to exist. In reality you are the One. Other than you there is no individual self (jīva) nor supreme Self (Ᾱtman).” 33. bhrānti-mātram-idaṁ viśvaṁ na kiñcid-iti niścayī, nirvāsanaḥ sphūrtimātro na kiñcid-iva śāmyati. (17) 34. “One who understands with certitude that this universe is but an illusion and is nothing, becomes desireless and pure Intelligence and finds serenity, as if nothing exists.” 35. eka eva bhavāmbhodhāvāsīd-asti bhaviśyati, na te bandho'sti mokṣo vā kṛtakṛtyaḥ sukhaṁ cara. (18) 36. “In the ocean of existence the one Self only was, is and will be. There is neither bondage nor Liberation for you. Live fulfilled and roam about happily.” 37. mā saṅkalpa-vikalpābhyāṁ cittaṁ kṣobhaya cinmaya, upaśāmya sukhaṁ tiṣṭha svātmanyānanda-vigrahe. (19) 38. “O pure Intelligence! Do not disturb your mind by affirming and negating things. Silencing them, abide happily in your own Self, which is an embodiment of the Bliss Absolute.” 39. tyajaiva dhyānaṁ sarvatra mā kiñcid-hṛdi dhāraya, ātmā tvaṁ-mukta evāsi kiṁ vimṛśya kariṣyasi. (20)",
+        "verse": "\"Completely give up even contemplation and hold nothing in your mind. You are indeed the Self, ever free. What will you do by meditation?\""
+      }
     ]
   },
   {
-    id: 16,
-    title: "Effort and No-Effort",
-    verses: [
-      { id: "16.1", number: "16.1", speaker: "Ashtavakra said:", text: "The yogi who is full of the sense of \"I am the doer\"\nis far from freedom.\nHe has not found peace." },
-      { id: "16.2", number: "16.2", speaker: "Ashtavakra said:", text: "Effort to concentrate a scattered mind\nas if gathering straws,\nwill result in a scattered mind." },
-      { id: "16.3", number: "16.3", speaker: "Ashtavakra said:", text: "He who holds to \"I am\"\nmissing entirely what is\nwill never arrive at freedom." },
-      { id: "16.4", number: "16.4", speaker: "Ashtavakra said:", text: "Knowing yourself as neither the doer\nnor the enjoyer,\nalthough the world may see you as acting,\nremain unshaken." },
-      { id: "16.5", number: "16.5", speaker: "Ashtavakra said:", text: "Even hearing the highest Truth,\nthe mind tethered to desires\ncannot find tranquility." },
-      { id: "16.6", number: "16.6", speaker: "Ashtavakra said:", text: "Discrimination and detachment,\npeace, forbearance--\nfrom these three naturally springs\ndeliberation." },
-      { id: "16.7", number: "16.7", speaker: "Ashtavakra said:", text: "One who tastes this elixir,\neven for an instant,\nfinds peace." },
-      { id: "16.8", number: "16.8", speaker: "Ashtavakra said:", text: "When the mind becomes free\nof the grip of sense objects,\nknowledge naturally springs forth,\nlike light from fire." },
+    "id": 16,
+    "title": "Self-abidance – Instructions",
+    "verses": [
+      {
+        "id": "16.1",
+        "number": "16.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ācakṣva śruṇu vā tāta nānā-śāstrāṇyanekaśaḥ, tathāpi na tava svāsthyaṁ sarva-vismaraṇād-ṛte.",
+        "verse": "\"My son! You may speak many times in many ways, upon the various scriptures, or hear them. But you cannot get established in the Self, unless you forget all.\""
+      },
+      {
+        "id": "16.2",
+        "number": "16.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhogaṁ karma-samādhiṁ vā kuru vijña tathāpi te, cittaṁ nirasta-sarvāśam-atyarthaṁ rocayiṣyati.",
+        "verse": "\"O wise one! You may enjoy the world or undertake work or practise mental concentration (samādhi). But your mind will still yearn for your own true nature, which is beyond all objects and in which all desires are extinguished.\""
+      },
+      {
+        "id": "16.3",
+        "number": "16.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "āyāsāt sakalo duḥkhī nainaṁ jānāti kaścana, anenaivopadeśena dhanyaḥ prāpnoti nirvṛtim.",
+        "verse": "\"Because they exert themselves, all are unhappy. But none (knows) appreciates this. Through this instruction alone the blessed one attains Liberation.\""
+      },
+      {
+        "id": "16.4",
+        "number": "16.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vyāpāre khidyate yastu nimeṣonmeṣayorapi, tasyālasya-dhurīṇasya sukhaṁ nānyasya kasyacit.",
+        "verse": "\"Happiness belongs to that master idler who feels distressed even at the effort of opening and closing his eyes! It belongs to none else.\""
+      },
+      {
+        "id": "16.5",
+        "number": "16.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "idaṁ kṛtamidaṁ neti dvandvair-muktaṁ yadā manaḥ, dharmārtha-kāma-mokṣeṣu nirapekṣaṁ tadā bhavet.",
+        "verse": "\"When the mind is free from such pairs of opposites as ‘this is done’ and ‘this is not yet done’, it becomes indifferent to righteousness, wealth, desire and Liberation.\""
+      },
+      {
+        "id": "16.6",
+        "number": "16.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "virakto viṣaya-dveṣṭā rāgī viṣaya-lolupaḥ, graha-mokṣa-vihīnastu na virakto na rāgavān.",
+        "verse": "\"One who has aversion for sense objects is considered as 'not-sensual', and one who covets them is ‘sensual’. But he who does not accept or reject is neither 'sensual' nor 'not-sensual'.\""
+      },
+      {
+        "id": "16.7",
+        "number": "16.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "heyopādeyatā tāvat saṁsāra viṭapāṅkuraḥ, spṛhā jīvati yāvadvai nirvicāra-daśāspadam.",
+        "verse": "\"As long as desire, which is the root of the state of non-discrimination, exists, so long there will indeed be the sense of acceptance and aversion which are the branch and sprout of the tree of saṁsāra.\""
+      },
+      {
+        "id": "16.8",
+        "number": "16.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "pravṛttau jāyate rāgo nivṛttau dveṣa eva hi, nirdvandvo bālavad-dhīmān-evam-eva vyavasthitaḥ.",
+        "verse": "\"Activity begets attachment and abstention from it generates aversion. The wise man is free from the pairs of opposites, like a child and indeed, is well-established in the Self.\""
+      },
+      {
+        "id": "16.9",
+        "number": "16.9",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "hātum-icchati saṁsāraṁ rāgī duḥkha-jihāsayā, vītarāgo hi nirduḥkhas-tasminnapi na khidyati.",
+        "verse": "\"One who is attached to the world, wants to renounce it in order to avoid its miseries; but one without attachment is free from sorrow and does not feel miserable even in the world.\""
+      },
+      {
+        "id": "16.10",
+        "number": "16.10",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yasyābhimāno mokṣe'pi dehe'pi mamatā tathā, na ca jñānī na vā yogī kevalaṁ duḥkhabhāgasau.",
+        "verse": "\"He who has an ego sense even towards Liberation and he who considers even his body as his own, he is neither a jñānī nor a yogin. He is merely a sufferer of misery.\""
+      },
+      {
+        "id": "16.11",
+        "number": "16.11",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "1. ācakṣva śruṇu vā tāta nānā-śāstrāṇyanekaśaḥ, tathāpi na tava svāsthyaṁ sarva-vismaraṇād-ṛte. (1) Aṣṭāvakra said: 2. “My son! You may speak many times in many ways, upon the various scriptures, or hear them. But you cannot get established in the Self, unless you forget all.” 3. bhogaṁ karma-samādhiṁ vā kuru vijña tathāpi te, cittaṁ nirasta-sarvāśam-atyarthaṁ rocayiṣyati. (2) 4. “O wise one! You may enjoy the world or undertake work or practise mental concentration (samādhi). But your mind will still yearn for your own true nature, which is beyond all objects and in which all desires are extinguished.” 5. āyāsāt sakalo duḥkhī nainaṁ jānāti kaścana, anenaivopadeśena dhanyaḥ prāpnoti nirvṛtim. (3) 6. “Because they exert themselves, all are unhappy. But none (knows) appreciates this. Through this instruction alone the blessed one attains Liberation.” 7. vyāpāre khidyate yastu nimeṣonmeṣayorapi, tasyālasya-dhurīṇasya sukhaṁ nānyasya kasyacit. (4) 8. “Happiness belongs to that master idler who feels distressed even at the effort of opening and closing his eyes! It belongs to none else.” 9. idaṁ kṛtamidaṁ neti dvandvair-muktaṁ yadā manaḥ, dharmārtha-kāma-mokṣeṣu nirapekṣaṁ tadā bhavet. (5) 10. “When the mind is free from such pairs of opposites as ‘this is done’ and ‘this is not yet done’, it becomes indifferent to righteousness, wealth, desire and Liberation.” 11. virakto viṣaya-dveṣṭā rāgī viṣaya-lolupaḥ, graha-mokṣa-vihīnastu na virakto na rāgavān. (6) 12. “One who has aversion for sense objects is considered as 'not-sensual', and one who covets them is ‘sensual’. But he who does not accept or reject is neither 'sensual' nor 'not-sensual'.” 13. heyopādeyatā tāvat saṁsāra viṭapāṅkuraḥ, spṛhā jīvati yāvadvai nirvicāra-daśāspadam. (7) 14. “As long as desire, which is the root of the state of non-discrimination, exists, so long there will indeed be the sense of acceptance and aversion which are the branch and sprout of the tree of saṁsāra.” 15. pravṛttau jāyate rāgo nivṛttau dveṣa eva hi, nirdvandvo bālavad-dhīmān-evam-eva vyavasthitaḥ. (8) 16. “Activity begets attachment and abstention from it generates aversion. The wise man is free from the pairs of opposites, like a child and indeed, is well-established in the Self.” 17. hātum-icchati saṁsāraṁ rāgī duḥkha-jihāsayā, vītarāgo hi nirduḥkhas-tasminnapi na khidyati. (9) 18. “One who is attached to the world, wants to renounce it in order to avoid its miseries; but one without attachment is free from sorrow and does not feel miserable even in the world.” 19. yasyābhimāno mokṣe'pi dehe'pi mamatā tathā, na ca jñānī na vā yogī kevalaṁ duḥkhabhāgasau. (10) 20. “He who has an ego sense even towards Liberation and he who considers even his body as his own, he is neither a jñānī nor a yogin. He is merely a sufferer of misery.” 21. haro yadyupadeṣṭā te hariḥ kamalajo'pi vā, tathāpi na tava svāsthyaṁ sarva-vismaraṇād-ṛte. (11)",
+        "verse": "\"Even if Śiva, Viṣṇu or the lotus born Creator – Brahmā – be your instructor, yet, unless you forget all, you cannot achieve abidance in the Self.\""
+      }
     ]
   },
   {
-    id: 17,
-    title: "The Nature of the Free",
-    verses: [
-      { id: "17.1", number: "17.1", speaker: "Ashtavakra said:", text: "The wise one\nwho has realized the truth\nbehaves as he has done before,\nthough all conditioning has dropped away." },
-      { id: "17.2", number: "17.2", speaker: "Ashtavakra said:", text: "The wise one sits\nthough others run about.\nHe speaks\nthough others are silent." },
-      { id: "17.3", number: "17.3", speaker: "Ashtavakra said:", text: "He walks about\nthough others sit.\nHe associates with all,\nyet is free of identification." },
-      { id: "17.4", number: "17.4", speaker: "Ashtavakra said:", text: "To eat, to sleep, to defend the body\nwhen it is attacked--\nthese are done out of habit." },
-      { id: "17.5", number: "17.5", speaker: "Ashtavakra said:", text: "Even though he may listen,\nthe wise one hears nothing.\nEven though he may look,\nhe sees nothing." },
-      { id: "17.6", number: "17.6", speaker: "Ashtavakra said:", text: "His senses are like flowers\nwithout fragrance,\nfor all sense objects are nil\nwithin the Self." },
-      { id: "17.7", number: "17.7", speaker: "Ashtavakra said:", text: "In him exists neither pain nor disease,\nneither pleasure nor joy.\nHow can impurity touch\nthe one free from the three gunas?" },
-      { id: "17.8", number: "17.8", speaker: "Ashtavakra said:", text: "Untroubled and free,\nhe neither desires his life\nnor shuns death.\nHis focus is on freedom alone." },
+    "id": 17,
+    "title": "Aloneness of the Self",
+    "verses": [
+      {
+        "id": "17.1",
+        "number": "17.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tena jñāna-phalaṁ prāptaṁ yogābhyāsa-phalaṁ tathā, tṛptaḥ svacchendriyo nityam-ekākī ramate tu yaḥ.",
+        "verse": "\"He has gained the fruit of knowledge as well as the fruit of practice of yoga, who, contented and purified in his senses, ever revels in his 'aloneness' indeed.\""
+      },
+      {
+        "id": "17.2",
+        "number": "17.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na kadācijjagatyasmin tattvajño hanta khidyati, yata ekena tenedaṁ pūrṇaṁ brahmāṇḍa-maṇḍalam.",
+        "verse": "\"Oh! The knower of Truth knows no misery in this world, for the whole universe is filled by himself alone.\""
+      },
+      {
+        "id": "17.3",
+        "number": "17.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na jātu viṣayāḥ ke'pi svārāmaṁ harṣayantyamī, sallakī-pallava-prītam-ivebhan-nimba-pallavāḥ.",
+        "verse": "\"No sense objects ever please the one who is contented in the Self, just as the margosa (nīma) leaves do not please an elephant who delights in sallakī leaves.\""
+      },
+      {
+        "id": "17.4",
+        "number": "17.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yastu bhogeṣu bhukteṣu na bhavatyadhivāsitāḥ, abhukteṣu nirākāṅkṣī tādṛśo bhava-durlabhaḥ.",
+        "verse": "\"Rare in the world is he on whom impressions are not left of things which he had experienced or one who does not hanker after things not yet enjoyed.\""
+      },
+      {
+        "id": "17.5",
+        "number": "17.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bubhukṣuriha saṁsāre mumukṣurapi dṛśyate, bhoga-mokṣa-nirākāṅkṣī viralo hi mahāśayaḥ.",
+        "verse": "\"Those who seek worldly enjoyments and those desirous of Liberation, both are found in this world. But rare indeed is the noble-minded sage who is not desirous of either enjoyment or Liberation.\""
+      },
+      {
+        "id": "17.6",
+        "number": "17.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dharmārtha-kāma-mokṣeṣu jīvite maraṇe tathā, kasyāpyudāra-cittasya heyopādeyatā na hi.",
+        "verse": "\"Rare is the broad-minded person who has neither attraction for nor aversion to piety, worldly prosperity, desire fulfilment and Liberation as well as any attraction for life or aversion to death.\""
+      },
+      {
+        "id": "17.7",
+        "number": "17.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vāñchā na viśva-vilaye na dveṣastasya ca sthitau, yathā jīvikayā tasmād-dhanya āste yathā-sukham.",
+        "verse": "\"The Man of Wisdom does not feel any longing for the dissolution of the universe or any aversion towards its existence. He, the blessed one, therefore, lives happily in whatever subsistence turns up, as his lot, unasked.\""
+      },
+      {
+        "id": "17.8",
+        "number": "17.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kṛtārtho'nena jñānenetyevaṁ galita-dhīḥ kṛtī, paśyan śṛṇvan spṛśan jighran aśnan āste yathāsukham.",
+        "verse": "\"Being fulfilled by this wisdom of the Self and with his mind absorbed and contented in the Self, the wise man lives happily – seeing, hearing, touching, smelling and eating.\""
+      },
+      {
+        "id": "17.9",
+        "number": "17.9",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śūnyā dṛṣtir-vṛthā ceṣṭā vikalānīndriyāṇi ca, na spṛhā na viraktirvā kṣīṇa-saṁsāra-sāgare.",
+        "verse": "\"There is no attachment or aversion for one in whom the ocean of the world has dried up. His gaze becomes vacant. His bodily actions are purposeless and his senses inoperative.\""
+      },
+      {
+        "id": "17.10",
+        "number": "17.10",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na jāgarti na nidrāti nonmīlati na mīlati, aho paradaśā kvāpi vartate mukta-cetasaḥ.",
+        "verse": "\"The Man of Wisdom neither keeps awake nor sleeps. He neither opens nor closes his eyes. Oh! The liberated soul anywhere enjoys the supreme state of Consciousness.\""
+      },
+      {
+        "id": "17.11",
+        "number": "17.11",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sarvatra dṛśyate svasthaḥ sarvatra vimalāśayaḥ, samasta-vāsanā-mukto muktaḥ sarvatra rājate.",
+        "verse": "\"The liberated one is found everywhere abiding in the Self and is undefiled by desires under all conditions. Freed from all vāsanās, he revels.\""
+      },
+      {
+        "id": "17.12",
+        "number": "17.12",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "paśyan śṛṇvan spṛśan jighran aśnan gṛhṇan vadan vrajan, īhitān-īhitair-mukto mukta eva mahāśayaḥ.",
+        "verse": "\"Seeing, hearing, touching, smelling, eating, accepting, speaking and walking, the noble-minded one, free from all attachments and aversions, is indeed liberated.\""
+      },
+      {
+        "id": "17.13",
+        "number": "17.13",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na nindati na ca stauti na hṛṣyati na kupyati, na dadāti na gṛhṇāti muktaḥ sarvatra nīrasaḥ.",
+        "verse": "\"The liberated one neither abuses nor praises. He neither rejoices nor is he angry. He neither gives nor receives. He is free from enjoyment in all objects.\""
+      },
+      {
+        "id": "17.14",
+        "number": "17.14",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sānurāgāṁ striyaṁ dṛṣṭvā mṛtyuṁ vā samupasthitam, avihvala-manāḥ svastho mukta eva mahāśayaḥ.",
+        "verse": "\"The noble-minded one is not perturbed and remains self-poised at the sight of a woman full of passion, as well as of approaching death. He is, indeed, liberated.\""
+      },
+      {
+        "id": "17.15",
+        "number": "17.15",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sukhe duḥkhe nare nāryāṁ sampatsu ca vipatsu ca, viśeṣo naiva dhīrasya sarvatra sama-darśinaḥ.",
+        "verse": "\"The wise one who sees the same everywhere, sees no difference between happiness and misery, man and woman, fortune and misfortune.\""
+      },
+      {
+        "id": "17.16",
+        "number": "17.16",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na hiṁsā naiva kāruṇyaṁ nauddhatyaṁ na ca dīnatā, nāścaryaṁ naiva ca kṣobhaḥ kṣīṇa-saṁsaraṇe nare.",
+        "verse": "\"In the man, whose worldly life is exhausted, there is neither compassion nor violence, neither humility nor pride; neither wonder nor agitation.\""
+      },
+      {
+        "id": "17.17",
+        "number": "17.17",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na mukto viṣaya-dveṣṭā na vā viṣaya-lolupaḥ, asaṁsakta-manāḥ nityaṁ prāptāprāptam-upāśnute.",
+        "verse": "\"The liberated one has neither aversion nor craving for the objects of the senses. Ever with detached mind, he experiences both what is attained and what is not attained.\""
+      },
+      {
+        "id": "17.18",
+        "number": "17.18",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "samādhānāsamādhāna-hitāhita-vikalpanāḥ, śūnyacitto na jānāti kaivalyamiva saṁsthitaḥ.",
+        "verse": "\"The wise man of empty mind does not know the mental alternatives of contemplation and non-contemplation, of good and evil. He abides, as it were, in the state of Aloneness.\""
+      },
+      {
+        "id": "17.19",
+        "number": "17.19",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirmamo nirahaṅkāro na kiñciditi niścitaḥ, antargalita-sarvāśaḥ kurvannapi karoti na.",
+        "verse": "\"Devoid of the feelings of 'I-ness' and 'my-ness', knowing for certain that nothing is and with all his inner desires melted away, the wise man does not act, though he may appear to be acting.\""
+      },
+      {
+        "id": "17.20",
+        "number": "17.20",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "1. tena jñāna-phalaṁ prāptaṁ yogābhyāsa-phalaṁ tathā, tṛptaḥ svacchendriyo nityam-ekākī ramate tu yaḥ. (1) Aṣṭāvakra said: 2. “He has gained the fruit of knowledge as well as the fruit of practice of yoga, who, contented and purified in his senses, ever revels in his 'aloneness' indeed.” 3. na kadācijjagatyasmin tattvajño hanta khidyati, yata ekena tenedaṁ pūrṇaṁ brahmāṇḍa-maṇḍalam. (2) 4. “Oh! The knower of Truth knows no misery in this world, for the whole universe is filled by himself alone.” 5. na jātu viṣayāḥ ke'pi svārāmaṁ harṣayantyamī, sallakī-pallava-prītam-ivebhan-nimba-pallavāḥ. (3) 6. “No sense objects ever please the one who is contented in the Self, just as the margosa (nīma) leaves do not please an elephant who delights in sallakī leaves.” 7. yastu bhogeṣu bhukteṣu na bhavatyadhivāsitāḥ, abhukteṣu nirākāṅkṣī tādṛśo bhava-durlabhaḥ. (4) 8. “Rare in the world is he on whom impressions are not left of things which he had experienced or one who does not hanker after things not yet enjoyed.” 9. bubhukṣuriha saṁsāre mumukṣurapi dṛśyate, bhoga-mokṣa-nirākāṅkṣī viralo hi mahāśayaḥ. (5) 10. “Those who seek worldly enjoyments and those desirous of Liberation, both are found in this world. But rare indeed is the noble-minded sage who is not desirous of either enjoyment or Liberation.” 11. dharmārtha-kāma-mokṣeṣu jīvite maraṇe tathā, kasyāpyudāra-cittasya heyopādeyatā na hi. (6) 12. “Rare is the broad-minded person who has neither attraction for nor aversion to piety, worldly prosperity, desire fulfilment and Liberation as well as any attraction for life or aversion to death.” 13. vāñchā na viśva-vilaye na dveṣastasya ca sthitau, yathā jīvikayā tasmād-dhanya āste yathā-sukham. (7) 14. “The Man of Wisdom does not feel any longing for the dissolution of the universe or any aversion towards its existence. He, the blessed one, therefore, lives happily in whatever subsistence turns up, as his lot, unasked.” 15. kṛtārtho'nena jñānenetyevaṁ galita-dhīḥ kṛtī, paśyan śṛṇvan spṛśan jighran aśnan āste yathāsukham. (8) 16. “Being fulfilled by this wisdom of the Self and with his mind absorbed and contented in the Self, the wise man lives happily – seeing, hearing, touching, smelling and eating.” 17. śūnyā dṛṣtir-vṛthā ceṣṭā vikalānīndriyāṇi ca, na spṛhā na viraktirvā kṣīṇa-saṁsāra-sāgare. (9) 18. “There is no attachment or aversion for one in whom the ocean of the world has dried up. His gaze becomes vacant. His bodily actions are purposeless and his senses inoperative.” 19. na jāgarti na nidrāti nonmīlati na mīlati, aho paradaśā kvāpi vartate mukta-cetasaḥ. (10) 20. “The Man of Wisdom neither keeps awake nor sleeps. He neither opens nor closes his eyes. Oh! The liberated soul anywhere enjoys the supreme state of Consciousness.” 21. sarvatra dṛśyate svasthaḥ sarvatra vimalāśayaḥ, samasta-vāsanā-mukto muktaḥ sarvatra rājate. (11) 22. “The liberated one is found everywhere abiding in the Self and is undefiled by desires under all conditions. Freed from all vāsanās, he revels.” 23. paśyan śṛṇvan spṛśan jighran aśnan gṛhṇan vadan vrajan, īhitān-īhitair-mukto mukta eva mahāśayaḥ. (12) 24. “Seeing, hearing, touching, smelling, eating, accepting, speaking and walking, the noble-minded one, free from all attachments and aversions, is indeed liberated.” 25. na nindati na ca stauti na hṛṣyati na kupyati, na dadāti na gṛhṇāti muktaḥ sarvatra nīrasaḥ. (13) 26. “The liberated one neither abuses nor praises. He neither rejoices nor is he angry. He neither gives nor receives. He is free from enjoyment in all objects.” 27. sānurāgāṁ striyaṁ dṛṣṭvā mṛtyuṁ vā samupasthitam, avihvala-manāḥ svastho mukta eva mahāśayaḥ. (14) 28. “The noble-minded one is not perturbed and remains self-poised at the sight of a woman full of passion, as well as of approaching death. He is, indeed, liberated.” 29. sukhe duḥkhe nare nāryāṁ sampatsu ca vipatsu ca, viśeṣo naiva dhīrasya sarvatra sama-darśinaḥ. (15) 30. “The wise one who sees the same everywhere, sees no difference between happiness and misery, man and woman, fortune and misfortune.” 31. na hiṁsā naiva kāruṇyaṁ nauddhatyaṁ na ca dīnatā, nāścaryaṁ naiva ca kṣobhaḥ kṣīṇa-saṁsaraṇe nare. (16) 32. “In the man, whose worldly life is exhausted, there is neither compassion nor violence, neither humility nor pride; neither wonder nor agitation.” 33. na mukto viṣaya-dveṣṭā na vā viṣaya-lolupaḥ, asaṁsakta-manāḥ nityaṁ prāptāprāptam-upāśnute. (17) 34. “The liberated one has neither aversion nor craving for the objects of the senses. Ever with detached mind, he experiences both what is attained and what is not attained.” 35. samādhānāsamādhāna-hitāhita-vikalpanāḥ, śūnyacitto na jānāti kaivalyamiva saṁsthitaḥ. (18) 36. “The wise man of empty mind does not know the mental alternatives of contemplation and non-contemplation, of good and evil. He abides, as it were, in the state of Aloneness.” 37. nirmamo nirahaṅkāro na kiñciditi niścitaḥ, antargalita-sarvāśaḥ kurvannapi karoti na. (19) 38. “Devoid of the feelings of 'I-ness' and 'my-ness', knowing for certain that nothing is and with all his inner desires melted away, the wise man does not act, though he may appear to be acting.” 39. manaḥ prakāśa-saṁmoha-svapna-jāḍya-vivarjitaḥ, daśāṁ kāmapi saṁprāpto bhaved-galita-mānasaḥ. (20)",
+        "verse": "\"An indescribable state is attained by the sage whose mind has melted away, whose functions having ceased to operate and who is free from delusion, dreaming and dullness.\""
+      }
     ]
   },
   {
-    id: 18,
-    title: "Peace",
-    verses: [
-      { id: "18.1", number: "18.1", speaker: "Ashtavakra said:", text: "Praise That,\nwhich is Bliss itself,\nwhich is by nature stillness and light,\nand which by Its knowing\nreveals the world as a dream." },
-      { id: "18.2", number: "18.2", speaker: "Ashtavakra said:", text: "One may enjoy the abundant pleasures of the world,\nbut will never be happy\nuntil giving them up." },
-      { id: "18.3", number: "18.3", speaker: "Ashtavakra said:", text: "How can one whose innermost heart\nhas been scorched by the sun of sorrow\nthat comes from duty\nbe happy until the sweet rain\nof torrential stillness?" },
-      { id: "18.4", number: "18.4", speaker: "Ashtavakra said:", text: "The universe is but a thought\nin Consciousness.\nIn Reality it is nothing.\nOne who sees the true nature\nof existence and non-existence\nnever ceases to exist." },
-      { id: "18.5", number: "18.5", speaker: "Ashtavakra said:", text: "The Self—which is\nabsolute, effortless, timeless, immaculate—\nis without limits\nand at no distance from you.\nYou are forever It." },
-      { id: "18.6", number: "18.6", speaker: "Ashtavakra said:", text: "For those whose vision becomes unclouded,\nillusion evaporates\nand the Self becomes known.\nAll sorrow is instantly dispelled." },
-      { id: "18.7", number: "18.7", speaker: "Ashtavakra said:", text: "Seeing everything is imagination,\nknowing the Self as timelessly free,\nthe sage lives as a child." },
-      { id: "18.8", number: "18.8", speaker: "Ashtavakra said:", text: "Knowing himself as Absolute,\nknowing existence and non-existence\nto be imagination only,\nwhat is there for the desireless one\nto learn, say or do?" },
-      { id: "18.9", number: "18.9", speaker: "Ashtavakra said:", text: "Knowing for certain that all is Self,\nthe sage has no trace of thoughts\nsuch as \"I am this\" or \"I am not that.\"" },
-      { id: "18.10", number: "18.10", speaker: "Ashtavakra said:", text: "The yogi who finds stillness\nis neither distracted nor focused.\nHe knows neither pleasure nor pain.\nIgnorance dispelled,\nhe is free of knowing." },
-      { id: "18.11", number: "18.11", speaker: "Ashtavakra said:", text: "Heaven or poverty,\ngain or loss,\nsociety or solitude,\nto the yogi free of conditioning\nthere is no difference." },
-      { id: "18.12", number: "18.12", speaker: "Ashtavakra said:", text: "Religious merit,\nsensory pleasure,\nworldly prosperity,\ndiscrimination between this and that—\nthese have no significance\nto the yogi free of opposites\nsuch as \"I do this\"\nand \"this I do not.\"" },
-      { id: "18.13", number: "18.13", speaker: "Ashtavakra said:", text: "The yogi who is liberated while living\nhas no duties in this world,\nno attachments in his heart.\nHis life proceeds without him." },
-      { id: "18.14", number: "18.14", speaker: "Ashtavakra said:", text: "For the great soul\nwho abides beyond desire,\nwhere is illusion?\nWhere is the universe?\nWhere is meditation on That?\nWhere even is liberation from them?" },
-      { id: "18.15", number: "18.15", speaker: "Ashtavakra said:", text: "He who sees the world\nmay try to renounce it.\nBut what can the desireless one do?\nHe sees there is nothing to see." },
-      { id: "18.16", number: "18.16", speaker: "Ashtavakra said:", text: "He who has seen the Supreme Brahma\nthinks, \"I am Brahma.\"\nBut he who has transcended all thought,\nwhat can he think?\nHe knows no other than Self." },
-      { id: "18.17", number: "18.17", speaker: "Ashtavakra said:", text: "He achieves self-control\nwho sees his own distraction.\nBut the great soul is not distracted.\nHe has nothing to achieve.\nHe has nothing to do." },
-      { id: "18.18", number: "18.18", speaker: "Ashtavakra said:", text: "The man of Knowledge\nmay live as an ordinary man,\nbut he is not.\nHe sees he is neither\nfocused nor distracted,\nand finds no fault with himself." },
-      { id: "18.19", number: "18.19", speaker: "Ashtavakra said:", text: "He who is beyond existence and non-existence—\nwho is wise, satisfied, free of desire—\ndoes nothing,\nthough the world may see him in motion." },
-      { id: "18.20", number: "18.20", speaker: "Ashtavakra said:", text: "The wise one\nis not troubled by action or inactivity.\nHe lives happily,\ndoing whatever gets done." },
-      { id: "18.21", number: "18.21", speaker: "Ashtavakra said:", text: "Like a leaf in the wind\nthe liberated one\nis untethered from life—\ndesireless, independent, free." },
-      { id: "18.22", number: "18.22", speaker: "Ashtavakra said:", text: "For one who has transcended the world\nthere is no joy or sorrow.\nWith a stilled mind,\nhe lives on with no body." },
-      { id: "18.23", number: "18.23", speaker: "Ashtavakra said:", text: "One who knows Self,\nwhose mind is serene and spotless,\ndoes not desire to give up anything,\nnor does he miss what is not there." },
-      { id: "18.24", number: "18.24", speaker: "Ashtavakra said:", text: "His mind being in a natural state\nof emptiness,\nthe wise one knows nothing\nof honor and dishonor.\nHe does what comes to be done." },
-      { id: "18.25", number: "18.25", speaker: "Ashtavakra said:", text: "One who acts knowing\n\"This is done by the body, not by I, pure Self,\"\nindeed does nothing—\nno matter how much acting takes place." },
-      { id: "18.26", number: "18.26", speaker: "Ashtavakra said:", text: "The liberated one\nacts without claiming to be acting,\nbut he is no fool.\nHe is blessed and happy\neven though in the world." },
-      { id: "18.27", number: "18.27", speaker: "Ashtavakra said:", text: "Having had enough\nof the endless workings of the mind,\nthe wise one comes to rest.\nHe neither thinks, nor knows,\nnor hears, nor sees." },
-      { id: "18.28", number: "18.28", speaker: "Ashtavakra said:", text: "Beyond stillness,\nbeyond distraction,\nthe great soul thinks nothing\nof liberation or bondage.\nHaving seen the universe is void—\neven though it seems to exist—\nhe is God." },
-      { id: "18.29", number: "18.29", speaker: "Ashtavakra said:", text: "He who believes he is a person\nis constantly acting,\neven when the body is at rest.\nThe sage knows he is not a person,\nand therefore does nothing,\neven when the body is in motion." },
-      { id: "18.30", number: "18.30", speaker: "Ashtavakra said:", text: "The mind of the liberated one\nis neither troubled nor pleased.\nIt is actionless, motionless, desireless\nand free of doubt." },
-      { id: "18.31", number: "18.31", speaker: "Ashtavakra said:", text: "The liberated one\ndoes not exert effort\nto meditate or act.\nAction and meditation just happen." },
-      { id: "18.32", number: "18.32", speaker: "Ashtavakra said:", text: "Hearing ultimate Truth,\nthe dull-witted man is bewildered.\nThe wise man hearing Truth\nretreats within and appears\ndull-witted." },
-      { id: "18.33", number: "18.33", speaker: "Ashtavakra said:", text: "The ignorant practice\nmeditation and no-thought.\nThe wise,\nlike men in deep sleep,\ndo nothing." },
-      { id: "18.34", number: "18.34", speaker: "Ashtavakra said:", text: "The ignorant man finds no peace\neither by effort or non-effort.\nThe wise man\nby Truth alone is stilled." },
-      { id: "18.35", number: "18.35", speaker: "Ashtavakra said:", text: "Though they are by nature Self alone,\npure intelligence, love and perfection;\nthough they transcend the universe\nand are clearness itself,\nmen of the world will not see this\nthrough meditation and practices." },
-      { id: "18.36", number: "18.36", speaker: "Ashtavakra said:", text: "The ignorant man\nwill never be liberated\nby his repetitious practices.\nBlessed is he who\nby simple understanding\nenters timeless freedom." },
-      { id: "18.37", number: "18.37", speaker: "Ashtavakra said:", text: "Because he desires to know God,\nthe ignorant man can never become That.\nThe wise man is God\nbecause he is free of desire\nand knows nothing." },
-      { id: "18.38", number: "18.38", speaker: "Ashtavakra said:", text: "Unable to stand steady\nand eager for salvation,\nthe ignorant perpetuate\nthe illusion of world.\nSeeing the world\nas the source of all misery,\nthe wise cut it off at the root." },
-      { id: "18.39", number: "18.39", speaker: "Ashtavakra said:", text: "The fool thinks peace comes\nby controlling the mind.\nHe will never attain it.\nThe wise one knows Truth,\nand is stillness itself." },
-      { id: "18.40", number: "18.40", speaker: "Ashtavakra said:", text: "For he who thinks knowledge\nis things and ideas\nhow can there be Self-knowledge?\nThe wise do not see separate things—\nonly the timeless Self." },
-      { id: "18.41", number: "18.41", speaker: "Ashtavakra said:", text: "The fool tries to control the mind\nwith the mind—what folly!\nThe wise one delights in Self alone.\nThere is no mind to master." },
-      { id: "18.42", number: "18.42", speaker: "Ashtavakra said:", text: "Some believe in existence;\nothers believe nothing exists.\nRare is the one who believes nothing\nand is never confused." },
-      { id: "18.43", number: "18.43", speaker: "Ashtavakra said:", text: "Weak intellectuals may believe\nthe Self is One without other.\nBut being mired in illusion\nthey do not actually know Self,\nso live out their lives in misery." },
-      { id: "18.44", number: "18.44", speaker: "Ashtavakra said:", text: "The mind of one seeking liberation\ndepends on things for perception.\nThe mind of the liberated one\nperceives no-thing\nand is free of desire." },
-      { id: "18.45", number: "18.45", speaker: "Ashtavakra said:", text: "Timid men fear sensory experience\nmuch as they do tigers.\nThey seek refuge in caves\nand try to un-think the world." },
-      { id: "18.46", number: "18.46", speaker: "Ashtavakra said:", text: "Sensory experiences are like elephants who,\nupon encountering a desireless man,\nsee him as a lion.\nThey immediately turn on their heels,\nor if unable to escape,\nstay on to flatter and serve him." },
-      { id: "18.47", number: "18.47", speaker: "Ashtavakra said:", text: "A man with no doubts,\nwho knows only Self,\nhas no need of practice\nor liberation.\nSeeing, hearing, touching, smelling, eating—\nhe lives as he is, happily." },
-      { id: "18.48", number: "18.48", speaker: "Ashtavakra said:", text: "One whose mind is emptied and unconflicted\nby the mere hearing of Truth\nsees nothing to do,\nnothing to avoid,\nnothing to warrant his indifference." },
-      { id: "18.49", number: "18.49", speaker: "Ashtavakra said:", text: "The sage does whatever\nappears to be done\nwithout thinking of good or bad.\nHis actions are those of a child." },
-      { id: "18.50", number: "18.50", speaker: "Ashtavakra said:", text: "Depending on nothing,\none finds happiness.\nDepending on nothing,\none attains the Supreme.\nDepending on nothing,\none passes through tranquility\nto One Self." },
-      { id: "18.51", number: "18.51", speaker: "Ashtavakra said:", text: "When one realizes\nhe is neither the actor\nnor the one who watches,\nthe mind-storm is stilled." },
-      { id: "18.52", number: "18.52", speaker: "Ashtavakra said:", text: "The actions of the sage,\nfree of pretence and motive,\nshine like clear light.\nNot so those of the deluded seeker\nwho affects a peaceful demeanor\nwhile remaining firmly attached." },
-      { id: "18.53", number: "18.53", speaker: "Ashtavakra said:", text: "Unbounded, unfettered,\nuntethered from the projections of mind,\nthe wise are free to play and enjoy,\nor retire to mountain caves." },
-      { id: "18.54", number: "18.54", speaker: "Ashtavakra said:", text: "Whether honoring a spiritual scholar,\na god, or holy shrine;\nwhether seeing a desirable woman,\na king, or beloved friend—\nthe heart of the sage\nis unmoved." },
-      { id: "18.55", number: "18.55", speaker: "Ashtavakra said:", text: "Though his servants, sons,\nwives, daughters, grandchildren\nand all his wealth surround him,\nthe liberated one,\nfree of attachment,\nremains apart." },
-      { id: "18.56", number: "18.56", speaker: "Ashtavakra said:", text: "To one in whom desire,\naversion and confusion are extinct,\nwhat are children,\nwhat is a wife,\nwhat is loss,\nwhat is gain?" },
-      { id: "18.57", number: "18.57", speaker: "Ashtavakra said:", text: "The sage,\nfree of ego and false knowing,\nlives happily in this world\nwithout any purpose." },
-      { id: "18.58", number: "18.58", speaker: "Ashtavakra said:", text: "One free of the sense of \"I\" and \"mine\"\nacts as he will.\nHe has no sense of committing sin\nor performing good deeds." },
-      { id: "18.59", number: "18.59", speaker: "Ashtavakra said:", text: "The yogi free of becoming\nsees the universe as void.\nHe dwells in this world\nwithout body consciousness." },
-      { id: "18.60", number: "18.60", speaker: "Ashtavakra said:", text: "The great soul\nfree of desire,\nfree of aversion,\nfree of fear,\nenjoys the bliss of Brahman." },
-      { id: "18.61", number: "18.61", speaker: "Ashtavakra said:", text: "In the liberated one,\nwhere is knowledge,\nwhere is ignorance,\nwhere is bondage,\nwhere is freedom?" },
-      { id: "18.62", number: "18.62", speaker: "Ashtavakra said:", text: "He for whom the supreme Self\nand the world are one,\nwhat can he renounce,\nwhat can he accept?" },
-      { id: "18.63", number: "18.63", speaker: "Ashtavakra said:", text: "The yogi free of thought\nis neither engaged nor disengaged.\nHe neither knows meditation\nnor the lack of it." },
-      { id: "18.64", number: "18.64", speaker: "Ashtavakra said:", text: "One whose firm conviction\nis \"I am the Infinite,\"\nwhat fear can touch him,\nwhat sorrow bind him?" },
-      { id: "18.65", number: "18.65", speaker: "Ashtavakra said:", text: "Free of the idea of doing,\nfree of the idea of not-doing,\nfree of the three gunas,\nthe sage is established in Truth." },
-      { id: "18.66", number: "18.66", speaker: "Ashtavakra said:", text: "The yogi in whom the mind\nhas dissolved into the Self\nneeds no support,\nno warning,\nno instruction." },
-      { id: "18.67", number: "18.67", speaker: "Ashtavakra said:", text: "What lotus leaf floats on water\nand remains untouched—\nso does the wise one in the world." },
-      { id: "18.68", number: "18.68", speaker: "Ashtavakra said:", text: "The jnani,\nfirm in the knowledge \"I am the Self,\"\nneeds neither the path nor a guide." },
-      { id: "18.69", number: "18.69", speaker: "Ashtavakra said:", text: "The wise one,\nfree of the sense of doership,\nlives happily\nwithout becoming entangled." },
-      { id: "18.70", number: "18.70", speaker: "Ashtavakra said:", text: "The yogi established in the Self\nrequires neither effort nor indolence.\nHe is forever content\nin his own nature." },
-      { id: "18.71", number: "18.71", speaker: "Ashtavakra said:", text: "Beyond the three gunas,\nbeyond the three states,\nthe yogi freed from the knots of the heart\nabides in the Self." },
-      { id: "18.72", number: "18.72", speaker: "Ashtavakra said:", text: "To the knower of Truth,\nwhere is the need for the disciplines,\nwhere the world,\nwhere liberation,\nwhere bondage?" },
-      { id: "18.73", number: "18.73", speaker: "Ashtavakra said:", text: "The great soul,\nwho exists as the timeless Self,\nneither acts,\nnor knows that he acts." },
-      { id: "18.74", number: "18.74", speaker: "Ashtavakra said:", text: "In the yogi established in the Self,\nthere is no mental conflict,\nno elation,\nno depression." },
-      { id: "18.75", number: "18.75", speaker: "Ashtavakra said:", text: "The wise one,\nfree of the sense of \"I\" and \"mine,\"\nneeds no doctrine,\nno teacher,\nno scripture." },
-      { id: "18.76", number: "18.76", speaker: "Ashtavakra said:", text: "One for whom the Self alone exists,\nall forms are unreal,\nall names are unreal." },
-      { id: "18.77", number: "18.77", speaker: "Ashtavakra said:", text: "He whose mind does not dwell\non the past or the future,\nwho is free from concern,\nwho knows no fear—\nwho but he is at peace?" },
-      { id: "18.78", number: "18.78", speaker: "Ashtavakra said:", text: "One in whom imagination\nhas ceased to function,\nwho has become empty and pure,\nlives blissfully in this world." },
-      { id: "18.79", number: "18.79", speaker: "Ashtavakra said:", text: "The yogi,\nfree from the tyranny of the mind,\nenjoys the greatest bliss,\nfirm in the knowledge \"I am the Self.\"" },
-      { id: "18.80", number: "18.80", speaker: "Ashtavakra said:", text: "The sage who has realized\nthe nature of the Self,\nneither restrains nor indulges the senses." },
-      { id: "18.81", number: "18.81", speaker: "Ashtavakra said:", text: "Free of the notion of \"I am separate,\"\nthe wise one is neither occupied nor empty." },
-      { id: "18.82", number: "18.82", speaker: "Ashtavakra said:", text: "Having seen that he is not the doer,\nthe wise one is neither pleased nor displeased\nwith the results of action." },
-      { id: "18.83", number: "18.83", speaker: "Ashtavakra said:", text: "Knowing that the self-sense is false,\nthe yogi has no trace of fear\nor grief." },
-      { id: "18.84", number: "18.84", speaker: "Ashtavakra said:", text: "The mind of the yogi,\nfree from all notions of doership,\nis clear and transparent." },
-      { id: "18.85", number: "18.85", speaker: "Ashtavakra said:", text: "One whose understanding is clear,\nwhose mind is unfettered,\nwhose vision is pure,\nis free in this world." },
-      { id: "18.86", number: "18.86", speaker: "Ashtavakra said:", text: "The wise one,\nfree from the sense of doership,\nneeds neither scripture nor teacher." },
-      { id: "18.87", number: "18.87", speaker: "Ashtavakra said:", text: "By recognizing the emptiness of the mind,\nby understanding that all is the Self,\nthe yogi becomes free." },
-      { id: "18.88", number: "18.88", speaker: "Ashtavakra said:", text: "The yogi who sees the universe\nas nothing but imagination\nis already liberated." },
-      { id: "18.89", number: "18.89", speaker: "Ashtavakra said:", text: "Having transcended the three gunas,\nfree from ego,\nfull of bliss,\nthe yogi dwells in the Self." },
-      { id: "18.90", number: "18.90", speaker: "Ashtavakra said:", text: "One in whom all desires have perished,\nwho has forgotten himself,\nwho dwells in the Self—\nhe is truly blissful." },
-      { id: "18.91", number: "18.91", speaker: "Ashtavakra said:", text: "The jnani,\nfree of illusion and delusion,\nneeds neither effort nor rest." },
-      { id: "18.92", number: "18.92", speaker: "Ashtavakra said:", text: "One established in the knowledge\n\"I am the Infinite,\"\nwhat bondage can touch him,\nwhat freedom concern him?" },
-      { id: "18.93", number: "18.93", speaker: "Ashtavakra said:", text: "The wise one,\nfree from the sense of \"I\" in action,\nneeds no guide for the path." },
-      { id: "18.94", number: "18.94", speaker: "Ashtavakra said:", text: "Through knowledge of the Self,\nthrough detachment from illusion,\nthe yogi becomes immaculate." },
-      { id: "18.95", number: "18.95", speaker: "Ashtavakra said:", text: "For him who realizes \"There is no doer,\"\nwhat good,\nwhat bad,\nwhat loss,\nwhat gain?" },
-      { id: "18.96", number: "18.96", speaker: "Ashtavakra said:", text: "The yogi whose mind is without movement,\nwhose understanding is clear,\nwhose knowledge is firm,\nis already free." },
-      { id: "18.97", number: "18.97", speaker: "Ashtavakra said:", text: "One immersed in the Self,\nfree from action,\nfree from bondage,\nis the true knower." },
-      { id: "18.98", number: "18.98", speaker: "Ashtavakra said:", text: "Having abandoned all distinction,\nall discrimination,\nthe yogi dwells blissfully in the Self." },
-      { id: "18.99", number: "18.99", speaker: "Ashtavakra said:", text: "One who has transcended the mind,\nwho has gone beyond time,\nwho is established in the Truth,\nneeds no instruction." },
-      { id: "18.100", number: "18.100", speaker: "Ashtavakra said:", text: "The sage who knows the Truth,\nwho is free from delusion,\nwho is blissful in his nature,\nis the Eternal Self." },
+    "id": 18,
+    "title": "The Goal",
+    "verses": [
+      {
+        "id": "18.1",
+        "number": "18.1",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yasya bodhodaye tāvat svapnavad-bhavati bhramaḥ, tasmai sukhaika-rūpāya namaḥ śāntāya tejase. (1)",
+        "verse": "\"Salutations to That, which is the embodiment of Bliss, serenity, effulgence, with the dawn of whose knowledge, all delusions become unreal as a dream.\""
+      },
+      {
+        "id": "18.2",
+        "number": "18.2",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "arjayitvā-'khilān-arthān bhogān-āpnoti puṣkalān, na hi sarvaparityāgam-antareṇa sukhī bhavet. (2)",
+        "verse": "\"One gets plenty of enjoyments by acquiring the manifold objects of the senses. Surely one cannot be happy without renouncing them all.\""
+      },
+      {
+        "id": "18.3",
+        "number": "18.3",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kartavya-duḥkha-mārtaṇḍa-jvālā-dagdhāntarātmanaḥ, kutaḥ praśama-pīyūṣa-dhārā-sāramṛte sukham. (3)",
+        "verse": "\"One whose inner equipment has been scorched by the heat of the sun of sorrow arising from his deeds, where can he enjoy happiness, except in the continuous ambrosial shower of desirelessness?\""
+      },
+      {
+        "id": "18.4",
+        "number": "18.4",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhavo'yaṁ bhāvanā-mātro na kiñcit paramārthataḥ, nāstyabhāvaḥ svabhāvānāṁ bhāvābhāva-vibhāvinām. (4)",
+        "verse": "\"This universe is but a mode of thinking. In reality it is nothing. The inherent nature of the existent (Self) and of the non-existent (universe) are never lost.\""
+      },
+      {
+        "id": "18.5",
+        "number": "18.5",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na dūraṁ na ca saṅkocāllabdham-evātmanaḥ padam, nirvikalpaṁ nirāyāsaṁ nirvikāraṁ nirañjanam. (5)",
+        "verse": "\"The Self which is absolute, effortless, immutable and stainless is not far away, inaccessible nor is It limited, unattainable. It is indeed ever attained.\""
+      },
+      {
+        "id": "18.6",
+        "number": "18.6",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vyāmoha-mātra-viratau svarūp-ādāna-mātrataḥ, vītaśokā virājante nirāvaraṇa-dṛṣṭayaḥ. (6)",
+        "verse": "\"Those whose understanding (vision) is fully unveiled, they shine free from misery. As soon as their illusion ceases, the Self is realised.\""
+      },
+      {
+        "id": "18.7",
+        "number": "18.7",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "samastaṁ kalpanā-mātram-ātmā muktaḥ sanātanaḥ, iti vijñāya dhīro hi kim-abhyasyati bālavat. (7)",
+        "verse": "\"All that exists is mere imagination. The Self is free and eternal, knowing thus, does the wise one act like a child?\""
+      },
+      {
+        "id": "18.8",
+        "number": "18.8",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ātmā brahmeti niścitya bhāvābhāvau ca kalpitau, niṣkāmaḥ kiṁ vijānāti kiṁ brūte ca karoti kim. (8)",
+        "verse": "\"Having known with certitude that the Self is Brahman, and the existence and non-existence are mere imaginations, what can one, who is desireless, know, say or do?\""
+      },
+      {
+        "id": "18.9",
+        "number": "18.9",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ayaṁ so'ham-ayaṁ nāham-iti kṣīṇā vikalpanāḥ, sarvam-ātmeti niścitya tūṣṇīm-bhūtasya yoginaḥ. (9)",
+        "verse": "\"Such thoughts as ‘this is That,’ ‘I am That,’ and ‘I am not this’ are extinguished for the yogin who has become quiet, knowing with certitude that everything is Self only.\""
+      },
+      {
+        "id": "18.10",
+        "number": "18.10",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na vikṣepo na caikāgryaṁ nātibodho na mūḍhatā, na sukhaṁ na ca vā duḥkham-upaśāntasya yoginaḥ. (10)",
+        "verse": "\"The yogin who has attained serenity has no more distractions, no concentration, no increase in knowledge, no ignorance. He has neither pleasure nor pain.\""
+      },
+      {
+        "id": "18.11",
+        "number": "18.11",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "svārājye bhaikṣya-vṛttau ca lābhālābhe jane vane, nirvikalpa-svabhāvasya na viśeṣo'sti yoginaḥ. (11)",
+        "verse": "\"Be he in heaven or be he in beggary, be he in gain or loss, in company of society or lonely in forest, there is no difference to the yogin, who is free from desire agitations.\""
+      },
+      {
+        "id": "18.12",
+        "number": "18.12",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva dharmaḥ kva ca vā kāmaḥ kva cārthaḥ kva vivekitā, idaṁ kṛtam-idaṁ neti dvandvair-muktasya yoginaḥ. (12)",
+        "verse": "\"For a yogin, who has transcended such dual notions as ‘this is to be done’ and ‘this is not to be done’ where is righteousness (dharma)? Where is sense enjoyment (kāma)? Where is worldly prosperity (artha) and where is conscience (vivekatā)?\""
+      },
+      {
+        "id": "18.13",
+        "number": "18.13",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kṛtyaṁ kimapi naivāsti na kāpi hṛdi rañjanā, yathā jīvanam-eveha jīvanmuktasya yoginaḥ. (13)",
+        "verse": "\"The yogin, who is Liberated in life, has neither any duty nor any attachment at heart. His actions merely follow the lot of his life.\""
+      },
+      {
+        "id": "18.14",
+        "number": "18.14",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva mohaḥ kva ca vā viśvaṁ kva taddhānaṁ kva muktatā, sarva-saṅkalpa-sīmāyāṁ viśrāntasya mahātmanaḥ. (14)",
+        "verse": "\"Where is delusion? Where is the universe? Where is its renunciation? Or, where is the Liberation itself for the noble-minded one, who rests beyond the world of desire agitations?\""
+      },
+      {
+        "id": "18.15",
+        "number": "18.15",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yena viśvam-idaṁ dṛṣṭaṁ sa nāstīti karotu vai, nirvāsanaḥ kiṁ kurute paśyannapi na paśyati. (15)",
+        "verse": "\"He, who sees the universe, may try to obliterate it! What has the desireless to do? He beholds it not, even though he sees!!\""
+      },
+      {
+        "id": "18.16",
+        "number": "18.16",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yena dṛṣṭaṁ paraṁ brahma so'haṁ brahmeti cintayet, kiṁ cintayati niścinto dvitīyaṁ yo na paśyati. (16)",
+        "verse": "\"He, who sees the supreme Brahman, meditates upon ‘I am Brahman’. He who has transcended all thoughts and when he sees ‘no second’, what should he meditate upon?\""
+      },
+      {
+        "id": "18.17",
+        "number": "18.17",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dṛṣṭo yenātma-vikṣepo nirodhaṁ kurute tvasau, udārastu na vikṣiptaḥ sādhyābhāvāt-karoti kim. (17)",
+        "verse": "\"He who experiences distractions in himself indeed must control himself. But the noble-minded great one is not distracted at all. Having nothing to accomplish, what should he do?\""
+      },
+      {
+        "id": "18.18",
+        "number": "18.18",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dhīro loka-viparyasto vartamāno'pi lokavat, na samādhiṁ na vikṣepaṁ na lepaṁ svasya paśyati. (18)",
+        "verse": "\"The wise man though living like an ordinary person is the reverse of the common man. He sees neither absorption, nor distraction nor involvement of himself.\""
+      },
+      {
+        "id": "18.19",
+        "number": "18.19",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhāvābhāva-vihīno yastṛpto nirvāsano budhaḥ, naiva kiñcit kṛtaṁ tena loka-dṛṣṭyā vikurvatā. (19)",
+        "verse": "\"He, who transcends existence and non-existence, who is wise, contented, free from desires, does nothing, even if he be acting vigorously in the eyes of the world.\""
+      },
+      {
+        "id": "18.20",
+        "number": "18.20",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "pravṛttau vā nivṛttau vā naiva dhīrasya durgrahaḥ, yadā yatkartum-āyāti tatkṛtvā tiṣṭhataḥ sukham. (20)",
+        "verse": "\"The wise one, who lives on happily, doing what comes to him to be done, does not feel trouble (uneasy) either in activity or in inactivity.\""
+      },
+      {
+        "id": "18.21",
+        "number": "18.21",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirvāsano nirālambaḥ svacchando mukta-bandhanaḥ, kṣiptaḥ saṁskāra-vātena ceṣṭate śuṣka-parṇavat. (21)",
+        "verse": "\"Blown by the wind of effects of the past actions (saṁskāras), the desireless, independent, free and liberated person moves about like a dry leaf.\""
+      },
+      {
+        "id": "18.22",
+        "number": "18.22",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "asaṁsārasya tu kvāpi na harṣo na viṣādatā, sa śītalamanā nityaṁ videha iva rājate. (22)",
+        "verse": "\"Never is joy or sorrow, for one who has transcended the worldly experiences. Tranquil in mind, he lives like one without a body.\""
+      },
+      {
+        "id": "18.23",
+        "number": "18.23",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kutrāpi na jihāsā'sti nāśo vā'pi na kutracit, ātmārāmasya dhīrasya śītalācchatarātmanaḥ. (23)",
+        "verse": "\"The wise, who delights in the Self, whose mind is serene and pure, has no desire to renounce anything whatsoever, nor does he feel any loss anywhere.\""
+      },
+      {
+        "id": "18.24",
+        "number": "18.24",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "prakṛtyā śūnya-cittasya kurvato'sya yadṛcchayā, prākṛtasyeva dhīrasya na māno nāvamānatā. (24)",
+        "verse": "\"Void in mind by nature and doing what comes of itself unasked, the wise one, unlike a common man, is not affected by honour or dishonour.\""
+      },
+      {
+        "id": "18.25",
+        "number": "18.25",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kṛṭaṁ dehena karmedaṁ na mayā śuddha-rūpiṇā, iti cintānurodhī yaḥ kurvannapi karoti na. (25)",
+        "verse": "\"One who acts in conformity with thoughts such as: ‘This is done by the body and not by me, the pure Self’ – such a person even though acting does not act.\""
+      },
+      {
+        "id": "18.26",
+        "number": "18.26",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "atad-vādīva kurute na bhaved-api bāliśaḥ, jīvanmuktaḥ sukhī śrīmān saṁsarannapi śobhate. (26)",
+        "verse": "\"The Liberated in life even though acts like one, who does not say why he is acting so, is not, thereby, a fool. He flourishes in the world and is happy and even blessed.\""
+      },
+      {
+        "id": "18.27",
+        "number": "18.27",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nānā-vicāra-suśrānto dhīro viśrāntim-āgataḥ, na kalpate na jānāti na śṛṇoti na paśyati. (27)",
+        "verse": "\"The wise man who has withdrawn himself from diverse reasonings and has attained complete repose, neither thinks nor knows nor hears nor sees.\""
+      },
+      {
+        "id": "18.28",
+        "number": "18.28",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "asamādher-avikṣepānna mumukṣurna cetaraḥ, niścitya kalpitaṁ paśyan brahmaivāste mahāśayaḥ. (28)",
+        "verse": "\"Since the wise one has no agitations and does not practise meditation, he is not an aspirant for Liberation nor is he, in bondage. Having known the universe to be a figment of his imagination, even though he sees it, he exists as Brahman itself.\""
+      },
+      {
+        "id": "18.29",
+        "number": "18.29",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yasyāntaḥ syād-ahaṅkāro na karoti karoti saḥ, nirahaṅkāra-dhīreṇa na kiñcid-akṛtaṁ kṛtam. (29)",
+        "verse": "\"He who has the ego sense in him within, acts (mentally), even though he does not act (physically). Surely, the wise one, who is free from the sense of ego, does not act (mentally), even though he acts (physically).\""
+      },
+      {
+        "id": "18.30",
+        "number": "18.30",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nodvignaṁ na ca santuṣṭam-akartṛ-spanda-varjitam, nirāśaṁ gata-sandehaṁ cittaṁ muktasya rājate. (30)",
+        "verse": "\"The mind of the Liberated is neither troubled nor pleased. It is actionless, free from fluctuations, desireless and purged of all doubts.\""
+      },
+      {
+        "id": "18.31",
+        "number": "18.31",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirdhyātuṁ ceṣṭituṁ vāpi yaccittaṁ na pravartate, nirnimittamidaṁ kintu nirdhyāyati viceṣṭate. (31)",
+        "verse": "\"The mind of the Liberated one does not engage itself either in meditation or in activity. It becomes meditative and active without any motive spontaneously.\""
+      },
+      {
+        "id": "18.32",
+        "number": "18.32",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tattvaṁ yathārtham-ākarṇya mandaḥ prāpnoti mūḍhatām, athavāyāti saṅkocam-amūḍhaḥ ko'pi mūḍhavat. (32)",
+        "verse": "\"An unintelligent person becomes confused on hearing the real Truth, but some intelligent man withdraws within (and lives) like a fool.\""
+      },
+      {
+        "id": "18.33",
+        "number": "18.33",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ekāgratā nirodho vā mūḍhair-abhyasyate bhṛśam, dhīrāḥ kṛtyaṁ na paśyanti suptavat svapade sthitāḥ. (33)",
+        "verse": "\"The fools constantly practise concentration and control of the mind. The wise, abiding in their own Self, like persons in deep sleep, do not find anything to be attained.\""
+      },
+      {
+        "id": "18.34",
+        "number": "18.34",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "aprayatnāt prayatnādvā mūḍho nāpnoti nirvṛtim, tattva-niścaya-mātreṇa prājño bhavati nirvṛtaḥ. (34)",
+        "verse": "\"The fool does not attain tranquillity either by action or by inaction. The wise one becomes tranquil merely by knowing the Truth.\""
+      },
+      {
+        "id": "18.35",
+        "number": "18.35",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śuddhaṁ buddhaṁ priyaṁ pūrṇaṁ niṣprapañcaṁ nirāmayam, ātmānaṁ taṁ na jānanti tatrābhyāsaparā janāḥ. (35)",
+        "verse": "\"In this world those who devote themselves to diverse practices do not know the Self which is pure, enlightened, beloved, perfect, transcendental and stainless.\""
+      },
+      {
+        "id": "18.36",
+        "number": "18.36",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nāpnoti karmaṇā mokṣaṁ vimūḍho'bhyāsa-rūpiṇā, dhanyo vijñāna-mātreṇa muktas-tiṣṭhatyavikriyaḥ. (36)",
+        "verse": "\"A highly unintelligent person never attains (the Self) through the repeated practices of controlling his mind. The blessed one, through mere intuitive enlightenment, remains liberated and immutable.\""
+      },
+      {
+        "id": "18.37",
+        "number": "18.37",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mūḍho nāpnoti tad-brahma yato bhavitum-icchati, anicchannapi dhīro hi parabrahma-svarūpabhāk. (37)",
+        "verse": "\"The fool does not attain Brahman, for he desires to become It! The wise one certainly realises the nature of the supreme Brahman even without desiring to do so.\""
+      },
+      {
+        "id": "18.38",
+        "number": "18.38",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirādhārā graha-vyagrāḥ mūḍhāḥ saṁsārapoṣakāḥ, etasyānartha-mūlasya mūlacchedaḥ kṛto budhaiḥ. (38)",
+        "verse": "\"Without any support and eager for the attainment of freedom, the fools only keep up the world! The wise cut at the very root of this world, which is the source of all misery.\""
+      },
+      {
+        "id": "18.39",
+        "number": "18.39",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na śāntiṁ labhate mūḍho yataḥ śamitum-icchati, dhīras-tattvaṁ viniścitya sarvadā śānta-mānasaḥ. (39)",
+        "verse": "\"Since the fool wants to get peace through control of his mind, he does not gain it. The wise one knowing for certain the Truth, is ever tranquil in mind.\""
+      },
+      {
+        "id": "18.40",
+        "number": "18.40",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kvātmano darśanaṁ tasya yad-dṛṣṭam-avalambate, dhīrās-taṁ taṁ na paśyanti paśyantyātmānam-avyayam. (40)",
+        "verse": "\"Where is the vision of the Self to one who resorts to seeing the manifested world? The wise do not see this and that, but see only the immutable Self.\""
+      },
+      {
+        "id": "18.41",
+        "number": "18.41",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva nirodho vimūḍhasya yo nirbandhaṁ karoti vai, svārāmasyaiva dhīrasya sarvadā'sāvakṛtrimaḥ. (41)",
+        "verse": "\"Where is the control of the mind for the fool, who strives for it? To the wise one who delights in the Self, it is indeed spontaneous and perennial.\""
+      },
+      {
+        "id": "18.42",
+        "number": "18.42",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhāvasya bhāvakaḥ kaścinna kiñcid-bhāvako'paraḥ, ubhayā'bhāvakaḥ kaścid-evam-eva nirākulaḥ. (42)",
+        "verse": "\"Some think that ‘existence’ is and others that ‘nothing’ is. Rare is the one who thinks neither. He is perfectly serene, free from all distractions.\""
+      },
+      {
+        "id": "18.43",
+        "number": "18.43",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śuddham-advayam-ātmānaṁ bhāvayanti kubuddhayaḥ, na tu jānanti saṁmohād-yāvajjīvam-anirvṛtāḥ. (43)",
+        "verse": "\"Those of dull intellect meditate upon the Ᾱtman as pure and one without a second, but they do not realise It. Through delusion they remain unhappy as long as they live.\""
+      },
+      {
+        "id": "18.44",
+        "number": "18.44",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mumukṣor-buddhir-ālambam-antareṇa na vidyate, nirālambaiva niṣkāmā buddhir-muktasya sarvadā. (44)",
+        "verse": "\"The intellect of one who aspires for Liberation cannot function without a supporting object. But the desireless intellect of the Liberated one is, indeed, ever without any support (in meditation).\""
+      },
+      {
+        "id": "18.45",
+        "number": "18.45",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "viṣayā-dvīpino vīkṣya cakitāḥ śaraṇārthinaḥ, viśanti jhaṭiti kroḍaṁ nirodhaikāgrya-siddhaye. (45)",
+        "verse": "\"Encountering the tigers of sense objects, the frightened ones seeking refuge at once enter the cave of the mind, for the attainment of control and concentration.\""
+      },
+      {
+        "id": "18.46",
+        "number": "18.46",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirvāsanaṁ hariṁ dṛṣṭvā tūṣṇīṁ viṣayadantinaḥ, palāyante na śaktāste sevante kṛtacāṭavaḥ. (46)",
+        "verse": "\"Encountering the desireless man-lion, the elephants of sense objects, quietly run away; or, if unable to run away, serve him like flattering courtiers!!\""
+      },
+      {
+        "id": "18.47",
+        "number": "18.47",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na mukti-kārikāṁ dhatte niḥśaṅko yukta-mānasaḥ, paśyan śṛṇvan spṛśan jighranaśnanāste yathāsukham. (47)",
+        "verse": "\"He who is free from doubts and has his mind identified completely with the Self never resorts to the practices of control as a means to Liberation. Seeing, hearing, touching, smelling and eating, he lives happily.\""
+      },
+      {
+        "id": "18.48",
+        "number": "18.48",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vastu-śravaṇa-mātreṇa śuddha-buddhir-nirākulaḥ, naivācāram-anācāram-audāsyaṁ vā prapaśyati. (48)",
+        "verse": "\"Having established in his pure intellect and having become serene by mere listening to the Real, the wise one, no more sees what is proper and improper action or even what is inaction.\""
+      },
+      {
+        "id": "18.49",
+        "number": "18.49",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "yadā yatkartum-āyāti tadā tat-kurute ṛjuḥ, śubhaṁ vāpyaśubhaṁ vāpi tasya ceṣṭā hi bālavat. (49)",
+        "verse": "\"The wise one does freely whatever comes to his lot, whether good or evil; his actions are like those of a child.\""
+      },
+      {
+        "id": "18.50",
+        "number": "18.50",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "svātantryāt sukham-āpnoti svātantryāllabhate param, svātantryānnirvṛtiṁ gacchet svātantryāt paramaṁ padam. (50)",
+        "verse": "\"Through freedom one attains happiness; through freedom the highest; through freedom to repose and through freedom to the supreme state.\""
+      },
+      {
+        "id": "18.51",
+        "number": "18.51",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "akartṛtvam-abhoktṛtvaṁ svātmano manyate yadā, tadā kṣīṇā bhavantyeva samastāś-cittavṛttayaḥ. (51)",
+        "verse": "\"All the modifications of the mind are indeed destroyed, when a man realises that the Self in him, is neither the doer nor the enjoyer.\""
+      },
+      {
+        "id": "18.52",
+        "number": "18.52",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ucchṛṅkhalāpyakṛtikā sthitirdhīrasya rājate, na tu saṁspṛha-cittasya śāntir-mūḍhasya kṛtrimā. (52)",
+        "verse": "\"The conduct of the wise one, which is unrestricted (by motive) shines, being spontaneous, that is free from pretence; but not the deliberate calmness of the foolish, whose mind is attached (in other words full of desires).\""
+      },
+      {
+        "id": "18.53",
+        "number": "18.53",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vilasanti mahābhogair-viśanti giri-gahvarān, nirasta-kalpanā dhīrā abaddhā mukta-buddhayaḥ. (53)",
+        "verse": "\"The wise, who are free from mental imagining, unbound and liberated in intellect, sometimes sport in the midst of great enjoyments and at other times retire to the mountain caves.\""
+      },
+      {
+        "id": "18.54",
+        "number": "18.54",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śrotriyaṁ devatāṁ tīrtham-aṅganāṁ bhūpatiṁ priyam, dṛṣṭvā sampūjya dhīrasya na kāpi hṛdi vāsanā. (54)",
+        "verse": "\"Whether he is honouring a Vaidika scholar, the gods or the holy places or seeing a woman, a king or a beloved one, not a bit of desire ever springs in the heart of the wise one.\""
+      },
+      {
+        "id": "18.55",
+        "number": "18.55",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhṛtyaiḥ putraiḥ kalatraiśca dauhitraiścāpi gotrajaiḥ, vihasya dhikkṛto yogī na yāti vikṛtiṁ manāk. (55)",
+        "verse": "\"The Liberated is not at all perturbed even when scoffed and abused by his servants, sons, wives, daughter's sons and other relations.\""
+      },
+      {
+        "id": "18.56",
+        "number": "18.56",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "santuṣṭo'pi na santuṣṭaḥ khinnopi na ca khidyate, tasyāścarya-daśāṁ tāṁ tāṁ tādṛśā eva jānate. (56)",
+        "verse": "\"Though delighted, he is not delighted. Though afflicted, he is not afflicted. Only those who are like him, understand this stupendous state.\""
+      },
+      {
+        "id": "18.57",
+        "number": "18.57",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kartavyataiva saṁsāro na tāṁ paśyanti sūrayaḥ, śūnyākārā nirākārā nirvikārā nirāmayāḥ. (57)",
+        "verse": "\"The sense of duty, indeed, is the mundane world. This is not acknowledged by the wise one, who has realised himself as the all-pervading formless, immutable, untainted Self.\""
+      },
+      {
+        "id": "18.58",
+        "number": "18.58",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "akurvannapi saṁkṣobhāt vyagraḥ sarvatra mūḍhadhīḥ, kurvannapi tu kṛtyāni kuśalo hi nirākulaḥ. (58)",
+        "verse": "\"The fool, even in ‘inaction’, is ever agitated by his commotion within. But the adept (wise) even when performing his duties, indeed, is unperturbed.\""
+      },
+      {
+        "id": "18.59",
+        "number": "18.59",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sukham-āste sukhaṁ śete sukham-āyāti yāti ca, sukhaṁ vakti sukhaṁ bhuṅkte vyavahāre'pi śāntadhīḥ. (59)",
+        "verse": "\"Even in practical affairs of life, the wise one, of peaceful mind, sits happily, sleeps happily, moves happily, speaks happily and eats happily.\""
+      },
+      {
+        "id": "18.60",
+        "number": "18.60",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "svabhāvād-yasya naivārtir-lokavad vyavahāriṇaḥ, mahāhrada ivākṣobhyo gatakleśaḥ suśobhate. (60)",
+        "verse": "\"One who, due to his inner disposition even when engaged in practical affairs of life, does not have any distress, like ordinary people have; he remains unagitated like a vast lake, with all his sorrows extinguished, he indeed, shines.\""
+      },
+      {
+        "id": "18.61",
+        "number": "18.61",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirvṛttir-api mūḍhasya pravṛttir-upajāyate, pravṛttir-api dhīrasya nivṛtti-phala-bhāginī. (61)",
+        "verse": "\"With the fool, even withdrawal (inaction) becomes action. With the wise, even action results in the fruit of withdrawal (inaction).\""
+      },
+      {
+        "id": "18.62",
+        "number": "18.62",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "parigraheṣu vairāgyaṁ prāyo mūḍhasya dṛśyate, dehe vigalitāśasya kva rāgaḥ kva virāgatā. (62)",
+        "verse": "\"The fool often shows aversion to his possessions. Where is attachment and where is aversion for him whose love for the body has vanished?\""
+      },
+      {
+        "id": "18.63",
+        "number": "18.63",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhāvanābhāvanāsaktā dṛṣṭir-mūḍhasya sarvadā, bhāvya-bhāvanayā sā tu svasthasyādṛṣṭi-rūpiṇī. (63)",
+        "verse": "\"The view of the fool is always attached to ideation and non-ideation. But the view of one established in the Self, though engaged in the ideation of objects, is of the nature of non-ideation.\""
+      },
+      {
+        "id": "18.64",
+        "number": "18.64",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sarvārambheṣu niṣkāmo yaścared bālavan-muniḥ, na lepastasya śuddhasya kriyamāṇe'pi karmaṇi. (64)",
+        "verse": "\"The wise one, who has no motive in any of (all) his actions, moves like a child and is pure, has no attachments even in the action that is being done by him.\""
+      },
+      {
+        "id": "18.65",
+        "number": "18.65",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sa eva dhanya ātmajñaḥ sarvabhāveṣu yaḥ samaḥ, paśyan śṛṇvan spṛśan jighran-aśnan-nistarṣa-mānasaḥ. (65)",
+        "verse": "\"Blessed indeed is that knower of the Self, who, with his mind free from thirst, even though seeing, hearing, touching, smelling or eating, remains the same under all conditions.\""
+      },
+      {
+        "id": "18.66",
+        "number": "18.66",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva saṁsāraḥ kva cābhāsaḥ kva sādhyaṁ kva ca sādhanam, ākāśasyeva dhīrasya nirvikalpasya sarvadā. (66)",
+        "verse": "\"Where is the world and where is the ego, where is the end and where are the means for the wise one, who is ever changeless like the universal space?\""
+      },
+      {
+        "id": "18.67",
+        "number": "18.67",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sa jayatyartha-sannyāsī pūrṇa-svarasa-vigrahaḥ, akṛtrimo'navacchinne samādhiryasya vartate. (67)",
+        "verse": "\"Hallelujah to him who has renounced all desires, who is the embodiment of perfect Bliss, which is his own nature and who is spontaneously absorbed in the unlimited space.\""
+      },
+      {
+        "id": "18.68",
+        "number": "18.68",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bahunātra kim-uktena jñāta-tattvo mahāśayaḥ, bhoga-mokṣa-nirākāṅkṣī sadā sarvatra nīrasaḥ. (68)",
+        "verse": "\"In short, here there is no need to say more. The great souled one, who has realised the Truth, is free from desire for sense enjoyments and for spiritual Liberation. He is devoid of all passions, in all places, and at all times.\""
+      },
+      {
+        "id": "18.69",
+        "number": "18.69",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mahadādi jagad-dvaitaṁ nāma-mātravijṛmbhitam, vihāya śuddhabodhasya kiṁ kṛtyam-avaśiṣyate. (69)",
+        "verse": "\"What remains to be done by one who is pure Consciousness? He has renounced the pluralistic world, which begins with mahat (total intellect) and is manifested merely by names.\""
+      },
+      {
+        "id": "18.70",
+        "number": "18.70",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhrama-bhūtam-idaṁ sarvaṁ kiñcin-nāstīti niścayī, alakṣya-sphuraṇaḥ śuddhaḥ svabhāvenaiva śāmyati. (70)",
+        "verse": "\"The pure one knows with certitude that this universe is the product of illusion and that nothing really exists. The imperceptible Self is revealed to him and he, naturally, becomes tranquil.\""
+      },
+      {
+        "id": "18.71",
+        "number": "18.71",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "śuddha-sphuraṇa-rūpasya dṛṣyā-bhāvam-apaśyataḥ, kva vidhiḥ kva ca vairāgyaṁ kva tyāgaḥ kva śamo'pi vā. (71)",
+        "verse": "\"Rules of life, dispassion, relinquishment, control of the mind – what are all these to one who is of the nature of pure effulgence and who does not perceive the phenomenal world at all.\""
+      },
+      {
+        "id": "18.72",
+        "number": "18.72",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sphurato'nanta-rūpeṇa prakṛtiṁ ca na paśyataḥ, kva bandhaḥ kva ca vā mokṣaḥ kva harṣaḥ kva viṣāditā. (72)",
+        "verse": "\"Where is bondage? Where is Liberation? Where is joy? Where is sorrow? for one who does not perceive nature – the relative existence – but sees only the Self shining in endless forms.\""
+      },
+      {
+        "id": "18.73",
+        "number": "18.73",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "buddhiparyanta-saṁsāre māyāmātraṁ vivartate, nirmamo nirahaṅkāro niṣkāmaḥ śobhate budhaḥ. (73)",
+        "verse": "\"The illusion of this phenomenal world prevails until Self-knowledge. The wise one lives devoid of ‘I-ness,’ devoid of ‘mine-ness’ and free from passions.\""
+      },
+      {
+        "id": "18.74",
+        "number": "18.74",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "akṣayaṁ gata-santāpam-ātmānaṁ paśyato muneḥ, kva vidyā ca kva vā viśvaṁ kva deho'ham mameti vā. (74)",
+        "verse": "\"To the wise one who perceives the Self as both imperishable and free from grief, where is knowledge, and where is the universe? Where is the feeling 'body am I' or the feeling 'mine is the body?'\""
+      },
+      {
+        "id": "18.75",
+        "number": "18.75",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirodhādīni karmāṇi jahāti jaḍadhīryadi, manorathān pralāpāṁśca kartumāpnotyatat kṣaṇāt. (75)",
+        "verse": "\"The moment a man of dull intellect gives up the practices of mental control, he from that very moment begins to entertain desires and fancies.\""
+      },
+      {
+        "id": "18.76",
+        "number": "18.76",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mandaḥ śrutvāpi tadvastu na jahāti vimūḍhatām, nirvikalpo bahiryatnād-antarviṣayalālasaḥ. (76)",
+        "verse": "\"A man of dull intellect even after hearing the Truth does not give up his delusion. Though outwardly, through suppression he may appear to be without mental fluctuations, a craving for sense objects shall linger in him.\""
+      },
+      {
+        "id": "18.77",
+        "number": "18.77",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "jñānā-dgalita-karmā yo lokadṛṣṭyāpi karmakṛt, nāpnotyavasaraṁ kartuṁ vaktum-eva na kiñcana. (77)",
+        "verse": "\"He, whose work has dropped-off with the dawn of wisdom, may undertake some work as seen by ordinary people. But he gets no room or scope to do or to say anything.\""
+      },
+      {
+        "id": "18.78",
+        "number": "18.78",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva tamaḥ kva prakāśo vā hānaṁ kva ca na kiñcana, nirvikārasya dhīrasya nirātaṅkasya sarvadā. (78)",
+        "verse": "\"To the wise one, who is ever unperturbed and fearless, where is darkness? Where is light? Where is loss? There is nothing whatsoever.\""
+      },
+      {
+        "id": "18.79",
+        "number": "18.79",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva dhairyaṁ kva vivekitvaṁ kva nirātaṅkatāpi vā, anirvācyasvabhāvasya niḥsvabhāvasya yoginaḥ. (79)",
+        "verse": "\"For the fulfilled seeker (yogin), who is attributeless and of undefinable nature, where is patience? Where is discrimination? Where is even fearlessness?\""
+      },
+      {
+        "id": "18.80",
+        "number": "18.80",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na svargo naiva narako jīvanmuktirna caiva hi, bahunātra kim-uktena yogadṛṣṭyā na kiñcana. (80)",
+        "verse": "\"There is no heaven nor is there a hell, there is not even the state of Liberation. In short, in the yogika vision nothing exists.\""
+      },
+      {
+        "id": "18.81",
+        "number": "18.81",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "naiva prārthayate lābhaṁ nālābhenānuśocati, dhīrasya śītalaṁ cittam-amṛtenaiva pūritam. (81)",
+        "verse": "\"A wise man neither longs for gain nor grieves at the loss. His serene mind is indeed filled with the nectar – the supreme Bliss.\""
+      },
+      {
+        "id": "18.82",
+        "number": "18.82",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na śāntaṁ stauti niṣkāmo na duṣṭam-api nindati, sama-duḥkha-sukhas-tṛptaḥ kiñcit kṛtyaṁ na paśyati. (82)",
+        "verse": "\"The desireless one has neither praise for the calm nor even blame for the wicked. Contented and the same in happiness and misery, he finds nothing to be achieved.\""
+      },
+      {
+        "id": "18.83",
+        "number": "18.83",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "dhīro na dveṣṭi saṁsāram-ātmānaṁ na didṛkṣati, harṣāmarṣa-vinirmukto na mṛto na ca jīvati. (83)",
+        "verse": "\"This wise one neither hates the world of change nor wishes to ‘see’ the Self. Free from joy and sorrow, he is neither dead nor alive.\""
+      },
+      {
+        "id": "18.84",
+        "number": "18.84",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "niḥsnehaḥ putra-dārādau niṣkāmo viṣayeṣu ca, niścintaḥ svaśarīre'pi nirāśaḥ śobhate budhaḥ. (84)",
+        "verse": "\"Shining (glorious) is the life of the wise man, free from all expectations, without any attachment for children, wife and others, free from desire for the sense objects, and without care even for his own body.\""
+      },
+      {
+        "id": "18.85",
+        "number": "18.85",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "tuṣṭiḥ sarvatra dhīrasya yathā-patita-vartinaḥ, svacchandaṁ carato deśān-yatrāstamita-śāyinaḥ. (85)",
+        "verse": "\"Contentment ever dwells in the heart of the wise man, who lives upon whatever happens to come unasked as his lot and who roams about at pleasure, resting wherever he is, when the sun sets!\""
+      },
+      {
+        "id": "18.86",
+        "number": "18.86",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "patatūdetu vā deho nāsya cintā mahātmanaḥ, svabhāva-bhūmi-viśrānti-vismṛtāśeṣa-saṁsṛteḥ. (86)",
+        "verse": "\"Reposing upon the floor (foundation) of his own Being and completely transcending birth and rebirth, the great one does not care whether his body drops down dead or rises up to live.\""
+      },
+      {
+        "id": "18.87",
+        "number": "18.87",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "akiñcanaḥ kāmacāro nirdvandvaśchinnasaṁśayaḥ, asaktaḥ sarvabhāveṣu kevalo ramate budhaḥ. (87)",
+        "verse": "\"The wise one stands alone, unattached to anything. He is without any possession and moves at his will and pleasure. He is free from the pairs of opposites and his doubts have been cut asunder. He, indeed, is the blessed one.\""
+      },
+      {
+        "id": "18.88",
+        "number": "18.88",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "nirmamaḥ śobhate dhīraḥ sama-loṣṭāśma-kāñcanaḥ, subhinna-hṛdaya-granthir-vinirdhūta-rajastamaḥ. (88)",
+        "verse": "\"The wise one, who is devoid of his ego and to whom a clod of earth, a precious stone and a bar of gold are all the same, whose knots of the heart have been cut asunder and who has cleansed himself of all his ‘rajas’ and ‘tamas’, shines.\""
+      },
+      {
+        "id": "18.89",
+        "number": "18.89",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "sarvatrānavadhānasya na kiñcid-vāsanā hṛdi, muktātmano vitṛptasya tulanā kena jāyate. (89)",
+        "verse": "\"Who can be compared with a Liberated one, who has no desires at all lingering in his heart, who is contented and totally indifferent to everything?\""
+      },
+      {
+        "id": "18.90",
+        "number": "18.90",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "jānannapi na jānāti paśyannapi na paśyati, bruvannapi na ca brūte ko'nyo nirvāsanādṛte. (90)",
+        "verse": "\"Who, but the desireless one knows not though knowing, sees not though seeing and speaks not though speaking?\""
+      },
+      {
+        "id": "18.91",
+        "number": "18.91",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "bhikṣurvā bhūpatirvāpi yo niṣkāmaḥ sa śobhate, bhāveṣu galitā yasya śobhanā'śobhanā matiḥ. (91)",
+        "verse": "\"May he be a beggar or a king, he indeed excels who is unattached and whose view of existent things has been freed from the sense of good and evil.\""
+      },
+      {
+        "id": "18.92",
+        "number": "18.92",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "kva svācchandyaṁ kva saṅkocaḥ kva vā tattva-viniścayaḥ, nirvyājārjava-bhūtasya caritārthasya yoginaḥ. (92)",
+        "verse": "\"For the yogin, who has attained his fulfilment and who is an embodiment of guileless sincerity, where is licentiousness? Where is restraint? Where is determination of the truth of the Self?\""
+      },
+      {
+        "id": "18.93",
+        "number": "18.93",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "ātma-viśrānti-tṛptena nirāśena gatārtinā, antaryad-anubhūyate tat-kathaṁ kasya kathyate. (93)",
+        "verse": "\"How and to whom can be described, the inner experience of one who is desireless, who transcends all his sorrows and who is contented with his repose in the Self?\""
+      },
+      {
+        "id": "18.94",
+        "number": "18.94",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "supto'pi na suṣuptau ca svapne'pi śayito na ca, jāgare'pi na jāgarti dhīrastṛptaḥ pade pade. (94)",
+        "verse": "\"The wise one is not asleep, even when in deep sleep. He is not lying down, even when dreaming. He is not awake, even in his waking state. He is contented under all conditions.\""
+      },
+      {
+        "id": "18.95",
+        "number": "18.95",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "jñaḥ sacinto'pi niścintaḥ sendriyo'pi nirindriyaḥ, sabuddhirapi nirbuddhiḥ sāhaṅkāro'nahaṅkṛtiḥ. (95)",
+        "verse": "\"The Man of Wisdom is devoid of thoughts even when he thinks. He is devoid of sense organs even though he possesses them. He is devoid of intelligence even though endowed with an intellect. He is devoid of egoism even though he possesses an ego.\""
+      },
+      {
+        "id": "18.96",
+        "number": "18.96",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na sukhī na ca vā duḥkhī na virakto na saṅgavān, na mumukṣurna vā mukto na kiñcinna ca kiñcana. (96)",
+        "verse": "\"The wise one is neither happy nor miserable, neither attached nor unattached, neither Liberated nor an aspirant for Liberation, he is neither this nor that.\""
+      },
+      {
+        "id": "18.97",
+        "number": "18.97",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "vikṣepe'pi na vikṣiptaḥ samādhau na samādhimān, jāḍye'pi na jaḍo dhanyaḥ pāṇḍitye'pi na paṇḍitaḥ. (97)",
+        "verse": "\"The blessed one is not distracted even in distraction. He is not in meditation even in samādhi. He is not dull even in a state of dullness. And he is not learned, even though possessed of learning.\""
+      },
+      {
+        "id": "18.98",
+        "number": "18.98",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "mukto yathā-sthiti-svasthaḥ kṛta-kartavya-nirvṛtaḥ, samaḥ sarvatra vaitṛṣṇyānna smaratyakṛtaṁ kṛtam. (98)",
+        "verse": "\"The Liberated one, who abides in the Self under all conditions, is released from the idea of actions and of duty. He is the same everywhere and due to the absence of desires in him, does not brood over what he has done and what he has not done.\""
+      },
+      {
+        "id": "18.99",
+        "number": "18.99",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na prīyate vandyamāno nindyamāno na kupyati, naivodvijati maraṇe jīvane nābhinandati. (99)",
+        "verse": "\"The Liberated in life does not feel pleased when praised nor does he feel annoyed when blamed. He neither rejoices in life nor fears death.\""
+      },
+      {
+        "id": "18.100",
+        "number": "18.100",
+        "speaker": "Aṣṭāvakra said:",
+        "sanskrit": "na dhāvati janākīrṇaṁ nāraṇyam-upaśāntadhīḥ, yathā tathā yatra tatra sama evāvatiṣṭhate. (100)",
+        "verse": "\"The serene minded Master seeks neither the crowded place nor the solitude of the forest. He remains the same under any condition, in any place.\""
+      }
     ]
   },
   {
-    id: 19,
-    title: "Adoration",
-    verses: [
-      { id: "19.1", number: "19.1", speaker: "Janaka said:", text: "Praise to That which is\nthe Witness of all conditions,\nwhich is Being, Consciousness, Bliss,\nwithout equal, changeless, eternal." },
-      { id: "19.2", number: "19.2", speaker: "Janaka said:", text: "Praise to That\nwhose very nature is Bliss,\nwhose knowledge shines\nlike a lamp in the heart." },
-      { id: "19.3", number: "19.3", speaker: "Janaka said:", text: "Praise to That\nwhich gives life to all beings,\nwhich reveals Itself as the universe\nand yet remains untouched." },
-      { id: "19.4", number: "19.4", speaker: "Janaka said:", text: "Praise to That\nwhose nature cannot be known by the mind,\nwhose reality transcends all concepts." },
-      { id: "19.5", number: "19.5", speaker: "Janaka said:", text: "Praise to the Self Eternal,\nwhose light alone illuminates\nall that appears." },
+    "id": 19,
+    "title": "The Grandeur of the Self",
+    "verses": [
+      {
+        "id": "19.1",
+        "number": "19.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "tattva-vijñāna-sandaṁśam-ādāya hṛdayodarāt, nānāvidha-parāmarśa-śalyoddhāraḥ kṛto mayā. (1)",
+        "verse": "\"Using the pincers of knowledge of Truth, from the innermost recesses of my heart, I have extracted the thorn of adverse opinions.\""
+      },
+      {
+        "id": "19.2",
+        "number": "19.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva dharmaḥ kva ca vā kāmaḥ kva cārthaḥ kva vivekitā, kva dvaitaṁ kva ca vā'dvaitaṁ svamahimni sthitasya me. (2)",
+        "verse": "\"Where is piety? Where is desire? Where is wealth? Where indeed is conscience? Where is duality and where, again, is non-duality? for me who abides in my own grandeur.\""
+      },
+      {
+        "id": "19.3",
+        "number": "19.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva bhūtaṁ kva bhaviṣyadvā vartamānamapi kva vā, kva deśaḥ kva ca vā nityaṁ svamahimni sthitasya me. (3)",
+        "verse": "\"Where is the past? Where is the future? Where, even, is the present? Where is space? Where, even, is eternity for me who abide in my own grandeur.\""
+      },
+      {
+        "id": "19.4",
+        "number": "19.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva cātmā kva ca vā'nātmā kva śubhaṁ kvāśubhaṁ tathā, kva cintā kva ca vā'cintā svamahimni sthitasya me. (4)",
+        "verse": "\"Where is the Self? Where is the not-Self? Where, similarly, are good and evil? Where is anxiety or non-anxiety for me, who abide in my own grandeur.\""
+      },
+      {
+        "id": "19.5",
+        "number": "19.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva svapnaḥ kva suṣuptirvā kva ca jāgaraṇaṁ tathā, kva turīyaṁ bhayaṁ vāpi svamahimni sthitasya me. (5)",
+        "verse": "\"Where is dream? Where is deep sleep? Where is wakefulness? And also where is the fourth state of Consciousness? Where is even fear for me, who abide in my own grandeur?\""
+      },
+      {
+        "id": "19.6",
+        "number": "19.6",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva dūraṁ kva samīpam vā bāhyaṁ kvābhyantaraṁ kva vā, kva sthūlaṁ kva ca vā sūkṣmaṁ svamahimni sthitasya me. (6)",
+        "verse": "\"Where is distance? Where is nearness? Where is outside? Where is inside? Where is the gross and where is the subtle for me, who abide in my own grandeur?\""
+      },
+      {
+        "id": "19.7",
+        "number": "19.7",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva mṛtyurjīvitaṁ vā kva lokāḥ kvāsya kva laukikam, kva layaḥ kva samādhirvā svamahimni sthitasya me. (7)",
+        "verse": "\"Where is life or where is death? Where are the worlds or where are the worldly relations? Where is dissolution of consciousness? Where is samādhi for me, who in my own grandeur abide?\""
+      },
+      {
+        "id": "19.8",
+        "number": "19.8",
+        "speaker": "Janaka said:",
+        "sanskrit": "alaṁ trivargakathayā yogasya kathayā'pyalam, alaṁ vijñānakathayā viśrāntasya mamātmani. (8)",
+        "verse": "\"For me, who repose in the Self, talks about the three ‘goals of life’ are useless; talks about yoga are purposeless and even talks about direct knowledge are needless!\""
+      }
     ]
   },
   {
-    id: 20,
-    title: "Final Questions",
-    verses: [
-      { id: "20.1", number: "20.1", speaker: "Janaka said:", text: "Master, what am I?\nWhat is this universe?\nWhat is the mind?\nWhat is liberation?" },
-      { id: "20.2", number: "20.2", speaker: "Ashtavakra said:", text: "You are that Self\nof which the universe and mind\nare but imaginary appearances.\nThere is no bondage,\nno liberation." },
-      { id: "20.3", number: "20.3", speaker: "Janaka said:", text: "Master, what is knowledge?\nWhat is ignorance?\nWhat is becoming?\nWhat is dissolution?" },
-      { id: "20.4", number: "20.4", speaker: "Ashtavakra said:", text: "All are but thought-constructs\nin the Self.\nIn Reality,\nthere is neither becoming nor dissolution." },
-      { id: "20.5", number: "20.5", speaker: "Janaka said:", text: "Master, who is bound?\nWho is free?\nWho practices?\nWho is realized?" },
-      { id: "20.6", number: "20.6", speaker: "Ashtavakra said:", text: "These too are imaginations.\nThere is no bondage,\nno freedom,\nno practice,\nno realization.\nAll is but the Self." },
+    "id": 20,
+    "title": "The Absolute State",
+    "verses": [
+      {
+        "id": "20.1",
+        "number": "20.1",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva bhūtāni kva deho vā kvendriyāṇi kva vā manaḥ, kva śūnyaṁ kva ca nairāśyaṁ matsvarūpe nirañjane. (1)",
+        "verse": "\"Where are the five great elements and where is the body? Where are the organs and where is the mind? Where is the void and where is despair for me, who am by nature stainless?\""
+      },
+      {
+        "id": "20.2",
+        "number": "20.2",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva śāstraṁ kvātmavijñānaṁ kva vā nirviṣayaṁ manaḥ, kva tṛptiḥ kva vitṛṣṇatvaṁ gata-dvandvasya me sadā. (2)",
+        "verse": "\"Where are the scriptures? Where is the knowledge of the Self? Where is the mind detached from the sense objects and where is contentment? Where is desirelessness for me, who has transcended the duality of the pairs of opposites?\""
+      },
+      {
+        "id": "20.3",
+        "number": "20.3",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva vidyā kva ca vā'vidyā kvāhaṁ kvedaṁ mama kva vā, kva bandhaḥ kva ca vā mokṣaḥ svarūpasya kva rūpitā. (3)",
+        "verse": "\"Where is Knowledge and where is ‘ignorance’? Where is I? Where is ‘this’ and where is ‘mine’? Where is bondage and where is Liberation? Where is an attribute to the essential nature of my infinite Self?\""
+      },
+      {
+        "id": "20.4",
+        "number": "20.4",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva prārabdhāni karmāṇi jīvanmuktirapi kva vā, kva tad-videha-kaivalyaṁ nirviśeṣasya sarvadā. (4)",
+        "verse": "\"Where are prārabdha karmas? Where is Liberation in life, and where is even Liberation at death for me, the ever undifferentiated?\""
+      },
+      {
+        "id": "20.5",
+        "number": "20.5",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva kartā kva ca vā bhoktā niṣkriyaṁ sphuraṇaṁ kva vā, kvāparokṣaṁ phalaṁ vā kva niḥsvabhāvasya me sadā. (5)",
+        "verse": "\"Where is the ‘doer’ or the ‘enjoyer’? Where is the cessation of thoughts or the rising of thoughts? Where is direct knowledge or reflected knowledge for me, who am ever devoid of natural attributes?\""
+      },
+      {
+        "id": "20.6",
+        "number": "20.6",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva lokaḥ kva mumukṣurvā kva yogī jñānavān kva vā, kva baddhaḥ kva ca vā muktaḥ sva-svarūpe'ham-advaye. (6)",
+        "verse": "\"Where is the world and where is the seeker after Liberation? Where is the man of contemplation and where is the Man of Realisation? Where is the bound man and where is the Liberated man for me, who am non-dual by nature?\""
+      },
+      {
+        "id": "20.7",
+        "number": "20.7",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva sṛṣṭiḥ kva ca saṁhāraḥ kva sādhyaṁ kva ca sādhanam, kva sādhakaḥ kva siddhirvā sva-svarupe'ham-advaye. (7)",
+        "verse": "\"Where is creation and where is destruction? Where is the end and where is the means? Where is the seeker and where is the accomplishment for me, abiding in my own non-dual nature?\""
+      },
+      {
+        "id": "20.8",
+        "number": "20.8",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva pramātā pramāṇaṁ vā kva prameyaṁ kva ca pramā, kva kiñcit kva na kiñcidvā sarvadā vimalasya me. (8)",
+        "verse": "\"Where is the ‘knower’ and where is the ‘means to knowledge‘? Where is the ‘object of knowledge’ and where is the objective knowledge? Where is ‘anything’ and where is ‘nothing’ for me, who am ‘ever pure’?\""
+      },
+      {
+        "id": "20.9",
+        "number": "20.9",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva vikṣepaḥ kva caikāgryaṁ kva nirbodhaḥ kva mūḍhatā, kva harṣaḥ kva viṣādo vā sarvadā niṣkriyasya me. (9)",
+        "verse": "\"Where is distraction and where is concentration? Where is sure knowledge and where is delusion? Where is joy and where is sorrow for me, who am ever the actionless?\""
+      },
+      {
+        "id": "20.10",
+        "number": "20.10",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva caiṣa vyavahāro vā kva ca sā paramārthatā, kva sukhaṁ kva ca vā duḥkhaṁ nirvimarśasya me sadā. (10)",
+        "verse": "\"Where is activity in the state of relativity and where is the state of the Absolute? Where is happiness and where is misery for me, who am ever beyond any discursive thought?\""
+      },
+      {
+        "id": "20.11",
+        "number": "20.11",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva māyā kva ca saṁsāraḥ kva prītirviratiḥ kva vā, kva jīvaḥ kva ca tad-brahma sarvadā vimalasya me. (11)",
+        "verse": "\"Where is illusion and where is the world of change? Where is attachment and where is detachment? Where is jīva and what is Brahman for me, who am ever pure?\""
+      },
+      {
+        "id": "20.12",
+        "number": "20.12",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva pravṛttirnivṛttirvā kva muktiḥ kva ca bandhanam, kūṭasthanirvibhāgasya svasthasya mama sarvadā. (12)",
+        "verse": "\"Where is activity? Where is inactivity? Where is Liberation? and where is bondage for me, who am immutable and indivisible, and ever established in the Self?\""
+      },
+      {
+        "id": "20.13",
+        "number": "20.13",
+        "speaker": "Janaka said:",
+        "sanskrit": "kvopadeśaḥ kva vā śāstraṁ kva śiṣyaḥ kva ca vā guruḥ, kva cāsti puruṣārtho vā nirupādheḥ śivasya me. (13)",
+        "verse": "\"Where are instructions or where are scriptural injunctions? Where is the disciple and where is the preceptor? Where, indeed, is the 'goal of life' for me, who is the absolute Good (Śiva), free from all limitations?\""
+      },
+      {
+        "id": "20.14",
+        "number": "20.14",
+        "speaker": "Janaka said:",
+        "sanskrit": "kva cāsti kva ca vā nāsti kvāsti caikaṁ kva ca dvayam, bahunā'tra kimuktena kiñcinnottiṣṭhate mama. (14)",
+        "verse": "\"Where is existence or where is ‘non-existence’? Where is the one (unity) and where is duality? What need is there to say more? Nothing indeed emanates from me.\""
+      }
     ]
-  },
+  }
+]
 ];
