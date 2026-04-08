@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <div className="flex h-screen bg-background">
       {/* Sidebar */}
-      <aside className="hidden md:flex md:w-72 bg-sidebar border-r border-sidebar-border flex-col">
+      <aside className="w-72 bg-sidebar border-r border-sidebar-border flex flex-col hidden lg:flex">
         <div className="p-6 border-b border-sidebar-border">
           <h1 className="text-2xl font-serif font-bold text-sidebar-foreground">
             Ashtavakra Gita
@@ -67,9 +67,19 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col">
-        {/* Mobile Header */}
-        <div className="md:hidden bg-card border-b border-border p-4">
+        {/* Mobile/Tablet Header */}
+        <div className="lg:hidden bg-card border-b border-border p-4 flex items-center justify-between">
           <h1 className="text-xl font-serif font-bold text-foreground">Ashtavakra Gita</h1>
+          <button
+            onClick={() => {
+              const drawer = document.getElementById('mobile-drawer');
+              if (drawer) drawer.classList.remove('hidden');
+            }}
+            className="lg:hidden bg-primary text-primary-foreground rounded p-2"
+            aria-label="Open chapters"
+          >
+            ☰
+          </button>
         </div>
 
         {/* Verse Display */}
@@ -96,64 +106,37 @@ export default function Home() {
       </main>
 
       {/* Mobile Chapter Drawer */}
-      <MobileChapterDrawer
-        chapters={chapters}
-        selectedChapterId={selectedChapterId}
-        onSelectChapter={handleChapterSelect}
-      />
-    </div>
-  );
-}
-
-function MobileChapterDrawer({
-  chapters,
-  selectedChapterId,
-  onSelectChapter,
-}: {
-  chapters: typeof chapters;
-  selectedChapterId: number;
-  onSelectChapter: (id: number) => void;
-}) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <>
-      {open && (
-        <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
-          onClick={() => setOpen(false)}
-        />
-      )}
       <div
-        className={`fixed right-0 top-0 h-full w-64 bg-sidebar border-l border-sidebar-border transform transition-transform duration-300 z-50 md:hidden ${
-          open ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        id="mobile-drawer"
+        className="fixed inset-0 bg-black/50 z-40 lg:hidden hidden"
+        onClick={(e) => {
+          if (e.target === e.currentTarget) {
+            document.getElementById('mobile-drawer')?.classList.add('hidden');
+          }
+        }}
       >
-        <div className="p-4 border-b border-sidebar-border flex items-center justify-between">
-          <h2 className="font-semibold text-sidebar-foreground">Chapters</h2>
-          <button
-            onClick={() => setOpen(false)}
-            className="text-sidebar-foreground/60 hover:text-sidebar-foreground"
-          >
-            ✕
-          </button>
+        <div className="absolute right-0 top-0 h-full w-72 bg-sidebar border-l border-sidebar-border flex flex-col">
+          <div className="p-4 border-b border-sidebar-border flex items-center justify-between">
+            <h2 className="font-semibold text-sidebar-foreground">Chapters</h2>
+            <button
+              onClick={() => {
+                document.getElementById('mobile-drawer')?.classList.add('hidden');
+              }}
+              className="text-sidebar-foreground/60 hover:text-sidebar-foreground text-xl"
+            >
+              ✕
+            </button>
+          </div>
+          <ChapterList
+            chapters={chapters}
+            selectedChapterId={selectedChapterId}
+            onSelectChapter={(id) => {
+              handleChapterSelect(id);
+              document.getElementById('mobile-drawer')?.classList.add('hidden');
+            }}
+          />
         </div>
-        <ChapterList
-          chapters={chapters}
-          selectedChapterId={selectedChapterId}
-          onSelectChapter={(id) => {
-            onSelectChapter(id);
-            setOpen(false);
-          }}
-        />
       </div>
-      <button
-        onClick={() => setOpen(!open)}
-        className="fixed bottom-20 right-4 md:hidden bg-primary text-primary-foreground rounded-full p-3 shadow-lg z-40"
-        aria-label="Open chapters"
-      >
-        ☰
-      </button>
-    </>
+    </div>
   );
 }
