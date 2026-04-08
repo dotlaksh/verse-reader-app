@@ -1,24 +1,203 @@
-/* Sanskrit and Meaning Text Styling */
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.98 0.001 240);
+  --foreground: oklch(0.25 0.01 240);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.25 0.01 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.01 240);
+  --primary: oklch(0.42 0.08 260);
+  --primary-foreground: oklch(0.98 0.001 240);
+  --secondary: oklch(0.88 0.03 200);
+  --secondary-foreground: oklch(0.25 0.01 240);
+  --muted: oklch(0.92 0.01 240);
+  --muted-foreground: oklch(0.55 0.02 240);
+  --accent: oklch(0.55 0.12 20);
+  --accent-foreground: oklch(0.98 0.001 240);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.001 240);
+  --border: oklch(0.92 0.01 240);
+  --input: oklch(0.97 0.005 240);
+  --ring: oklch(0.42 0.08 260);
+  --chart-1: oklch(0.42 0.08 260);
+  --chart-2: oklch(0.55 0.12 20);
+  --chart-3: oklch(0.65 0.08 150);
+  --chart-4: oklch(0.70 0.06 240);
+  --chart-5: oklch(0.60 0.08 180);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.96 0.002 240);
+  --sidebar-foreground: oklch(0.25 0.01 240);
+  --sidebar-primary: oklch(0.42 0.08 260);
+  --sidebar-primary-foreground: oklch(0.98 0.001 240);
+  --sidebar-accent: oklch(0.88 0.03 200);
+  --sidebar-accent-foreground: oklch(0.25 0.01 240);
+  --sidebar-border: oklch(0.92 0.01 240);
+  --sidebar-ring: oklch(0.42 0.08 260);
+}
+
+.dark {
+  --background: oklch(0.15 0.01 240);
+  --foreground: oklch(0.93 0.01 240);
+  --card: oklch(0.20 0.01 240);
+  --card-foreground: oklch(0.93 0.01 240);
+  --popover: oklch(0.20 0.01 240);
+  --popover-foreground: oklch(0.93 0.01 240);
+  --primary: oklch(0.70 0.12 260);
+  --primary-foreground: oklch(0.15 0.01 240);
+  --secondary: oklch(0.28 0.03 200);
+  --secondary-foreground: oklch(0.93 0.01 240);
+  --muted: oklch(0.28 0.02 240);
+  --muted-foreground: oklch(0.65 0.02 240);
+  --accent: oklch(0.65 0.12 20);
+  --accent-foreground: oklch(0.15 0.01 240);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.93 0.01 240);
+  --border: oklch(0.28 0.01 240);
+  --input: oklch(0.25 0.01 240);
+  --ring: oklch(0.70 0.12 260);
+  --chart-1: oklch(0.70 0.12 260);
+  --chart-2: oklch(0.65 0.12 20);
+  --chart-3: oklch(0.75 0.08 150);
+  --chart-4: oklch(0.75 0.08 240);
+  --chart-5: oklch(0.70 0.08 180);
+  --sidebar: oklch(0.18 0.01 240);
+  --sidebar-foreground: oklch(0.93 0.01 240);
+  --sidebar-primary: oklch(0.70 0.12 260);
+  --sidebar-primary-foreground: oklch(0.15 0.01 240);
+  --sidebar-accent: oklch(0.28 0.03 200);
+  --sidebar-accent-foreground: oklch(0.93 0.01 240);
+  --sidebar-border: oklch(0.28 0.01 240);
+  --sidebar-ring: oklch(0.70 0.12 260);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Sanskrit and Meaning Text Styling - Pure CSS */
+
 .sanskrit-section {
-  @apply bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-300 dark:border-amber-700 rounded-lg p-6 mb-8;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #fef3c7, #fde68a);
+  border-radius: 0.5rem;
+  border: 2px solid #fcd34d;
+}
+
+.dark .sanskrit-section {
+  background: linear-gradient(to right, rgba(180, 83, 9, 0.2), rgba(180, 83, 9, 0.2));
+  border-color: rgba(217, 119, 6, 0.5);
 }
 
 .sanskrit-label {
-  @apply text-sm font-semibold text-amber-900 dark:text-amber-300 uppercase tracking-wider mb-3;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b45309;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.dark .sanskrit-label {
+  color: #fbbf24;
 }
 
 .sanskrit-text {
-  @apply text-xl md:text-2xl font-serif italic text-amber-950 dark:text-amber-100 leading-relaxed;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #78350f;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.dark .sanskrit-text {
+  color: #fef08a;
 }
 
 .meaning-section {
-  @apply bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-300 dark:border-blue-700 rounded-lg p-6 mb-8;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #dbeafe, #e0e7ff);
+  border-radius: 0.5rem;
+  border: 2px solid #93c5fd;
+}
+
+.dark .meaning-section {
+  background: linear-gradient(to right, rgba(30, 58, 138, 0.2), rgba(49, 46, 129, 0.2));
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
 .meaning-label {
-  @apply text-sm font-semibold text-blue-900 dark:text-blue-300 uppercase tracking-wider mb-3;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1e40af;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.dark .meaning-label {
+  color: #60a5fa;
 }
 
 .meaning-text {
-  @apply text-lg font-serif text-blue-950 dark:text-blue-100 leading-relaxed;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: Georgia, serif;
+  white-space: pre-line;
+}
+
+.dark .meaning-text {
+  color: rgba(255, 255, 255, 0.9);
 }
