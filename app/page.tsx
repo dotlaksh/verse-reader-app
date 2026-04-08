@@ -117,8 +117,8 @@ export default function Home() {
           }
         }}
       >
-        <div className="absolute right-0 top-0 h-full w-72 bg-sidebar border-l border-sidebar-border flex flex-col">
-          <div className="p-4 border-b border-sidebar-border flex items-center justify-between">
+        <div className="absolute right-0 top-0 h-full w-72 bg-sidebar border-l border-sidebar-border flex flex-col overflow-hidden">
+          <div className="p-4 border-b border-sidebar-border flex-shrink-0 flex items-center justify-between">
             <h2 className="font-semibold text-sidebar-foreground">Chapters</h2>
             <button
               onClick={() => {
@@ -129,14 +129,16 @@ export default function Home() {
               ✕
             </button>
           </div>
-          <ChapterList
-            chapters={chapters}
-            selectedChapterId={selectedChapterId}
-            onSelectChapter={(id) => {
-              handleChapterSelect(id);
-              document.getElementById('mobile-drawer')?.classList.add('hidden');
-            }}
-          />
+          <div className="flex-1 overflow-y-auto">
+            <ChapterList
+              chapters={chapters}
+              selectedChapterId={selectedChapterId}
+              onSelectChapter={(id) => {
+                handleChapterSelect(id);
+                document.getElementById('mobile-drawer')?.classList.add('hidden');
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>
