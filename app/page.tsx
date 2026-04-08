@@ -11,8 +11,8 @@ export default function Home() {
   const [selectedVerseId, setSelectedVerseId] = useState('1.1');
 
   const currentChapter = chapters.find(ch => ch.id === selectedChapterId);
-  const currentVerseIndex = currentChapter?.verses.findIndex(v => v.id === selectedVerseId) ?? 0;
-  const currentVerse = currentChapter?.verses[currentVerseIndex];
+const currentVerseIndex = currentChapter ? currentChapter.verses.findIndex(v => v.id === selectedVerseId) : -1;
+const currentVerse = currentChapter?.verses[currentVerseIndex];
 
   const handlePrevious = () => {
     if (currentVerseIndex > 0) {
