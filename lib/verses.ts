@@ -2,7 +2,8 @@ export interface Verse {
   id: string;
   number: string;
   speaker?: string;
-  text: string;
+  sanskrit:string;
+  verse: string;
 }
 
 export interface Chapter {
