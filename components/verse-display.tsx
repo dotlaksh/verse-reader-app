@@ -62,11 +62,6 @@ export function VerseDisplay({
             {verse.verse}
           </p>
         </div>
-
-        {/* Bottom Decoration */}
-        <div className="mt-10 pt-8 border-t border-border flex justify-center">
-          <div className="text-2xl text-primary/30">✦</div>
-        </div>
       </div>
     </div>
   );
