@@ -40,16 +40,29 @@ export function VerseDisplay({
 
         {/* Speaker (if applicable) */}
         {verse.speaker && (
-          <div className="mb-4 text-sm font-semibold text-accent italic">
+          <div className="mb-6 text-sm font-semibold text-accent italic">
             {verse.speaker}
           </div>
         )}
 
-        {/* Verse Text */}
-        <div className="prose dark:prose-invert max-w-none">
-          <p className="text-lg leading-relaxed text-foreground/90 whitespace-pre-line font-serif">
-            {verse.text}
-          </p>
+        {/* Sanskrit Text Section */}
+        {verse.sanskrit && (
+          <div className="sanskrit-section">
+            <div className="sanskrit-label">Sanskrit</div>
+            <p className="sanskrit-text">
+              {verse.sanskrit}
+            </p>
+          </div>
+        )}
+
+        {/* English Meaning Section */}
+        <div className="meaning-section">
+          <div className="meaning-label">Meaning</div>
+          <div className="prose dark:prose-invert max-w-none">
+            <p className="meaning-text whitespace-pre-line">
+              {verse.text}
+            </p>
+          </div>
         </div>
 
         {/* Bottom Decoration */}
